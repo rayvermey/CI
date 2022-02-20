@@ -9,7 +9,7 @@ else
 	DISK=sda
 fi
 
-echo Freeing System
+echo Freeing System (only when run 2cnd time so ignore errors please)
 umount -R /dev/${DISK}1
 sleep 2
 umount -R /dev/${DISK}2
@@ -140,9 +140,6 @@ genfstab -U /mnt >> /mnt/etc/fstab
 
 cp sudoers /mnt/etc
 cp yay-11.0.2-1-x86_64.pkg.tar.zst /mnt
-cp rclone.conf /mnt
-
-cp POST_INSTALL.sh /mnt
 
 echo Going CHROOT
 arch-chroot /mnt /bin/bash <<EOF >LOG 2>&1
@@ -233,7 +230,7 @@ sudo make install
 
 echo Installing AUR packages
 
-su $USER -c 'yay --noconfirm --needed -S < AUR'
+su $USER -c 'yay --noconfirm --needed -S - < AUR'
 
 
 EOF
@@ -247,13 +244,10 @@ mv /mnt/dusk /mnt/home/$USER/git
 
 echo Copying scripts
 
-cp -rv FILES/scripts /mnt/home/$USER
-chmod -R 755 /mnt/home/$USER/scripts
-
 mkdir -p /mnt/home/$USER/.config/{picom,v,sxhkd}
 
-cp configs_general/picom.conf /mnt/home/$USER/.config/picom
-cp configs_general/.aliases.all /mnt/home/$USER
+cp picom.conf /mnt/home/$USER/.config/picom
+cp .aliases.all /mnt/home/$USER
 cp VM_xinitrc /mnt/home/$USER/.xinitrc
 
 chown -R $USER:$USER /mnt/home/$USER
