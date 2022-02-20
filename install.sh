@@ -9,7 +9,7 @@ else
 	DISK=sda
 fi
 
-echo Freeing System (only when run 2cnd time so ignore errors please)
+echo Freeing System \(only when run 2cnd time so ignore errors please\)
 umount -R /dev/${DISK}1
 sleep 2
 umount -R /dev/${DISK}2
@@ -140,6 +140,7 @@ genfstab -U /mnt >> /mnt/etc/fstab
 
 cp sudoers /mnt/etc
 cp yay-11.0.2-1-x86_64.pkg.tar.zst /mnt
+cp AUR /mnt/home/$USER
 
 echo Going CHROOT
 arch-chroot /mnt /bin/bash <<EOF >LOG 2>&1
@@ -165,7 +166,7 @@ $USER ALL=(ALL) NOPASSWD: ALL
 SU
 
 echo Chowning $USER
-chown -R $USER:$USER /home/$USER
+chown -R ${USER}:${USER} /home/$USER
 sleep 2
 
 echo Pacman Keys
@@ -214,11 +215,15 @@ grub-mkconfig -o /boot/grub/grub.cfg
 
 fi
 
+echo Installing AUR packages >/dev/tty
+
+su $USER -c 'yay --noconfirm --needed -S - < AUR'
+
 echo installing paru
 
 su $USER -c 'yay -S paru-bin --noconfirm'
 
-echo Installing dusk
+echo Installing dusk >/dev/tty
 
 su $USER -c 'yay --noconfirm -S yajl'
 su $USER -c 'yay --noconfirm -S imlib2'
@@ -228,21 +233,17 @@ cd dusk
 make
 sudo make install
 
-echo Installing AUR packages
 
-su $USER -c 'yay --noconfirm --needed -S - < AUR'
 
 
 EOF
 
-echo moving dusk
+echo moving dusk >/dev/tty
 
 cp mirrorlist /mnt/etc/pacman.d/
 mkdir /mnt/home/$USER/git
 mv /mnt/dusk /mnt/home/$USER/git
 
-
-echo Copying scripts
 
 mkdir -p /mnt/home/$USER/.config/{picom,v,sxhkd}
 
@@ -250,5 +251,5 @@ cp picom.conf /mnt/home/$USER/.config/picom
 cp .aliases.all /mnt/home/$USER
 cp VM_xinitrc /mnt/home/$USER/.xinitrc
 
-chown -R $USER:$USER /mnt/home/$USER
+chown -R ${USER}:${USER} /mnt/home/$USER
 
