@@ -5,7 +5,13 @@ Steps to take:
 
 1) Boot up from any Arch iso
 
-2) git clone https://github.com/rayvermey/CI
+2) Run:
+
+	 pacman -Sy
+
+	 pacman -S git
+
+	 git clone https://github.com/rayvermey/CI
    
 3) cd CI
 
