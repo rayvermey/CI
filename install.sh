@@ -149,6 +149,7 @@ cp /home/AUR .
 pacman -Sy
 pacman -Syu --noconfirm
 
+
 echo LOCALE and stuff > /dev/tty
 echo "en_US.UTF-8 UTF-8" > /etc/locale.gen
 locale-gen
@@ -188,6 +189,8 @@ pacman -U yay-11.0.2-1-x86_64.pkg.tar.zst --noconfirm
 systemctl enable --now sshd.service
 
 ln -s /usr/bin/vim /usr/bin/vi
+
+su ray -c "yay --noconfirm -R libxft xorg-x11perf"
 
 echo cleaning up >/dev/tty
 
