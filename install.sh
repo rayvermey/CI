@@ -140,9 +140,10 @@ genfstab -U /mnt >> /mnt/etc/fstab
 
 cp sudoers /mnt/etc
 cp yay-11.0.2-1-x86_64.pkg.tar.zst /mnt
-cp AUR /mnt/home/$USER
+cp AUR /mnt/
 
 echo Going CHROOT
+cp /AUR .
 arch-chroot /mnt /bin/bash <<EOF >LOG 2>&1
 pacman -Syu --noconfirm
 
@@ -166,7 +167,7 @@ $USER ALL=(ALL) NOPASSWD: ALL
 SU
 
 echo Chowning $USER
-chown -R ${USER}:${USER} /home/$USER
+chown -R ${USER} /home/$USER
 sleep 2
 
 echo Pacman Keys
