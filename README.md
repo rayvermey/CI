@@ -7,7 +7,8 @@ Steps to take:
 
 2) git clone https://github.com/rayvermey/CI
    
-3) cd CL
+3) cd CI
+
    run ./install.sh SCHEME USER PASSWORD
 
    SCHEME = UEFI or LEGACY , this will adjust your diskpartitioning accordingly
