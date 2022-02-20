@@ -220,7 +220,7 @@ fi
 
 echo Installing AUR packages >/dev/tty
 
-su $USER -c 'yay --noconfirm --needed -S - < AUR'
+su $USER -c 'yay --noconfirm --needed -S - < /home/AUR'
 
 echo installing paru >/dev/tty
 
@@ -231,9 +231,11 @@ echo Installing dusk >/dev/tty
 su $USER -c 'yay --noconfirm -S yajl'
 su $USER -c 'yay --noconfirm -S imlib2'
 
-chown -R ${USER}:${USER} /home/$USER
 
 git clone https://github.com/bakkeby/dusk
+
+chown -R ${USER}:${USER} /home/$USER
+
 cd dusk
 make
 sudo make install
@@ -243,14 +245,11 @@ EOF
 echo moving dusk >/dev/tty
 
 cp mirrorlist /mnt/etc/pacman.d/
-mkdir /mnt/home/$USER/git
-mv /mnt/dusk /mnt/home/$USER/git
-
 
 mkdir -p /mnt/home/$USER/.config/{picom,v,sxhkd}
 
 cp picom.conf /mnt/home/$USER/.config/picom
-cp .aliases.all /mnt/home/$USER
+cp .aliases.all /mnt/home/$USER/
 cp VM_xinitrc /mnt/home/$USER/.xinitrc
 
 
