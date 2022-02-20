@@ -143,11 +143,13 @@ cp yay-11.0.2-1-x86_64.pkg.tar.zst /mnt
 cp AUR /mnt/home
 
 echo Going CHROOT
-cp /home/AUR .
 arch-chroot /mnt /bin/bash <<EOF >LOG 2>&1
+cp /home/AUR .
+
+pacman -Sy
 pacman -Syu --noconfirm
 
-echo LOCALE and stuff
+echo LOCALE and stuff > /dev/tty
 echo "en_US.UTF-8 UTF-8" > /etc/locale.gen
 locale-gen
 export LANG=en_US.UTF-8
@@ -157,7 +159,7 @@ echo Arch-TEST > /etc/hostname
 sed -i "/localhost/s/$/ Arch-VM" /etc/hosts
 echo "root:$PASSWORD" | chpasswd
 
-echo Adding user $USER
+echo Adding user $USER >/dev/tty
 groupadd -r autologin
 useradd -G autologin,wheel,power -m $USER
 echo "$USER:$PASSWORD" | chpasswd
@@ -166,11 +168,11 @@ cat <<SU >> /etc/sudoers
 $USER ALL=(ALL) NOPASSWD: ALL
 SU
 
-echo Chowning $USER
+echo Chowning $USER >/dev/tty
 chown -R ${USER} /home/$USER
 sleep 2
 
-echo Pacman Keys
+echo Pacman Keys >/dev/tty
 pacman-key --init 
 sleep 3
 pacman-key --populate archlinux
@@ -179,7 +181,7 @@ sudo pacman -Syu --noconfirm
 sleep 2
 
 
-echo Installing yay
+echo Installing yay >/dev/tty
 
 pacman -U yay-11.0.2-1-x86_64.pkg.tar.zst --noconfirm
 
@@ -187,7 +189,7 @@ systemctl enable --now sshd.service
 
 ln -s /usr/bin/vim /usr/bin/vi
 
-echo cleaning up
+echo cleaning up >/dev/tty
 
 sed -i 's/Storage=volatile/#Storage=auto/' /etc/systemd/journald.conf
 rm /etc/udev/rules.d/81-dhcpcd.rules
@@ -199,11 +201,11 @@ rm /root/{.automated_script.sh,.zlogin}
 rm /etc/mkinitcpio-archiso.conf
 rm -r /etc/initcpio
 
-echo mkinitcpio
+echo mkinitcpio >/dev/tty
 
 mkinitcpio -P
 
-echo Installing grub
+echo Installing grub >/dev/tty
 if [ $1 == "UEFI" ]
 then
 grub-install --target=x86_64-efi --efi-directory=/efi --bootloader-id=GRUB
@@ -220,7 +222,7 @@ echo Installing AUR packages >/dev/tty
 
 su $USER -c 'yay --noconfirm --needed -S - < AUR'
 
-echo installing paru
+echo installing paru >/dev/tty
 
 su $USER -c 'yay -S paru-bin --noconfirm'
 
@@ -229,13 +231,12 @@ echo Installing dusk >/dev/tty
 su $USER -c 'yay --noconfirm -S yajl'
 su $USER -c 'yay --noconfirm -S imlib2'
 
+chown -R ${USER}:${USER} /home/$USER
+
 git clone https://github.com/bakkeby/dusk
 cd dusk
 make
 sudo make install
-
-
-
 
 EOF
 
@@ -252,5 +253,4 @@ cp picom.conf /mnt/home/$USER/.config/picom
 cp .aliases.all /mnt/home/$USER
 cp VM_xinitrc /mnt/home/$USER/.xinitrc
 
-chown -R ${USER}:${USER} /mnt/home/$USER
 
