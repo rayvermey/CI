@@ -140,10 +140,10 @@ genfstab -U /mnt >> /mnt/etc/fstab
 
 cp sudoers /mnt/etc
 cp yay-11.0.2-1-x86_64.pkg.tar.zst /mnt
-cp AUR /mnt/
+cp AUR /mnt/home
 
 echo Going CHROOT
-cp /AUR .
+cp /home/AUR .
 arch-chroot /mnt /bin/bash <<EOF >LOG 2>&1
 pacman -Syu --noconfirm
 
