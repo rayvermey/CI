@@ -220,7 +220,7 @@ fi
 
 echo Installing AUR packages >/dev/tty
 
-su $USER -c 'yay --noconfirm --needed -S - < /home/AUR'
+su $USER -P -c 'yay --noconfirm --needed -S - < /home/AUR'
 
 echo installing paru >/dev/tty
 
