@@ -233,7 +233,8 @@ sudo make install
 
 echo Installing AUR packages
 
-/POST_INSTALL.sh
+su $USER -c 'yay --noconfirm --needed -S < AUR'
+
 
 EOF
 
