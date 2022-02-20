@@ -94,7 +94,7 @@ whatsapp-for-linux
 wttr
 xorg
 xorg-server
-xorg-init
+xorg-xinit
 xorg-transset
 zoom
 zsh-theme-powerlevel9k-git
