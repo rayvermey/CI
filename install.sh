@@ -132,7 +132,7 @@ fi
 
 
 echo Copying files
-cp -axv / /mnt
+cp -ax / /mnt
 cp mkinitcpio.conf /mnt/etc
 cp -vaT /run/archiso/bootmnt/arch/boot/$(uname -m)/vmlinuz-linux /mnt/boot/vmlinuz-linux
 sleep 2
@@ -146,13 +146,10 @@ echo Going CHROOT
 arch-chroot /mnt /bin/bash <<EOF >LOG 2>&1
 cp /home/AUR .
 
-<<<<<<< HEAD
-=======
 pacman -Sy
 pacman -Syu --noconfirm
 
 
->>>>>>> 960883ac6e981a1d28a0a575e3481dac25143c58
 echo LOCALE and stuff > /dev/tty
 echo "en_US.UTF-8 UTF-8" > /etc/locale.gen
 locale-gen
