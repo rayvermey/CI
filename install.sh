@@ -146,9 +146,6 @@ echo Going CHROOT
 arch-chroot /mnt /bin/bash <<EOF >LOG 2>&1
 cp /home/AUR .
 
-pacman -Sy
-pacman -Syu --noconfirm
-
 echo LOCALE and stuff > /dev/tty
 echo "en_US.UTF-8 UTF-8" > /etc/locale.gen
 locale-gen
@@ -189,6 +186,8 @@ systemctl enable --now sshd.service
 
 ln -s /usr/bin/vim /usr/bin/vi
 
+su ray -c "yay --noconfirm -R libxft xorg-x11perf"
+
 echo cleaning up >/dev/tty
 
 sed -i 's/Storage=volatile/#Storage=auto/' /etc/systemd/journald.conf
@@ -218,18 +217,19 @@ grub-mkconfig -o /boot/grub/grub.cfg
 
 fi
 
+echo Installing base-devel package >/dev/tty
+
+su $USER -P -c ' yay --noconfirm --needed -S base-devel fakeroot'
+echo Installing libxft-bgra package >/dev/tty
+su $USER -P -c  'yes | yay --noconfirm --needed -S libxft-bgra'
+
 echo Installing AUR packages >/dev/tty
-
 su $USER -P -c 'yay --noconfirm --needed -S - < /home/AUR'
-
-echo installing paru >/dev/tty
-
-su $USER -c 'yay -S paru-bin --noconfirm'
 
 echo Installing dusk >/dev/tty
 
-su $USER -c 'yay --noconfirm -S yajl'
-su $USER -c 'yay --noconfirm -S imlib2'
+su $USER -P -c 'yay --noconfirm -S yajl'
+su $USER -P -c 'yay --noconfirm -S imlib2'
 
 
 git clone https://github.com/bakkeby/dusk
