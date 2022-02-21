@@ -1,5 +1,9 @@
 alias-tips-git
 archlinux-appstream-data-pamac
+<<<<<<< HEAD
+=======
+base-devel
+>>>>>>> 960883ac6e981a1d28a0a575e3481dac25143c58
 betterdiscord-installer
 cmake-extras-git
 colorpicker
