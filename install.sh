@@ -150,7 +150,7 @@ pacman -Sy
 pacman -Syu --noconfirm
 
 
-echo LOCALE and stuff > /dev/tty
+echo LOCALE and stuff
 echo "en_US.UTF-8 UTF-8" > /etc/locale.gen
 locale-gen
 export LANG=en_US.UTF-8
@@ -160,7 +160,7 @@ echo Arch-TEST > /etc/hostname
 sed -i "/localhost/s/$/ Arch-VM" /etc/hosts
 echo "root:$PASSWORD" | chpasswd
 
-echo Adding user $USER >/dev/tty
+echo Adding user $USER
 groupadd -r autologin
 useradd -G autologin,wheel,power -m $USER
 echo "$USER:$PASSWORD" | chpasswd
@@ -169,11 +169,11 @@ cat <<SU >> /etc/sudoers
 $USER ALL=(ALL) NOPASSWD: ALL
 SU
 
-echo Chowning $USER >/dev/tty
+echo Chowning $USER 
 chown -R ${USER} /home/$USER
 sleep 2
 
-echo Pacman Keys >/dev/tty
+echo Pacman Keys
 pacman-key --init 
 sleep 3
 pacman-key --populate archlinux
@@ -182,7 +182,7 @@ sudo pacman -Syu --noconfirm
 sleep 2
 
 
-echo Installing yay >/dev/tty
+echo Installing yay
 
 pacman -U yay-11.0.2-1-x86_64.pkg.tar.zst --noconfirm
 
@@ -192,7 +192,7 @@ ln -s /usr/bin/vim /usr/bin/vi
 
 su ray -c "yay --noconfirm -R libxft xorg-x11perf"
 
-echo cleaning up >/dev/tty
+echo cleaning up
 
 sed -i 's/Storage=volatile/#Storage=auto/' /etc/systemd/journald.conf
 rm /etc/udev/rules.d/81-dhcpcd.rules
@@ -204,11 +204,11 @@ rm /root/{.automated_script.sh,.zlogin}
 rm /etc/mkinitcpio-archiso.conf
 rm -r /etc/initcpio
 
-echo mkinitcpio >/dev/tty
+echo mkinitcpio
 
 mkinitcpio -P
 
-echo Installing grub >/dev/tty
+echo Installing grub 
 if [ $1 == "UEFI" ]
 then
 grub-install --target=x86_64-efi --efi-directory=/efi --bootloader-id=GRUB
@@ -221,16 +221,16 @@ grub-mkconfig -o /boot/grub/grub.cfg
 
 fi
 
-echo Installing base-devel package >/dev/tty
+echo Installing base-devel package
 
-su $USER -P -c ' yay --noconfirm --needed -S base-devel fakeroot'
-echo Installing libxft-bgra package >/dev/tty
+su $USER -P -c 'yay --noconfirm --needed -S base-devel fakeroot'
+echo Installing libxft-bgra package
 su $USER -P -c  'yes | yay --noconfirm --needed -S libxft-bgra'
 
-echo Installing AUR packages >/dev/tty
+echo Installing AUR packages
 su $USER -P -c 'yay --noconfirm --needed -S - < /home/AUR'
 
-echo Installing dusk >/dev/tty
+echo Installing dusk 
 
 su $USER -P -c 'yay --noconfirm -S yajl'
 su $USER -P -c 'yay --noconfirm -S imlib2'
@@ -246,7 +246,7 @@ sudo make install
 
 EOF
 
-echo moving dusk >/dev/tty
+echo moving dusk
 
 cp mirrorlist /mnt/etc/pacman.d/
 
