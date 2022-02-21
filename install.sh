@@ -132,7 +132,7 @@ fi
 
 
 echo Copying files
-cp -ax / /mnt
+cp -axv / /mnt
 cp mkinitcpio.conf /mnt/etc
 cp -vaT /run/archiso/bootmnt/arch/boot/$(uname -m)/vmlinuz-linux /mnt/boot/vmlinuz-linux
 sleep 2
