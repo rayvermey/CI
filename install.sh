@@ -232,8 +232,8 @@ su $USER -P -c 'yay --noconfirm --needed -S - < /home/AUR'
 
 echo Installing dusk 
 
-su $USER -c 'yay --noconfirm -S yajl'
-su $USER -c 'yay --noconfirm -S imlib2'
+pacman --noconfirm -S yajl
+pacman --noconfirm -S imlib2
 
 
 git clone https://github.com/bakkeby/dusk
@@ -255,5 +255,4 @@ mkdir -p /mnt/home/$USER/.config/{picom,v,sxhkd}
 cp picom.conf /mnt/home/$USER/.config/picom
 cp .aliases.all /mnt/home/$USER/
 cp VM_xinitrc /mnt/home/$USER/.xinitrc
-
 

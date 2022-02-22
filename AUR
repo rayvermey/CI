@@ -59,3 +59,6 @@ xorg-transset
 zoom
 zsh
 zsh-theme-powerlevel9k-git
+dmenu
+rofi
+alacritty
