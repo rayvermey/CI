@@ -223,17 +223,17 @@ fi
 
 echo Installing base-devel package
 
-su $USER -P -c 'yay --noconfirm --needed -S base-devel fakeroot'
+su $USER -c 'yay --noconfirm --needed -S base-devel fakeroot'
 echo Installing libxft-bgra package
-su $USER -P -c  'yes | yay --noconfirm --needed -S libxft-bgra'
+su $USER -c  'yes | yay --noconfirm --needed -S libxft-bgra'
 
 echo Installing AUR packages
 su $USER -P -c 'yay --noconfirm --needed -S - < /home/AUR'
 
 echo Installing dusk 
 
-su $USER -P -c 'yay --noconfirm -S yajl'
-su $USER -P -c 'yay --noconfirm -S imlib2'
+su $USER -c 'yay --noconfirm -S yajl'
+su $USER -c 'yay --noconfirm -S imlib2'
 
 
 git clone https://github.com/bakkeby/dusk

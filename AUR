@@ -1,9 +1,3 @@
-alias-tips-git
-archlinux-appstream-data-pamac
-<<<<<<< HEAD
-=======
-base-devel
->>>>>>> 960883ac6e981a1d28a0a575e3481dac25143c58
 betterdiscord-installer
 cmake-extras-git
 colorpicker
@@ -11,11 +5,9 @@ curlftpfs-ng
 downgrade
 f2
 fakeroot
-folder-color-switcher
 freetube-bin
 fzf-tab-git
 gconf
-gnethogs
 gotop-bin
 gtk-theme-config
 hardinfo
@@ -24,15 +16,12 @@ insync
 insync-nemo
 inxi
 ix
-jmtpfs
-kalu
-libxft-bgra
 libxnvctrl-390xx
 modprobed-db
+nautilus
 ncspot
 nemo
 nemo-compare
-nodejs-nativefier
 noto-color-emoji-fontconfig
 oh-my-zsh-git
 open-fuse-iso
@@ -41,18 +30,9 @@ otf-nerd-fonts-fira-code
 otf-symbola
 p7zip-gui
 pacnews-git
-paru-bin
 picom-jonaburg-git
 plymouth
-pnpm
-pygtk
-python2-distutils-extra
-python2-gobject2
-python2-greenlet
-python2-notify
-python2-pycups
 rttr
-siji-ng
 simpletools
 slack-desktop
 spotify
