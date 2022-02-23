@@ -12,15 +12,16 @@ fi
 echo Freeing System \(only when run 2cnd time so ignore errors please\)
 umount -R /dev/${DISK}1
 sleep 2
-swapoff /dev/${DISK}2
+umount -R /dev/${DISK}2
 sleep 2
 umount -R /dev/${DISK}3
-sleep 2
-umount -R /dev/${DISK}4
 sleep 2
 umount -R /mnt
 sleep 2
 df
+
+echo Setting vi
+ln -s /usr/bin/vim /usr/bin/vi
 
 MEMTOTAL=$(grep MemTotal /proc/meminfo | awk ' { print $2 }')
 
@@ -149,8 +150,6 @@ pacman -Sy
 pacman -Syu --noconfirm
 
 
-# Change stuff below to your needs, like timezone, hostname etc
-
 echo LOCALE and stuff
 echo "en_US.UTF-8 UTF-8" > /etc/locale.gen
 locale-gen
@@ -189,19 +188,21 @@ pacman -U yay-11.0.2-1-x86_64.pkg.tar.zst --noconfirm
 
 systemctl enable --now sshd.service
 
+ln -s /usr/bin/vim /usr/bin/vi
+
 su ray -c "yay --noconfirm -R libxft xorg-x11perf"
 
 echo cleaning up
 
-#sed -i 's/Storage=volatile/#Storage=auto/' /etc/systemd/journald.conf
-#rm /etc/udev/rules.d/81-dhcpcd.rules
-#systemctl disable pacman-init.service choose-mirror.service
-#rm -r /etc/systemd/system/{choose-mirror.service,pacman-init.service,etc-pacman.d-gnupg.mount,getty@tty1.service.d}
-#rm /etc/systemd/scripts/choose-mirror
-#rm /etc/systemd/system/getty@tty1.service.d/autologin.conf
-#rm /root/{.automated_script.sh,.zlogin}
-#rm /etc/mkinitcpio-archiso.conf
-#rm -r /etc/initcpio
+sed -i 's/Storage=volatile/#Storage=auto/' /etc/systemd/journald.conf
+rm /etc/udev/rules.d/81-dhcpcd.rules
+systemctl disable pacman-init.service choose-mirror.service
+rm -r /etc/systemd/system/{choose-mirror.service,pacman-init.service,etc-pacman.d-gnupg.mount,getty@tty1.service.d}
+rm /etc/systemd/scripts/choose-mirror
+rm /etc/systemd/system/getty@tty1.service.d/autologin.conf
+rm /root/{.automated_script.sh,.zlogin}
+rm /etc/mkinitcpio-archiso.conf
+rm -r /etc/initcpio
 
 echo mkinitcpio
 
@@ -219,6 +220,29 @@ grub-install /dev/$DISK
 grub-mkconfig -o /boot/grub/grub.cfg
 
 fi
+
+echo Installing base-devel package
+
+su $USER -c 'yay --noconfirm --needed -S base-devel fakeroot'
+echo Installing libxft-bgra package
+su $USER -c  'yes | yay --noconfirm --needed -S libxft-bgra'
+
+echo Installing AUR packages
+su $USER -P -c 'yay --noconfirm --needed -S - < /home/AUR'
+
+echo Installing dusk 
+
+pacman --noconfirm -S yajl
+pacman --noconfirm -S imlib2
+
+
+git clone https://github.com/bakkeby/dusk
+
+chown -R ${USER}:${USER} /home/$USER
+
+cd dusk
+make
+sudo make install
 
 EOF
 
