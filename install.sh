@@ -232,3 +232,4 @@ cp picom.conf /mnt/home/$USER/.config/picom
 cp .aliases.all /mnt/home/$USER/
 cp VM_xinitrc /mnt/home/$USER/.xinitrc
 
+cp postinstall.sh /mnt/home/ray
