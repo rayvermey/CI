@@ -1,6 +1,12 @@
 # CI
 Clean and fast install of any Arch distro
 
+This install.sh script will build a new system from the iso (or distro) you booted
+up from.
+So all the distro specifics are copied in, ALSO all the installed software.
+This can be convinient for ISO builders, no repo software install is needed afterward,
+only AUR packages you want.
+
 Steps to take:
 
 1) Boot up from any Arch iso
@@ -25,7 +31,12 @@ Steps to take:
 
    PASSWORD = The password for your USER
 
-4) AUR packages are installed by yay , edit the file AUR to have the right AUR packages installed
+4) 	poweroff and change boot order from cd to disk if you are in a vm situation, otherwise remove usb/installation medium
+     	boot up and login under account and password given when install.sh was ran!
+
+	AUR packages are installed by yay , edit the file AUR to have the right AUR packages installed
+
+	edit and run postinstall.sh
 
 5) I am a huge fan of the DUSK windowmanager so that is the one installed.
    Ofcourse you can change that later
