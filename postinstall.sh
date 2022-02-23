@@ -10,8 +10,8 @@ yay --noconfirm --needed -S - < /home/AUR
 
 echo Installing dusk 
 
-pacman --noconfirm -S yajl
-pacman --noconfirm -S imlib2
+sudo pacman --noconfirm -S yajl
+sudo pacman --noconfirm -S imlib2
 
 
 git clone https://github.com/bakkeby/dusk

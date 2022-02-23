@@ -49,4 +49,6 @@ Steps to take to make this all happen:
 5) 	I am a huge fan of the DUSK windowmanager so that is the one installed.
    	Ofcourse you can change that later
 
-6) Have FUN!
+6)	Check .xinitrc for the programs you want to autostart when starting X (your graphical environment)
+
+7) Have FUN!
