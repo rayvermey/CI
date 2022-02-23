@@ -52,3 +52,12 @@ Steps to take to make this all happen:
 6)	Check .xinitrc for the programs you want to autostart when starting X (your graphical environment)
 
 7) Have FUN!
+
+
+-- Notes --
+
+wip folder is for my own development
+there you find the old install script where i try to put it all into one :-)
+
+ic is short update script for github
+
