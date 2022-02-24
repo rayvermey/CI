@@ -1,3 +1,12 @@
+USER=$(whoami)
+
+sudo chown -R $USER:$USER /home/$USER
+
+sudo pacman -Sy
+sudo pacman -S --noconfirm archlinux-keyring
+
+sudo pacman -Syu --noconfirm
+
 echo Installing base-devel package
 
 yay --noconfirm --needed -S base-devel fakeroot
@@ -15,8 +24,6 @@ sudo pacman --noconfirm -S imlib2
 
 
 git clone https://github.com/bakkeby/dusk
-
-chown -R ${USER}:${USER} /home/$USER
 
 cd dusk
 make

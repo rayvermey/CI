@@ -228,6 +228,7 @@ cp mirrorlist /mnt/etc/pacman.d/
 
 mkdir -p /mnt/home/$USER/.config/{picom,v,sxhkd}
 
+cp sxhkdrc /mnt/home/$USER/.config/sxhkd
 cp picom.conf /mnt/home/$USER/.config/picom
 cp .aliases.all /mnt/home/$USER/
 cp VM_xinitrc /mnt/home/$USER/.xinitrc
