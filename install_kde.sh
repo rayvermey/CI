@@ -2,7 +2,7 @@ SCHEME=$1
 USER=$2
 PASSWORD=$3
 
-if [ $(lsblk|grep disk|grep vda|sed 's/ .*$//') == vda ]
+if [ $(lsblk|grep disk|sed 's/ .*$//') == vda ]
 then
 	DISK=vda
 else
@@ -131,7 +131,8 @@ fi
 
 
 echo Copying files
-cp -ax / /mnt
+cd /
+cp -ax . /mnt
 cp mkinitcpio.conf /mnt/etc
 cp -vaT /run/archiso/bootmnt/arch/boot/$(uname -m)/vmlinuz-linux /mnt/boot/vmlinuz-linux
 sleep 2
@@ -221,8 +222,6 @@ grub-mkconfig -o /boot/grub/grub.cfg
 fi
 
 EOF
-
-echo moving dusk
 
 cp mirrorlist /mnt/etc/pacman.d/
 
