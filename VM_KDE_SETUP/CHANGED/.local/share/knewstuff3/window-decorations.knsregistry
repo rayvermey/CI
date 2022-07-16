@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE khotnewstuff3>
+<hotnewstuffregistry>
+ <stuff category="114">
+  <name>Revery Aurorae Theme</name>
+  <providerid>https://api.kde-look.org/ocs/v1/</providerid>
+  <author>yeyushengfan258</author>
+  <homepage>https://store.kde.org/p/1807225</homepage>
+  <licence></licence>
+  <version></version>
+  <rating>50</rating>
+  <downloads>1764</downloads>
+  <installedfile>/home/ray/.local/share/aurorae/themes/Revery/*</installedfile>
+  <id>1807225</id>
+  <releasedate>2022-05-26</releasedate>
+  <summary>Revery kde is a dark clean theme for KDE Plasma desktop.&lt;br />
+&lt;br />
+In this repository you'll find:&lt;br />
+&lt;br />
+    Aurorae Themes&lt;br />
+    Kvantum Themes&lt;br />
+    Plasma Color Schemes&lt;br />
+    Plasma Desktop Themes&lt;br />
+    Plasma Look-and-Feel Settings&lt;br />
+    &lt;br />
+    &lt;br...</summary>
+  <changelog></changelog>
+  <preview>https://images.pling.com/cache/100x100-0/img/00/00/54/79/90/1807225/screenshot-20220527-041818.png</preview>
+  <previewBig>https://images.pling.com/cache/770x540-0/img/00/00/54/79/90/1807225/screenshot-20220527-041818.png</previewBig>
+  <payload>https://dl3.pling.com/api/files/download/j/eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpZCI6IjE2NTM1OTkzOTMiLCJvIjoiMSIsInMiOiI2MTJmNWQxNjI3MjYyZTNmNjFjYWY1NTYxYzYzNzI1ZmNhMzg4MzQ0MmFmMDY1M2IwMzI1NjRjMWQwZWFmOTdlY2M1MmIxM2Y0YmZjNjkzYjM0NjQ2ZmY0ODZmNmVhNTRiYmMyODdhNjY1OTE0MmIzODc1M2VkYWUxMjlkNGQwNCIsInQiOjE2NTc5ODk5NTQsInN0ZnAiOm51bGwsInN0aXAiOiIyMTcuMTIyLjI0NC45NiJ9.3rI3zqqbbZHpqTqJCd6Tponw3HRD4T-ONoEnlLDiF5s/revery.zip</payload>
+  <tags>plasma,theme,original-product,gplv3,kde,linux,unix</tags>
+  <status>installed</status>
+ </stuff>
+</hotnewstuffregistry>
