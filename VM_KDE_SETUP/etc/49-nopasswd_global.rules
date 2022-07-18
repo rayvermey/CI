@@ -1,0 +1,21 @@
+/*kate: hl JavaScript ;    https://forum.kde.org/viewtopic.php?f=15&t=156389#p408592
+  Allow members of the wheel group to execute any actions without password authentication!
+  Of course, this vital example is not given in the official manpage.
+  in   /etc/sudoers.d/10-installer  do  #comment out any shenanigans!
+  also in /etc/sudo.conf  comment out #Plugin sudoers_policy sudoers.so
+  Globally --   Create the following text file as root:
+
+sudo gedit /etc/polkit-1/rules.d/49-nopasswd_global.rules
+
+  additionally, use    NOPASSWD:   in   visudo :
+  ## Allow root to run any commands anywhere   in  /etc/sudoers
+  you   ALL=(ALL)    NOPASSWD: ALL  ###   also try:
+
+pkexec env DISPLAY=$DISPLAY XAUTHORITY=$XAUTHORITY KDE_SESSION_VERSION=5 KDE_FULL_SESSION=true  dolphin
+
+*/
+polkit.addRule(function(action, subject) {
+    if (subject.isInGroup("wheel")) {
+        return polkit.Result.YES;
+    }
+});
