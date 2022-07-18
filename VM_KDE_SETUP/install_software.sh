@@ -1,5 +1,8 @@
 sudo cp etc/sudoers /etc
 
+sudo pacman -Syy
+sudo pacman -Syu
+
 echo Installing needed software
 sudo pacman -S --noconfirm --needed ferdium-bin rclone
 yay -S --noconfirm --needed autokey-gtk 
@@ -11,9 +14,6 @@ yay -S --noconfirm --needed jotta-cli
 #/usr/local/bin/data/kvm
 
 sudo cp etc/49* /etc/polkit-1/rules.d/
-
-cp -r .config/autostart ~/.config/autostart
-cp -r .config/autokey ~/.config/autokey
 
 echo Setting up rclone mounts
 
