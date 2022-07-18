@@ -35,4 +35,6 @@ systemctl enable --now rclone-mount-photos
 systemctl enable --now rclone-mount
 systemctl enable --now rclone-mount-shared
 
+cp -r .config/autokey ~/.config
+cp -r .config/autostart ~/.config
 
