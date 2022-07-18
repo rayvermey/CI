@@ -17,7 +17,7 @@ echo Setting up rclone mounts
 sudo mkdir -p /DATA/cloud/Jotta
 sudo mkdir -p /DATA/cloud/Google_Drive
 sudo mkdir -p /DATA/SHARED
-sudo mkdir -p /MEDIA/Jotta_photos
+sudo mkdir -p /MEDIA/Jotta_Photos
 
 sudo chown -R ray:ray /DATA /MEDIA
 
