@@ -27,6 +27,7 @@ sudo chown -R ray:ray /DATA /MEDIA
 sudo cp -r etc/rclone* /etc/systemd/system
 
 mkdir ~/.config/rclone
+gpg -d .config/rclone.conf.gpg > .config/rclone.conf
 cp .config/rclone.conf ~/.config/rclone
 
 systemctl enable --now rclone-mount-google_drive
