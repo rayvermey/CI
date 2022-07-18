@@ -12,6 +12,9 @@ yay -S --noconfirm --needed jotta-cli
 
 sudo cp etc/49* /etc/polkit-1/rules.d/
 
+cp -r .config/autostart ~/.config/autostart
+cp -r .config/autokey ~/.config/autokey
+
 echo Setting up rclone mounts
 
 sudo mkdir -p /DATA/cloud/Jotta

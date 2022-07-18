@@ -1,0 +1,21 @@
+[Desktop Action new-private-window]
+Exec=/usr/bin/vivaldi-snapshot --incognito
+Name=New Private Window
+
+[Desktop Action new-window]
+Exec=/usr/bin/vivaldi-snapshot --new-window
+Name=New Window
+
+[Desktop Entry]
+Actions=new-window;new-private-window;
+Categories=Network;WebBrowser;
+Comment=Access the Internet
+Exec=/usr/bin/vivaldi-snapshot %U
+GenericName=Web Browser
+Icon=vivaldi-snapshot
+MimeType=application/pdf;application/rdf+xml;application/rss+xml;application/xhtml+xml;application/xhtml_xml;application/xml;image/gif;image/jpeg;image/png;image/webp;text/html;text/xml;x-scheme-handler/ftp;x-scheme-handler/http;x-scheme-handler/https;x-scheme-handler/mailto;
+Name=Vivaldi (snapshot)
+StartupNotify=true
+Terminal=false
+Type=Application
+Version=1.0

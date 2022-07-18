@@ -1,0 +1,21 @@
+[Desktop Entry]
+Categories=GNOME;GTK;Utility;
+Comment[en_US]=Program keyboard shortcuts
+Comment=Program keyboard shortcuts
+Exec=autokey-gtk
+GenericName[en_US]=Keyboard Automation
+GenericName=Keyboard Automation
+Icon=autokey
+Keywords=macros;keyboard;auto;key;autokey;ak;automation;shortcuts;bind;hotkey;autohotkey;mouse;customization;
+MimeType=
+Name[en_US]=AutoKey
+Name=AutoKey
+Path=
+StartupNotify=true
+Terminal=false
+TerminalOptions=
+Type=Application
+X-DBUS-ServiceName=
+X-DBUS-StartupType=
+X-KDE-SubstituteUID=false
+X-KDE-Username=
