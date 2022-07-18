@@ -2,7 +2,7 @@ echo Installing needed software
 sudo pacman -S --noconfirm --needed ferdium-bin
 yay -S --noconfirm --needed autokey-gtk 
 yay -S --noconfirm --needed flameshot
-yay -S --noconfirm --needed vivaldi
+yay -S --noconfirm --needed vivaldi-snapshot
 
 /usr/local/bin/data/tozsh
 /usr/local/bin/data/kvm
