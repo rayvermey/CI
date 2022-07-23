@@ -35,6 +35,11 @@ systemctl enable --now rclone-mount-photos
 systemctl enable --now rclone-mount
 systemctl enable --now rclone-mount-shared
 
+cp ~/CI/VM_KDE_SETUP/.zshrc ~/
+
 cp -r .config/autokey ~/.config
 cp -r .config/autostart ~/.config
+
+cd ~/.config
+tar zxvf ~/CI/VM_KDE_SETUP/Ferdium.tar.gz
 
