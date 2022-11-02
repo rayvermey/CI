@@ -165,10 +165,11 @@ su ray -c "yay -S jotta-cli alias-tips-git autojump autokey-common autokey-gtk d
 
 
 
-cp /FILES/picom.conf /home/ray/.config
+cp picom.conf /home/ray/.config
+mkdir -p ~/.config/variety/scripts/
 cp set_wallpaper.new ~/.config/variety/scripts/set_wallpaper
 
-picom --config /home/ray/.config/picom.conf -b
+#picom --config /home/ray/.config/picom.conf -b
 ln -s /usr/bin/vim /usr/bin/vi
 chown -R ray:ray /home/ray
 
@@ -187,8 +188,8 @@ cd ..
 
 sudo cp getty.target.wants /etc/systemd/system/
 
-echo Creating .xprofile
-        cat <<XINITRC > ~/.xinitrc
+echo Creating .xinitrc
+cat <<XINITRC > ~/.xinitrc
 xrandr -s 1920x1080 
 picom &
 variety &
