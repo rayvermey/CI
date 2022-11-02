@@ -17,6 +17,7 @@ echo Mirrors
 reflector -c NL > /etc/pacman.d/mirrorlist
 pacman -Syy
 
+
 MEMTOTAL=$(grep MemTotal /proc/meminfo | awk ' { print $2 }')
 
 echo Partitioning disk
@@ -29,32 +30,33 @@ fdisk -l
 fdisk /dev/vda <<EOF
 g
 n
-p
-^M
-^M
+
+
 +500M
+Y
 t
 1
 n
-^M
-^M
+
+
 +${MEMTOTAL}k
+Y
 t
-^M
+
 19
 n
-^M
-^M
+
+
 +30G
 t
-^M
+
 20
 n
-^M
-^M
-^M
+
+
+
 t
-^M
+
 28
 w
 EOF
