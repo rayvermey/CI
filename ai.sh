@@ -17,6 +17,8 @@ echo Mirrors
 reflector -c NL > /etc/pacman.d/mirrorlist
 pacman -Syy
 
+MEMTOTAL=$(grep MemTotal /proc/meminfo | awk ' { print $2 }')
+
 echo Partitioning disk
 sgdisk --zap-all /dev/vda
 sleep 2
@@ -24,7 +26,7 @@ sfdisk --delete /dev/vda
 sleep 2
 fdisk -l
 
-disk /dev/vda <<EOF
+fdisk /dev/vda <<EOF
 g
 n
 p
