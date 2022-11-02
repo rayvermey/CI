@@ -123,7 +123,7 @@ ray ALL=(ALL) NOPASSWD: ALL
 SU
 
 echo Installing needed tools
-pacman -S gparted git dmenu zsh chromium vivaldi bash-completion zsh-completions --noconfirm --needed
+pacman -S gparted git dmenu zsh chromium vivaldi jayl bash-completion zsh-completions --noconfirm --needed
 
 
 echo Installing yay
@@ -163,8 +163,6 @@ su ray -c "yay -S jotta-cli alias-tips-git autojump autokey-common autokey-gtk d
 #cp /FILES/rclone-mount.service /etc/systemd/system/
 #systemctl enable --now rclone-mount.service
 
-
-
 cp picom.conf /home/ray/.config
 mkdir -p ~/.config/variety/scripts/
 cp set_wallpaper.new ~/.config/variety/scripts/set_wallpaper
@@ -177,6 +175,9 @@ chown -R ray:ray /home/ray
 #chown -R ray:ray /DATA/
 
 echo Installing Dusk and st
+cd /home/ray
+mkdir git
+cd git
 git clone https://github.com/bakkeby/dusk
 git clone https://github.com/bakkeby/st-flexipatch
 cd dusk
@@ -186,9 +187,13 @@ make && sudo make install
 
 cd ..
 
+chown -R ray:ray /home/ray
+
 sudo cp getty.target.wants /etc/systemd/system/
 
 echo Creating .xinitrc
+XDG_SESSION_DESKTOP=dusk
+export XDG_SESSION_DESKTOP
 cat <<XINITRC > ~/.xinitrc
 xrandr -s 1920x1080 
 picom &
@@ -196,4 +201,7 @@ variety &
 exec dusk
 
 XINITRC
+cd
+systemctl enable --now NetworkManager
+cp getty@service /usr/lib/systemd/system/getty@.service
 EOF
