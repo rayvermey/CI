@@ -123,7 +123,7 @@ ray ALL=(ALL) NOPASSWD: ALL
 SU
 
 echo Installing needed tools
-pacman -S gparted git dmenu zsh chromium vivaldi jayl bash-completion zsh-completions --noconfirm --needed
+pacman -S gparted git dmenu zsh chromium vivaldi yajl bash-completion zsh-completions --noconfirm --needed
 
 
 echo Installing yay
@@ -187,13 +187,11 @@ make && sudo make install
 
 cd ..
 
-chown -R ray:ray /home/ray
 
 sudo cp getty.target.wants /etc/systemd/system/
 
 echo Creating .xinitrc
-XDG_SESSION_DESKTOP=dusk
-export XDG_SESSION_DESKTOP
+export DESKTOP_SESSION=dusk
 cat <<XINITRC > ~/.xinitrc
 xrandr -s 1920x1080 
 picom &
@@ -201,7 +199,9 @@ variety &
 exec dusk
 
 XINITRC
+cp ~/.xinitrc /home/ray
 cd
 systemctl enable --now NetworkManager
 cp getty@service /usr/lib/systemd/system/getty@.service
+chown -R ray:ray /home/ray
 EOF
