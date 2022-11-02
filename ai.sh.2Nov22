@@ -22,40 +22,24 @@ sgdisk --zap-all /dev/vda
 sleep 2
 sfdisk --delete /dev/vda
 sleep 2
-fdisk -l
 
-disk /dev/vda <<EOF
-g
-n
-p
-^M
-^M
-+500M
-t
-1
-n
-^M
-^M
-+${MEMTOTAL}k
-t
-^M
-19
-n
-^M
-^M
-+30G
-t
-^M
-20
-n
-^M
-^M
-^M
-t
-^M
-28
-w
+cat << EOF > vda.layout
+label: gpt
+label-id: F5D68989-9C99-F243-BF28-BFC9C596949D
+device: /dev/vda
+unit: sectors
+first-lba: 2048
+last-lba: 104857566
+sector-size: 512
+
+/dev/vda1 : start=        2048, size=      409600, type=U
+/dev/vda2 : start=      411648, size=     4194304, type=S
+/dev/vda3 : start=     4605952, size=    52428800, type=L
+/dev/vda4 : start=    57034752, size=    47822815, type=H
 EOF
+
+sfdisk /dev/vda < vda.layout
+fdisk -l
 
 echo Swap
 mkswap /dev/vda2
@@ -81,9 +65,6 @@ pacstrap /mnt base base-devel linux linux-firmware vim grub efibootmgr os-prober
 echo FSTAB
 genfstab -U /mnt >> /mnt/etc/fstab
 cat /mnt/etc/fstab
-
-cp yay-11.0.2-1-x86_64.pkg.tar.zst /mnt/root
-cp yay-11.0.2-1-x86_64.pkg.tar.zst /mnt/
 
 echo CHROOT
 arch-chroot /mnt /bin/bash <<EOF
@@ -119,20 +100,11 @@ ray ALL=(ALL) NOPASSWD: ALL
 SU
 
 echo Installing needed tools
-pacman -S gparted git dmenu zsh chromium vivaldi bash-completion zsh-completions --noconfirm --needed
-
-
-echo Installing yay
-
-pacman -U yay-11.0.2-1-x86_64.pkg.tar.zst --noconfirm
-
-systemctl enable --now sshd.service
-
-su ray -c "yay --noconfirm -R libxft xorg-x11perf"
+pacman -S gparted git zsh chromium vivaldi bash-completion zsh-completions --noconfirm --needed
 
 echo INstalling AUR packages
 
-su ray -c "yay -S jotta-cli alias-tips-git autojump autokey-common autokey-gtk downgrade gconf gitahead-bin gtk-theme-config insync nerd-fonts-hack otf-font-awesome-4 p7zip-gui pamac-all pcloud-drive pkgbrowser snapd snapd-glib spice-vdagent  wttr  --noconfirm"
+#su ray -c "yay -S jotta-cli alias-tips-git autojump autokey-common autokey-gtk downgrade gconf gitahead-bin gtk-theme-config insync nerd-fonts-hack otf-font-awesome-4 p7zip-gui pamac-all pcloud-drive pkgbrowser snapd snapd-glib spice-vdagent  wttr  --noconfirm"
 
 #echo Preparing Jotta & Rclone
 
@@ -159,34 +131,17 @@ su ray -c "yay -S jotta-cli alias-tips-git autojump autokey-common autokey-gtk d
 #cp /FILES/rclone-mount.service /etc/systemd/system/
 #systemctl enable --now rclone-mount.service
 
+#systemctl enable --now sshd.service
 
+#echo Setting autologin
+#cp /FILES/lightdm.conf /etc/lightdm
 
-cp /FILES/picom.conf /home/ray/.config
-cp set_wallpaper.new ~/.config/variety/scripts/set_wallpaper
+#cp /FILES/picom.conf /home/ray/.config
 
-picom --config /home/ray/.config/picom.conf -b
-ln -s /usr/bin/vim /usr/bin/vi
+#picom --config /home/ray/.config/picom.conf -b
+#ln -s /usr/bin/vim /usr/bin/vi
 chown -R ray:ray /home/ray
 
 #mkdir -p /DATA/cloud/Jotta
 #chown -R ray:ray /DATA/
-
-echo Installing Dusk and st
-git clone https://github.com/bakkeby/dusk
-git clone https://github.com/bakkeby/st-flexipatch
-cd dusk
-make && sudo make install
-cd ../st-flexipatch
-make && sudo make install
-
-sudo cp getty.target.wants /etc/systemd/system/
-
-echo Creating .xprofile
-        cat <<XINITRC > ~/.xinitrc
-xrandr -s 1920x1080 
-picom &
-variety &
-exec dusk
-
-XINITRC
 EOF
