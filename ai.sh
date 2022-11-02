@@ -183,6 +183,8 @@ make && sudo make install
 cd ../st-flexipatch
 make && sudo make install
 
+cd ..
+
 sudo cp getty.target.wants /etc/systemd/system/
 
 echo Creating .xprofile
