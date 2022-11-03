@@ -80,7 +80,7 @@ mount /dev/vda4 /mnt/home
 
 
 echo Pacstrap
-pacstrap /mnt base base-devel linux linux-firmware vim grub efibootmgr os-prober openssh dhclient networkmanager neofetch
+pacstrap /mnt base base-devel linux linux-firmware vim grub efibootmgr os-prober openssh dhclient networkmanager neofetch wget
 
 echo FSTAB
 genfstab -U /mnt >> /mnt/etc/fstab
