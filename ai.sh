@@ -204,7 +204,7 @@ make && sudo make install
 cd ../st-flexipatch
 make && sudo make install
 
-cd ..
+cd
 
 
 echo Creating .xinitrc
@@ -216,15 +216,14 @@ variety &
 exec dusk
 
 XINITRC
-cp ~/.xinitrc /home/ray
-cd
 systemctl enable --now NetworkManager
-cp getty@.service /usr/lib/systemd/system/getty@.service
 chown -R ray:ray /home/ray
 EOF
+
+
 cp /root/CI/arch.conf /mnt/boot/loader/entries/
 cp /root/CI/loader.conf /mnt/boot/loader
 cp /root/CI/picom.conf /mnt/home/ray/.config
 mkdir -p /mnt/home/ray/.config/variety/scripts/
-cp /root/CI/set_wallpaper.new /mnt/home/ray/.config/variety/scripts/set_wallpaper
-sudo cp /root/CI/getty.target.wants /mnt/etc/systemd/system/
+cp /root/CI/set_wallpaper /mnt/home/ray/.config/variety/scripts/set_wallpaper
+sudo cp /root/CI/getty@.service /mnt/usr/lib/systemd/system/getty@.service
