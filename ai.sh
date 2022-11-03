@@ -80,7 +80,7 @@ mount /dev/vda4 /mnt/home
 
 
 echo Pacstrap
-pacstrap /mnt base base-devel linux linux-firmware vim grub efibootmgr os-prober openssh dhclient networkmanager
+pacstrap /mnt base base-devel linux linux-firmware vim grub efibootmgr os-prober openssh dhclient networkmanager neofetch
 
 echo FSTAB
 genfstab -U /mnt >> /mnt/etc/fstab
@@ -98,7 +98,7 @@ export LANG=en_US.UTF-8
 echo "LANG=en_US.UTF-8" >> /etc/locale.conf
 ln -s /usr/share/zoneinfo/Europe/Amsterdam /etc/localtime
 echo Arch-VM > /etc/hostname
-sed -i "/localhost/s/$/ Arch-VM" /etc/hosts
+#sed -i "/localhost/s/$/ Arch-VM" /etc/hosts
 mkinitcpio -p linux
 echo "root:qazwsx12" | chpasswd
 
@@ -111,7 +111,7 @@ echo INSTALLING Window Manager DUSK offcourse
 pacman -Syy
 pacman -S xorg xorg-server xorg-apps xorg-xinit --noconfirm --needed
 pacman -S noto-fonts ttf-ubuntu-font-family ttf-dejavu ttf-freefont terminus-font ttf-font-awesome --noconfirm --needed  
-pacman -S variety feh --noconfirm --needed
+pacman -S variety feh picom --noconfirm --needed
 
 echo Adding user Ray
 groupadd -r autologin
@@ -191,8 +191,8 @@ cd ..
 sudo cp getty.target.wants /etc/systemd/system/
 
 echo Creating .xinitrc
-export DESKTOP_SESSION=dusk
 cat <<XINITRC > ~/.xinitrc
+export DESKTOP_SESSION=dusk
 xrandr -s 1920x1080 
 picom &
 variety &
@@ -202,6 +202,6 @@ XINITRC
 cp ~/.xinitrc /home/ray
 cd
 systemctl enable --now NetworkManager
-cp getty@service /usr/lib/systemd/system/getty@.service
+cp getty@.service /usr/lib/systemd/system/getty@.service
 chown -R ray:ray /home/ray
 EOF
