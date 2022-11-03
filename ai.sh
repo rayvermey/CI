@@ -80,7 +80,7 @@ mount /dev/vda4 /mnt/home
 
 
 echo Pacstrap
-pacstrap /mnt base base-devel linux linux-firmware vim grub efibootmgr os-prober openssh dhclient networkmanager neofetch wget
+pacstrap /mnt base base-devel linux linux-firmware vim openssh dhclient networkmanager neofetch wget
 
 echo FSTAB
 genfstab -U /mnt >> /mnt/etc/fstab
@@ -103,9 +103,11 @@ mkinitcpio -p linux
 echo "root:qazwsx12" | chpasswd
 
 echo Installing Bootloader
-pacman --noconfirm -S grub
-grub-install --target=x86_64-efi --efi-directory=/boot --bootloader-id=GRUB-EFI
-grub-mkconfig -o /boot/grub/grub.cfg
+#pacman --noconfirm -S grub
+#grub-install --target=x86_64-efi --efi-directory=/boot --bootloader-id=GRUB-EFI
+#grub-mkconfig -o /boot/grub/grub.cfg
+bootctl --path=/boot install
+UUID=$(blkid /dev/vda3 | cut -d" " -f5 | sed 's/PARTUUID="//' | sed 's/"//')
 
 echo INSTALLING Window Manager DUSK offcourse
 pacman -Syy
