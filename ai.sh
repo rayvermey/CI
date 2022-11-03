@@ -108,6 +108,22 @@ echo Installing Bootloader
 #grub-mkconfig -o /boot/grub/grub.cfg
 bootctl --path=/boot install
 UUID=$(blkid /dev/vda3 | cut -d" " -f5 | sed 's/PARTUUID="//' | sed 's/"//')
+cat <<BOOT > /boot/loader/entries/arch.conf
+title   Arch Linux
+linux   /vmlinuz-linux
+initrd  /initramfs-linux.img
+options root=PARTUUID=$UUID rw
+BOOT
+
+cat <<LOADER > /boot/loader/loader.conf
+default arch
+timeout 4
+console-mode max
+editor no
+
+LOADER
+
+bootctl --path=/boot update
 
 echo INSTALLING Window Manager DUSK offcourse
 pacman -Syy
