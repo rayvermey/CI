@@ -185,9 +185,6 @@ su ray -c "yay -S jotta-cli alias-tips-git autojump autokey-common autokey-gtk d
 #cp /FILES/rclone-mount.service /etc/systemd/system/
 #systemctl enable --now rclone-mount.service
 
-cp /root/CI/picom.conf /home/ray/.config
-mkdir -p /home/ray/.config/variety/scripts/
-cp /root/CI/set_wallpaper.new /home/ray/.config/variety/scripts/set_wallpaper
 
 #picom --config /home/ray/.config/picom.conf -b
 ln -s /usr/bin/vim /usr/bin/vi
@@ -210,8 +207,6 @@ make && sudo make install
 cd ..
 
 
-sudo cp /root/CI/getty.target.wants /etc/systemd/system/
-
 echo Creating .xinitrc
 cat <<XINITRC > /home/ray/.xinitrc
 export DESKTOP_SESSION=dusk
@@ -229,3 +224,7 @@ chown -R ray:ray /home/ray
 EOF
 cp /root/CI/arch.conf /mnt/boot/loader/entries/
 cp /root/CI/loader.conf /mnt/boot/loader
+cp /root/CI/picom.conf /mnt/home/ray/.config
+mkdir -p /mnt/home/ray/.config/variety/scripts/
+cp /root/CI/set_wallpaper.new /mnt/home/ray/.config/variety/scripts/set_wallpaper
+sudo cp /root/CI/getty.target.wants /mnt/etc/systemd/system/
