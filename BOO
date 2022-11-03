@@ -1,0 +1,4 @@
+title   Arch Linux
+linux   /vmlinuz-linux
+initrd  /initramfs-linux.img
+options root=PARTUUID=67d74bab-4469-43c9-8675-1a281ca09172 rw

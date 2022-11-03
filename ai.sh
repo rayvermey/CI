@@ -107,7 +107,7 @@ echo Installing Bootloader
 #grub-install --target=x86_64-efi --efi-directory=/boot --bootloader-id=GRUB-EFI
 #grub-mkconfig -o /boot/grub/grub.cfg
 bootctl --path=/boot install
-UUID=$(blkid /dev/vda3 | cut -d" " -f5 | sed 's/PARTUUID="//' | sed 's/"//')
+UUID=$(blkid /dev/vda3 | cut -d" " -f7 | sed 's/PARTUUID="//' | sed 's/"//')
 cat <<BOOT > /boot/loader/entries/arch.conf
 title   Arch Linux
 linux   /vmlinuz-linux
