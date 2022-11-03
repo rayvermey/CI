@@ -89,6 +89,27 @@ cat /mnt/etc/fstab
 cp yay-11.0.2-1-x86_64.pkg.tar.zst /mnt/root
 cp yay-11.0.2-1-x86_64.pkg.tar.zst /mnt/
 
+
+echo Preparing Bootloader
+UUID=$(blkid /dev/vda3 | cut -d" " -f7 | sed 's/PARTUUID="//' | sed 's/"//')
+cat <<BOOT > /root/CI/arch.conf
+title   Arch Linux
+linux   /vmlinuz-linux
+initrd  /initramfs-linux.img
+options root=PARTUUID=$UUID rw
+BOOT
+
+cat <<LOADER > /root/CI/loader.conf
+default arch
+timeout 4
+console-mode max
+editor no
+
+LOADER
+
+#bootctl --path=/boot update
+
+
 echo CHROOT
 arch-chroot /mnt /bin/bash <<EOF
 echo LOCALE and stuff
@@ -103,27 +124,10 @@ mkinitcpio -p linux
 echo "root:qazwsx12" | chpasswd
 
 echo Installing Bootloader
-#pacman --noconfirm -S grub
-#grub-install --target=x86_64-efi --efi-directory=/boot --bootloader-id=GRUB-EFI
-#grub-mkconfig -o /boot/grub/grub.cfg
 bootctl --path=/boot install
-UUID=$(blkid /dev/vda3 | cut -d" " -f7 | sed 's/PARTUUID="//' | sed 's/"//')
-cat <<BOOT > /boot/loader/entries/arch.conf
-title   Arch Linux
-linux   /vmlinuz-linux
-initrd  /initramfs-linux.img
-options root=PARTUUID=$UUID rw
-BOOT
+#cat <<LOADER > /boot/loader/loader.conf
 
-cat <<LOADER > /boot/loader/loader.conf
-default arch
-timeout 4
-console-mode max
-editor no
-
-LOADER
-
-bootctl --path=/boot update
+#bootctl --path=/boot update
 
 echo INSTALLING Window Manager DUSK offcourse
 pacman -Syy
@@ -181,9 +185,9 @@ su ray -c "yay -S jotta-cli alias-tips-git autojump autokey-common autokey-gtk d
 #cp /FILES/rclone-mount.service /etc/systemd/system/
 #systemctl enable --now rclone-mount.service
 
-cp picom.conf /home/ray/.config
-mkdir -p ~/.config/variety/scripts/
-cp set_wallpaper.new ~/.config/variety/scripts/set_wallpaper
+cp /root/CI/picom.conf /home/ray/.config
+mkdir -p /home/ray/.config/variety/scripts/
+cp /root/CI/set_wallpaper.new /home/ray/.config/variety/scripts/set_wallpaper
 
 #picom --config /home/ray/.config/picom.conf -b
 ln -s /usr/bin/vim /usr/bin/vi
@@ -206,10 +210,10 @@ make && sudo make install
 cd ..
 
 
-sudo cp getty.target.wants /etc/systemd/system/
+sudo cp /root/CI/getty.target.wants /etc/systemd/system/
 
 echo Creating .xinitrc
-cat <<XINITRC > ~/.xinitrc
+cat <<XINITRC > /home/ray/.xinitrc
 export DESKTOP_SESSION=dusk
 xrandr -s 1920x1080 
 picom &
@@ -223,3 +227,5 @@ systemctl enable --now NetworkManager
 cp getty@.service /usr/lib/systemd/system/getty@.service
 chown -R ray:ray /home/ray
 EOF
+cp /root/CI/arch.conf /mnt/boot/loader/entries/
+cp /root/CI/loader.conf /mnt/boot/loader
