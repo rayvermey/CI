@@ -188,7 +188,6 @@ su ray -c "yay -S jotta-cli alias-tips-git autojump autokey-common autokey-gtk d
 
 #picom --config /home/ray/.config/picom.conf -b
 ln -s /usr/bin/vim /usr/bin/vi
-chown -R ray:ray /home/ray
 
 #mkdir -p /DATA/cloud/Jotta
 #chown -R ray:ray /DATA/
@@ -224,6 +223,7 @@ EOF
 cp /root/CI/arch.conf /mnt/boot/loader/entries/
 cp /root/CI/loader.conf /mnt/boot/loader
 cp /root/CI/picom.conf /mnt/home/ray/.config
-mkdir -p /mnt/home/ray/.config/variety/scripts/
-cp /root/CI/set_wallpaper /mnt/home/ray/.config/variety/scripts/set_wallpaper
 sudo cp /root/CI/getty@.service /mnt/usr/lib/systemd/system/getty@.service
+cd /mnt/home/ray/.config/
+tar xvf /root/CI/VARIETY.tar
+chown -R ray:ray /mnt/home/ray
