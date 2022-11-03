@@ -91,7 +91,7 @@ cp yay-11.0.2-1-x86_64.pkg.tar.zst /mnt/
 
 
 echo Preparing Bootloader
-UUID=$(blkid /dev/vda3 | cut -d" " -f7 | sed 's/PARTUUID="//' | sed 's/"//')
+UUID=$(blkid /dev/vda3 | cut -d" " -f5 | sed 's/PARTUUID="//' | sed 's/"//')
 cat <<BOOT > /root/CI/arch.conf
 title   Arch Linux
 linux   /vmlinuz-linux
