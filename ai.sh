@@ -65,7 +65,7 @@ mount /dev/vda3 /mnt/home
 
 
 echo Swap
-dd if=/dev/zero of=/mnt/.swapfile bs=1k count=$(($MEMTOTAL / 1000)) status=progress
+dd if=/dev/zero of=/mnt/.swapfile bs=1M count=$(($MEMTOTAL / 1000)) status=progress
 chmod 0600 /mnt/.swapfile
 mkswap -U clear /mnt/.swapfile
 swapon /mnt/.swapfile
