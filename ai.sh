@@ -110,7 +110,7 @@ cp yay-11.0.2-1-x86_64.pkg.tar.zst /mnt/
 
 
 echo CHROOT
-arch-chroot /mnt /bin/bash <<EOF
+arch-chroot /mnt <<EOF
 echo LOCALE and stuff
 echo "en_US.UTF-8 UTF-8" > /etc/locale.gen
 locale-gen
