@@ -70,6 +70,9 @@ mkfs.fat -F 32 /dev/vda1
 mkfs.ext4 -F -F /dev/vda3
 mkfs.ext4 -F -F /dev/vda4
 
+echo FSTAB
+genfstab -U /mnt >> /mnt/etc/fstab
+
 echo Mounting
 mount /dev/vda3 /mnt
 mkdir /mnt/boot
@@ -78,12 +81,9 @@ mount /dev/vda1 /mnt/boot
 sleep 2
 mount /dev/vda4 /mnt/home
 
-
 echo Pacstrap
 pacstrap /mnt base base-devel linux linux-firmware vim openssh dhclient networkmanager neofetch wget
 
-echo FSTAB
-genfstab -U /mnt >> /mnt/etc/fstab
 
 cp yay-11.0.2-1-x86_64.pkg.tar.zst /mnt/root
 cp yay-11.0.2-1-x86_64.pkg.tar.zst /mnt/
