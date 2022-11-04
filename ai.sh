@@ -216,30 +216,28 @@ echo Installing Bootloader
 bootctl --path=/boot install
 #cat <<LOADER > /boot/loader/loader.conf
 
+
+EOF
+
+
 #bootctl --path=/boot update
 echo Preparing Bootloader
 PARTUUID=$(blkid -o value -s PARTUUID /dev/vda3)
-echo 1 $PARTUUID > partuuid.txt
-cat <<BOOT > /boot/loader/entries/arch.conf
+cat <<BOOT > /mnt/boot/loader/entries/arch.conf
 title   Arch Linux
 linux   /vmlinuz-linux
 initrd  /initramfs-linux.img
 options root=PARTUUID=$PARTUUID rw
 BOOT
 
-echo 2 $PARTUUID >> partuuid.txt
 
-cat <<LOADER > /boot/loader/loader.conf
+cat <<LOADER > /mnt/boot/loader/loader.conf
 default arch
 timeout 4
 console-mode max
 editor no
 
 LOADER
-
-bootctl --path=/boot update
-EOF
-
 
 #cp /root/CI/arch.conf /mnt/boot/loader/entries/
 #cp /root/CI/loader.conf /mnt/boot/loader
