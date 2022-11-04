@@ -223,6 +223,7 @@ EOF
 cp /root/CI/arch.conf /mnt/boot/loader/entries/
 cp /root/CI/loader.conf /mnt/boot/loader
 cp /root/CI/picom.conf /mnt/home/ray/.config
+cp /root/CI/.bashrc /mnt/home/ray
 sudo cp /root/CI/getty@.service /mnt/usr/lib/systemd/system/getty@.service
 cd /mnt/home/ray/.config/
 tar xvf /root/CI/VARIETY.tar
