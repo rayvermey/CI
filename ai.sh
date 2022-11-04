@@ -89,26 +89,6 @@ cp yay-11.0.2-1-x86_64.pkg.tar.zst /mnt/root
 cp yay-11.0.2-1-x86_64.pkg.tar.zst /mnt/
 
 
-#echo Preparing Bootloader
-#PARTUUID=$(blkid -o value -s PARTUUID /dev/vda3)
-#cat <<BOOT > /root/CI/arch.conf
-#title   Arch Linux
-#linux   /vmlinuz-linux
-#initrd  /initramfs-linux.img
-#options root=PARTUUID=$PARTUUID rw
-#BOOT
-
-#cat <<LOADER > /root/CI/loader.conf
-#default arch
-#timeout 4
-#console-mode max
-#editor no
-
-#LOADER
-
-#bootctl --path=/boot update
-
-
 echo CHROOT
 arch-chroot /mnt <<EOF
 echo LOCALE and stuff
@@ -214,7 +194,6 @@ chown -R ray:ray /home/ray
 
 echo Installing Bootloader
 bootctl --path=/boot install
-#cat <<LOADER > /boot/loader/loader.conf
 
 
 EOF
