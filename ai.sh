@@ -3,12 +3,6 @@ umount /dev/vda1
 sleep 2
 umount /dev/vda3
 sleep 2
-umount /dev/vda3
-sleep 2
-umount /dev/vda4
-sleep 2
-swapoff /dev/vda2
-sleep 2
 
 echo Setting vi
 ln -s /usr/bin/vim /usr/bin/vi
@@ -58,16 +52,17 @@ mkfs.fat -F 32 /dev/vda1
 mkfs.ext4 -F -F /dev/vda2
 mkfs.ext4 -F -F /dev/vda3
 
-echo FSTAB
-genfstab -U /mnt >> /mnt/etc/fstab
 
 echo Mounting
-mount /dev/vda3 /mnt
+mount /dev/vda2 /mnt
 mkdir /mnt/boot
 mkdir /mnt/home
 mount /dev/vda1 /mnt/boot
 sleep 2
-mount /dev/vda4 /mnt/home
+mount /dev/vda3 /mnt/home
+
+echo FSTAB
+genfstab -U /mnt >> /mnt/etc/fstab
 
 echo Swap
 dd if=/dev/zero of=/mnt/.swapfile bs=1k count=$MEMTOTAL status=progress
