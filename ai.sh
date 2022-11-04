@@ -219,12 +219,15 @@ bootctl --path=/boot install
 #bootctl --path=/boot update
 echo Preparing Bootloader
 PARTUUID=$(blkid -o value -s PARTUUID /dev/vda3)
+echo 1 $PARTUUID > partuuid.txt
 cat <<BOOT > /boot/loader/entries/arch.conf
 title   Arch Linux
 linux   /vmlinuz-linux
 initrd  /initramfs-linux.img
 options root=PARTUUID=$PARTUUID rw
 BOOT
+
+echo 2 $PARTUUID >> partuuid.txt
 
 cat <<LOADER > /boot/loader/loader.conf
 default arch
