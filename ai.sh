@@ -219,14 +219,14 @@ bootctl --path=/boot install
 #bootctl --path=/boot update
 echo Preparing Bootloader
 PARTUUID=$(blkid -o value -s PARTUUID /dev/vda3)
-cat <<BOOT > /root/CI/arch.conf
+cat <<BOOT > /boot/loader/entries/arch.conf
 title   Arch Linux
 linux   /vmlinuz-linux
 initrd  /initramfs-linux.img
 options root=PARTUUID=$PARTUUID rw
 BOOT
 
-cat <<LOADER > /root/CI/loader.conf
+cat <<LOADER > /boot/loader/loader.conf
 default arch
 timeout 4
 console-mode max
@@ -234,12 +234,12 @@ editor no
 
 LOADER
 
-#bootctl --path=/boot update
+bootctl --path=/boot update
 EOF
 
 
-cp /root/CI/arch.conf /mnt/boot/loader/entries/
-cp /root/CI/loader.conf /mnt/boot/loader
+#cp /root/CI/arch.conf /mnt/boot/loader/entries/
+#cp /root/CI/loader.conf /mnt/boot/loader
 cp /root/CI/picom.conf /mnt/home/ray/.config
 cp /root/CI/.bashrc /mnt/home/ray
 sudo cp /root/CI/getty@.service /mnt/usr/lib/systemd/system/getty@.service
