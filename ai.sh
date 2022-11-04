@@ -1,6 +1,8 @@
 echo Freeing System
 umount /dev/vda1
 sleep 2
+umount /dev/vda2
+sleep 2
 umount /dev/vda3
 sleep 2
 
@@ -191,7 +193,7 @@ EOF
 
 #bootctl --path=/boot update
 echo Preparing Bootloader
-PARTUUID=$(blkid -o value -s PARTUUID /dev/vda3)
+PARTUUID=$(blkid -o value -s PARTUUID /dev/vda2)
 cat <<BOOT > /mnt/boot/loader/entries/arch.conf
 title   Arch Linux
 linux   /vmlinuz-linux
