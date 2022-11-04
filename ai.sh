@@ -61,8 +61,6 @@ mount /dev/vda1 /mnt/boot
 sleep 2
 mount /dev/vda3 /mnt/home
 
-echo FSTAB
-genfstab -U /mnt >> /mnt/etc/fstab
 
 echo Swap
 dd if=/dev/zero of=/mnt/.swapfile bs=1k count=$MEMTOTAL status=progress
@@ -73,6 +71,9 @@ swapon /mnt/.swapfile
 echo Pacstrap
 pacstrap /mnt base base-devel linux linux-firmware vim openssh dhclient networkmanager neofetch wget
 
+
+echo FSTAB
+genfstab -U /mnt >> /mnt/etc/fstab
 
 cp yay-11.0.2-1-x86_64.pkg.tar.zst /mnt/root
 cp yay-11.0.2-1-x86_64.pkg.tar.zst /mnt/
