@@ -39,14 +39,6 @@ t
 n
 
 
-+${MEMTOTAL}k
-Y
-t
-
-19
-n
-
-
 +30G
 t
 
@@ -61,14 +53,10 @@ t
 w
 EOF
 
-echo Swap
-mkswap /dev/vda2
-swapon /dev/vda2
-
 echo Formatting disks
 mkfs.fat -F 32 /dev/vda1
+mkfs.ext4 -F -F /dev/vda2
 mkfs.ext4 -F -F /dev/vda3
-mkfs.ext4 -F -F /dev/vda4
 
 echo FSTAB
 genfstab -U /mnt >> /mnt/etc/fstab
@@ -80,6 +68,12 @@ mkdir /mnt/home
 mount /dev/vda1 /mnt/boot
 sleep 2
 mount /dev/vda4 /mnt/home
+
+echo Swap
+dd if=/dev/zero of=/mnt/.swapfile bs=1k count=$MEMTOTAL status=progress
+chmod 0600 /mnt/.swapfile
+mkswap -U clear /mnt/.swapfile
+swapon /mnt/.swapfile
 
 echo Pacstrap
 pacstrap /mnt base base-devel linux linux-firmware vim openssh dhclient networkmanager neofetch wget
