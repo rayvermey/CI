@@ -111,8 +111,7 @@ ray ALL=(ALL) NOPASSWD: ALL
 SU
 
 echo Installing needed tools
-pacman -S gparted git dmenu zsh chromium vivaldi yajl bash-completion zsh-completions  pipewire-audio pipewire-media-session pipewire-pulse pavucontrol vo
-    lumeicon --noconfirm --needed
+pacman -S gparted git dmenu zsh chromium vivaldi yajl bash-completion zsh-completions  pipewire-audio pipewire-media-session pipewire-pulse pavucontrol volumeicon --noconfirm --needed
 
 
 echo Installing yay
