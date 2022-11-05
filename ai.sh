@@ -111,7 +111,7 @@ ray ALL=(ALL) NOPASSWD: ALL
 SU
 
 echo Installing needed tools
-pacman -S gparted git dmenu zsh chromium vivaldi yajl bash-completion zsh-completions  pipewire-audio pipewire-media-session pipewire-pulse pavucontrol volumeicon --noconfirm --needed
+pacman -S gparted git dmenu zsh chromium vivaldi yajl bash-completion zsh-completions  pipewire-audio pipewire-media-session pipewire-pulse pavucontrol volumeicon exa expac --noconfirm --needed
 
 
 echo Installing yay
@@ -124,7 +124,7 @@ su ray -c "yay --noconfirm -R libxft xorg-x11perf"
 
 echo INstalling AUR packages
 
-su ray -c "yay -S jotta-cli alias-tips-git autojump autokey-common autokey-gtk downgrade gconf gitahead-bin gtk-theme-config insync nerd-fonts-hack otf-font-awesome-4 p7zip-gui pamac-all pcloud-drive pkgbrowser snapd snapd-glib spice-vdagent  wttr  --noconfirm"
+su ray -c "yay -S jotta-cli alias-tips-git autojump autokey-common autokey-gtk downgrade gconf gitahead-bin gtk-theme-config insync nerd-fonts-hack otf-font-awesome-4 p7zip-gui pamac-all pcloud-drive pkgbrowser snapd snapd-glib spice-vdagent wttr topgrade  --noconfirm"
 
 #echo Preparing Jotta & Rclone
 
@@ -179,9 +179,11 @@ xrandr -s 1920x1080
 picom &
 variety &
 volumeicon &
+spice-vdagent &
 exec dusk
 
 XINITRC
+
 systemctl enable --now NetworkManager
 chown -R ray:ray /home/ray
 
@@ -191,8 +193,6 @@ bootctl --path=/boot install
 
 EOF
 
-
-#bootctl --path=/boot update
 echo Preparing Bootloader
 PARTUUID=$(blkid -o value -s PARTUUID /dev/vda2)
 cat <<BOOT > /mnt/boot/loader/entries/arch.conf
@@ -211,8 +211,6 @@ editor no
 
 LOADER
 
-#cp /root/CI/arch.conf /mnt/boot/loader/entries/
-#cp /root/CI/loader.conf /mnt/boot/loader
 cp /root/CI/picom.conf /mnt/home/ray/.config
 cp /root/CI/.bashrc /mnt/home/ray
 sudo cp /root/CI/getty@.service /mnt/usr/lib/systemd/system/getty@.service
