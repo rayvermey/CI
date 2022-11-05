@@ -111,7 +111,8 @@ ray ALL=(ALL) NOPASSWD: ALL
 SU
 
 echo Installing needed tools
-pacman -S gparted git dmenu zsh chromium vivaldi yajl bash-completion zsh-completions --noconfirm --needed
+pacman -S gparted git dmenu zsh chromium vivaldi yajl bash-completion zsh-completions  pipewire-audio pipewire-media-session pipewire-pulse pavucontrol vo
+    lumeicon --noconfirm --needed
 
 
 echo Installing yay
@@ -178,6 +179,7 @@ export DESKTOP_SESSION=dusk
 xrandr -s 1920x1080 
 picom &
 variety &
+volumeicon &
 exec dusk
 
 XINITRC
