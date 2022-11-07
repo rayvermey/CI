@@ -9,6 +9,14 @@ sleep 2
 echo Setting vi
 ln -s /usr/bin/vim /usr/bin/vi
 
+
+echo Partitioning disk
+sgdisk --zap /dev/vda
+sgdisk -g /dev/vda
+sgdisk -n=1:0:+200M -t 1:ef00 /dev/vda
+sgdisk -n=2:201M:+30G -t 2:8300 /dev/vda
+sgdisk -n=3:31G:0 -t 2:8300 /dev/vda
+
 echo Mirrors
 reflector -c NL > /etc/pacman.d/mirrorlist
 pacman -Syy
@@ -16,18 +24,6 @@ pacman -Syy
 
 MEMTOTAL=$(grep MemTotal /proc/meminfo | awk ' { print $2 }')
 
-echo Partitioning disk
-sgdisk --zap-all /dev/vda
-sleep 2
-sfdisk --delete /dev/vda
-sleep 2
-fdisk -l
-
-parted -s /dev/vda1 mklabel gpt
-parted -s /dev/vda1 mkpart primary fat32 1MiB 512MiB
-parted -s /dev/vda1 set 1 esp on
-parted -s /dev/vda2 mkpart primary ext4 512MiB 30GB
-parted -s /dev/vda3 mkpart primary ext4 512MiB 100%
 
 echo Formatting disks
 mkfs.fat -F 32 /dev/vda1
