@@ -23,31 +23,11 @@ sfdisk --delete /dev/vda
 sleep 2
 fdisk -l
 
-fdisk /dev/vda <<EOF
-g
-n
-
-
-+500M
-Y
-t
-1
-n
-
-
-+30G
-t
-
-20
-n
-
-
-
-t
-
-20
-w
-EOF
+parted -s /dev/vda1 mklabel gpt
+parted -s /dev/vda1 mkpart primary fat32 1MiB 512MiB
+parted -s /dev/vda1 set 1 esp on
+parted -s /dev/vda2 mkpart primary ext4 512MiB 30GB
+parted -s /dev/vda3 mkpart primary ext4 512MiB 100%
 
 echo Formatting disks
 mkfs.fat -F 32 /dev/vda1
