@@ -56,6 +56,9 @@ genfstab -U /mnt >> /mnt/etc/fstab
 cp yay-11.0.2-1-x86_64.pkg.tar.zst /mnt/root
 cp yay-11.0.2-1-x86_64.pkg.tar.zst /mnt/
 
+echo Copying files
+mkdir /mnt/root/FILES
+cp -r * /mnt/root/FILES
 
 echo CHROOT
 arch-chroot /mnt <<EOF
@@ -92,7 +95,7 @@ pacman -S gparted git dmenu zsh chromium vivaldi yajl bash-completion zsh-comple
 
 echo Installing yay
 
-pacman -U yay-11.0.2-1-x86_64.pkg.tar.zst --noconfirm
+pacman -U yay-11.0.2-1-x86_64.pkg.tar.zst --noconfirm --needed
 
 systemctl enable --now sshd.service
 
@@ -104,26 +107,26 @@ su ray -c "yay -S jotta-cli alias-tips-git autojump autokey-common autokey-gtk d
 
 #echo Preparing Jotta & Rclone & Ranger
 
-cp -r ranger /home/ray/.config
+cp -r /root/FILES/ranger /home/ray/.config
 mkdir -p /DATA/cloud/Jotta
 mkdir -p /home/ray/.config
 mkdir -p /home/ray/.config/rclone
 
 pacman -S rclone rsync --needed --noconfirm
 
-cp rclone.conf /home/ray/.config/rclone
+cp /root/FILES/rclone.conf /home/ray/.config/rclone
 
 mkdir JOTTA
 cd JOTTA
-tar xzvf jotta-cli-0.11.44593_linux_amd64.tar.gz
+tar xzvf /root/FILES/jotta-cli-0.11.44593_linux_amd64.tar.gz
 cp -r usr/* /usr
 cp -r etc/* /etc
 cd ..
 
-cp jottad.service /etc/systemd/system/
+cp /root/FILES/jottad.service /etc/systemd/system/
 systemctl enable --now jottad.service
 
-cp rclone-mount.service /etc/systemd/system/
+cp /root/FILES/rclone-mount.service /etc/systemd/system/
 systemctl enable --now rclone-mount.service
 
 ln -s /usr/bin/vim /usr/bin/vi
