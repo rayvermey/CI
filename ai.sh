@@ -111,7 +111,7 @@ mkdir -p /home/ray/.config/rclone
 
 pacman -S rclone rsync --needed --noconfirm
 
-cp -r rclone* /home/ray/.config/rclone
+cp rclone.conf /home/ray/.config/rclone
 
 mkdir JOTTA
 cd JOTTA
@@ -125,7 +125,6 @@ systemctl enable --now jottad.service
 
 cp rclone-mount.service /etc/systemd/system/
 systemctl enable --now rclone-mount.service
-
 
 ln -s /usr/bin/vim /usr/bin/vi
 
