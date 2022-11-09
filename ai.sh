@@ -102,8 +102,9 @@ echo INstalling AUR packages
 
 su ray -c "yay -S jotta-cli alias-tips-git autojump autokey-common autokey-gtk downgrade gconf gitahead-bin gtk-theme-config insync nerd-fonts-hack otf-font-awesome-4 p7zip-gui pamac-all pcloud-drive pkgbrowser snapd snapd-glib spice-vdagent wttr topgrade  --noconfirm"
 
-#echo Preparing Jotta & Rclone
+#echo Preparing Jotta & Rclone & Ranger
 
+cp -r ranger /home/ray/.config
 mkdir -p /DATA/cloud/Jotta
 mkdir -p /home/ray/.config
 mkdir -p /home/ray/.config/rclone
