@@ -75,7 +75,7 @@ echo INSTALLING Window Manager DUSK offcourse
 pacman -Syy
 pacman -S xorg xorg-server xorg-apps xorg-xinit --noconfirm --needed
 pacman -S noto-fonts ttf-ubuntu-font-family ttf-dejavu ttf-freefont terminus-font ttf-font-awesome --noconfirm --needed  
-pacman -S variety feh picom polkit --noconfirm --needed
+pacman -S variety feh picom polkit fuseiso --noconfirm --needed
 
 echo Adding user Ray
 groupadd -r autologin
