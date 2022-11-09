@@ -104,15 +104,13 @@ su ray -c "yay -S jotta-cli alias-tips-git autojump autokey-common autokey-gtk d
 
 #echo Preparing Jotta & Rclone
 
-#cp /root/ai.sh /mnt
-
 mkdir -p /DATA/cloud/Jotta
 mkdir -p /home/ray/.config
+mkdir -p /home/ray/.config/rclone
 
 pacman -S rclone rsync --needed --noconfirm
 
 cp -r rclone* /home/ray/.config/rclone
-
 
 mkdir JOTTA
 cd JOTTA
@@ -124,14 +122,12 @@ cd ..
 cp jottad.service /etc/systemd/system/
 systemctl enable --now jottad.service
 
-cp /FILES/rclone-mount.service /etc/systemd/system/
+cp rclone-mount.service /etc/systemd/system/
 systemctl enable --now rclone-mount.service
 
 
-#picom --config /home/ray/.config/picom.conf -b
 ln -s /usr/bin/vim /usr/bin/vi
 
-mkdir -p /DATA/cloud/Jotta
 chown -R ray:ray /DATA/
 
 echo Installing Dusk and st
