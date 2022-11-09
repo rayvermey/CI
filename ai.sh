@@ -106,33 +106,33 @@ su ray -c "yay -S jotta-cli alias-tips-git autojump autokey-common autokey-gtk d
 
 #cp /root/ai.sh /mnt
 
-#mkdir -p /DATA/cloud/Jotta
-#mkdir -p /home/ray/.config
+mkdir -p /DATA/cloud/Jotta
+mkdir -p /home/ray/.config
 
-#pacman -S rclone --noconfirm
+pacman -S rclone rsync --needed --noconfirm
 
-##cp -r /FILES/rclone /home/ray/.config/rclone
+cp -r rclone* /home/ray/.config/rclone
 
 
-#mkdir JOTTA
-#cd JOTTA
-#tar xvf /FILES/jotta-cli-0.8.36055_linux_x86.tar
-#cp -r usr/* /usr
-#cp -r etc/* /etc
-#cd ..
+mkdir JOTTA
+cd JOTTA
+tar xzvf jotta-cli-0.11.44593_linux_amd64.tar.gz
+cp -r usr/* /usr
+cp -r etc/* /etc
+cd ..
 
-#cp /FILES/jottad.service /etc/systemd/system/
-#systemctl enable --now jottad.service
+cp jottad.service /etc/systemd/system/
+systemctl enable --now jottad.service
 
-#cp /FILES/rclone-mount.service /etc/systemd/system/
-#systemctl enable --now rclone-mount.service
+cp /FILES/rclone-mount.service /etc/systemd/system/
+systemctl enable --now rclone-mount.service
 
 
 #picom --config /home/ray/.config/picom.conf -b
 ln -s /usr/bin/vim /usr/bin/vi
 
-#mkdir -p /DATA/cloud/Jotta
-#chown -R ray:ray /DATA/
+mkdir -p /DATA/cloud/Jotta
+chown -R ray:ray /DATA/
 
 echo Installing Dusk and st
 cd /home/ray
