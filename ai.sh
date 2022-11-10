@@ -112,7 +112,7 @@ mkdir -p /DATA/cloud/Jotta
 mkdir -p /home/ray/.config
 mkdir -p /home/ray/.config/rclone
 
-pacman -S rclone rsync --needed --noconfirm
+pacman -S rclone rsync ranger atool elinks ffmpegthumbnailer highlight libcaca lynx mediainfo odt2txt perl-image-exiftool poppler python-chardet transmission-cli ueberzug w3m --needed --noconfirm
 
 cp /root/FILES/rclone.conf /home/ray/.config/rclone
 
