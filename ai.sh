@@ -187,5 +187,6 @@ cd /mnt/home/ray/.config/
 tar xvf /root/CI/VARIETY.tar
 
 mkdir -p /mnt/DATA/cloud/Insync/OneDrive_Ray/
+cd /root/CI
 cp -r Insync /mnt/home/ray/.config
 
