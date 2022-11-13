@@ -47,7 +47,7 @@ mkswap -U clear /mnt/.swapfile
 swapon /mnt/.swapfile
 
 echo Pacstrap
-pacstrap /mnt base base-devel linux linux-firmware vim openssh dhclient networkmanager neofetch wget
+pacstrap /mnt base base-devel linux linux-firmware vim openssh dhclient networkmanager neofetch wget xorg xorg-server xorg-apps xorg-xinit noto-fonts ttf-ubuntu-font-family ttf-dejavu ttf-freefont terminus-font ttf-font-awesome variety feh picom polkit fuseiso gparted git dmenu zsh chromium vivaldi yajl bash-completion zsh-completions  pipewire-audio pipewire-media-session pipewire-pulse pavucontrol volumeicon exa expac rclone rsync ranger atool elinks ffmpegthumbnailer highlight libcaca lynx mediainfo odt2txt perl-image-exiftool poppler python-chardet transmission-cli ueberzug w3m 
 
 
 echo FSTAB
@@ -76,9 +76,6 @@ echo "root:qazwsx12" | chpasswd
 
 echo INSTALLING Window Manager DUSK offcourse
 pacman -Syy
-pacman -S xorg xorg-server xorg-apps xorg-xinit --noconfirm --needed
-pacman -S noto-fonts ttf-ubuntu-font-family ttf-dejavu ttf-freefont terminus-font ttf-font-awesome --noconfirm --needed  
-pacman -S variety feh picom polkit fuseiso --noconfirm --needed
 
 echo Adding user Ray
 groupadd -r autologin
@@ -88,10 +85,6 @@ cat <<SU >> /etc/sudoers
 ## Same thing without a password
 ray ALL=(ALL) NOPASSWD: ALL
 SU
-
-echo Installing needed tools
-pacman -S gparted git dmenu zsh chromium vivaldi yajl bash-completion zsh-completions  pipewire-audio pipewire-media-session pipewire-pulse pavucontrol volumeicon exa expac --noconfirm --needed
-
 
 echo Installing yay
 
@@ -112,7 +105,6 @@ mkdir -p /DATA/cloud/Jotta
 mkdir -p /home/ray/.config
 mkdir -p /home/ray/.config/rclone
 
-pacman -S rclone rsync ranger atool elinks ffmpegthumbnailer highlight libcaca lynx mediainfo odt2txt perl-image-exiftool poppler python-chardet transmission-cli ueberzug w3m --needed --noconfirm
 
 cp /root/FILES/rclone.conf /home/ray/.config/rclone
 
