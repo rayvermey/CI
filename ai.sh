@@ -97,7 +97,7 @@ su ray -c "yay --noconfirm -R libxft xorg-x11perf"
 
 echo INstalling AUR packages
 
-su ray -c "yay -S jotta-cli alias-tips-git autojump autokey-common autokey-gtk downgrade gconf gitahead gtk-theme-config insync nerd-fonts-hack otf-font-awesome-4 p7zip-gui pamac-all pcloud-drive pkgbrowser snapd snapd-glib spice-vdagent wttr topgrade  --noconfirm"
+su ray -c "yay -S jotta-cli alias-tips-git autojump autokey-common autokey-gtk downgrade gconf gtk-theme-config insync nerd-fonts-hack otf-font-awesome-4 p7zip-gui pamac-all pcloud-drive pkgbrowser snapd snapd-glib spice-vdagent wttr topgrade  --noconfirm"
 
 #echo Preparing Jotta & Rclone & Ranger
 
