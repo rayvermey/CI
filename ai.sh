@@ -146,6 +146,7 @@ export DESKTOP_SESSION=dusk
 xrandr -s 1920x1080 
 picom &
 variety &
+insync start &
 volumeicon &
 spice-vdagent &
 exec dusk
@@ -184,3 +185,7 @@ cp /root/CI/.bashrc /mnt/home/ray
 sudo cp /root/CI/getty@.service /mnt/usr/lib/systemd/system/getty@.service
 cd /mnt/home/ray/.config/
 tar xvf /root/CI/VARIETY.tar
+
+mkdir -p /mnt/DATA/cloud/Insync/OneDrive_Ray/
+cp -r Insync /mnt/home/ray/.config
+

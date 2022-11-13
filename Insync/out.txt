@@ -1,0 +1,516 @@
+
+** (process:700): WARNING **: 15:15:46.641: Failed to load shared library 'libnotify.so.4' referenced by the typelib: /usr/lib/libgdk_pixbuf-2.0.so.0: undefined symbol: g_task_set_name
+qt.qpa.xcb: Unhandled client message:  "_NET_CLIENT_LIST"
+INFO     2022-11-13 15:15:46,930 [mainlogs:_log_run:138] Core(app_version=3.8.0.50453, platform=Linux-x86_64-arch/) initialized
+WARNING  2022-11-13 15:15:46,950 [base_events:_run_once:1782] Executing <Task pending coro=<init() running at ideskcore/core.py:28> wait_for=<Task pending coro=<SettingsMain._load_settings() running at ideskcore/mainsettings.py:186> cb=[_log_tb_after_delay() at ideskasync/coreloop.py:302, <TaskWakeupMethWrapper object at 0x7f117eb58f10>()] created at ideskcore/mainsettings.py:160> cb=[_log_tb_after_delay() at ideskasync/coreloop.py:302, _chain_future.<locals>._call_set_state() at asyncio/futures.py:358] created at asyncio/events.py:88> took 0.207 seconds
+INFO     2022-11-13 15:15:46,970 [mainsettings:_load_settings:236] Loaded settings, machine fingerprint = D7_CCp446DGx1AsgaH6YMwQSIec=
+Fontconfig warning: "/usr/share/fontconfig/conf.avail/05-reset-dirs-sample.conf", line 6: unknown element "reset-dirs"
+INFO     2022-11-13 15:15:53,441 [app:start_core:65] core started
+INFO     2022-11-13 15:15:53,442 [unix_socket_server:start:106] unix socket server thread start
+[1247:1370:1113/151732.059911:ERROR:block_files.cc(441)] Failed to open /home/ray/.config/chromium/ShaderCache/data_0
+[914:914:1113/151732.319654:ERROR:process_singleton_posix.cc(335)] Failed to create /home/ray/.config/chromium/SingletonLock: File exists (17)
+[1247:1328:1113/151732.837093:ERROR:object_proxy.cc(623)] Failed to call method: org.freedesktop.DBus.StartServiceByName: object_path= /org/freedesktop/DBus: org.freedesktop.DBus.Error.NoReply: Did not receive a reply. Possible causes include: the remote application did not send a reply, the message bus security policy blocked the reply, the reply timeout expired, or the network connection was broken.
+[914:1332:1113/151732.838297:ERROR:object_proxy.cc(623)] Failed to call method: org.freedesktop.DBus.StartServiceByName: object_path= /org/freedesktop/DBus: org.freedesktop.DBus.Error.NoReply: Did not receive a reply. Possible causes include: the remote application did not send a reply, the message bus security policy blocked the reply, the reply timeout expired, or the network connection was broken.
+[1136:1334:1113/151732.838430:ERROR:object_proxy.cc(623)] Failed to call method: org.freedesktop.DBus.StartServiceByName: object_path= /org/freedesktop/DBus: org.freedesktop.DBus.Error.NoReply: Did not receive a reply. Possible causes include: the remote application did not send a reply, the message bus security policy blocked the reply, the reply timeout expired, or the network connection was broken.
+[1025:1330:1113/151732.838632:ERROR:object_proxy.cc(623)] Failed to call method: org.freedesktop.DBus.StartServiceByName: object_path= /org/freedesktop/DBus: org.freedesktop.DBus.Error.NoReply: Did not receive a reply. Possible causes include: the remote application did not send a reply, the message bus security policy blocked the reply, the reply timeout expired, or the network connection was broken.
+libva error: vaGetDriverNameByIndex() failed with unknown libva error, driver_name = (null)
+libva error: vaGetDriverNameByIndex() failed with unknown libva error, driver_name = (null)
+libva error: vaGetDriverNameByIndex() failed with unknown libva error, driver_name = (null)
+libva error: vaGetDriverNameByIndex() failed with unknown libva error, driver_name = (null)
+[1367:1367:1113/151733.277557:ERROR:viz_main_impl.cc(186)] Exiting GPU process due to errors during initialization
+[1366:1366:1113/151733.277735:ERROR:viz_main_impl.cc(186)] Exiting GPU process due to errors during initialization
+[1368:1368:1113/151733.277879:ERROR:viz_main_impl.cc(186)] Exiting GPU process due to errors during initialization
+[1365:1365:1113/151733.277557:ERROR:viz_main_impl.cc(186)] Exiting GPU process due to errors during initialization
+[1025:1508:1113/151734.197932:ERROR:object_proxy.cc(623)] Failed to call method: org.freedesktop.DBus.Properties.Get: object_path= /org/freedesktop/UPower: org.freedesktop.DBus.Error.ServiceUnknown: The name org.freedesktop.UPower was not provided by any .service files
+[1025:1508:1113/151734.198106:ERROR:object_proxy.cc(623)] Failed to call method: org.freedesktop.UPower.GetDisplayDevice: object_path= /org/freedesktop/UPower: org.freedesktop.DBus.Error.ServiceUnknown: The name org.freedesktop.UPower was not provided by any .service files
+[1025:1508:1113/151734.198302:ERROR:object_proxy.cc(623)] Failed to call method: org.freedesktop.UPower.EnumerateDevices: object_path= /org/freedesktop/UPower: org.freedesktop.DBus.Error.ServiceUnknown: The name org.freedesktop.UPower was not provided by any .service files
+libva error: vaGetDriverNameByIndex() failed with unknown libva error, driver_name = (null)
+[1505:1505:1113/151734.328519:ERROR:viz_main_impl.cc(186)] Exiting GPU process due to errors during initialization
+libva error: vaGetDriverNameByIndex() failed with unknown libva error, driver_name = (null)
+[1548:1548:1113/151734.446358:ERROR:viz_main_impl.cc(186)] Exiting GPU process due to errors during initialization
+libva error: vaGetDriverNameByIndex() failed with unknown libva error, driver_name = (null)
+[1560:1560:1113/151734.526706:ERROR:viz_main_impl.cc(186)] Exiting GPU process due to errors during initialization
+[1573:1573:1113/151734.542931:ERROR:angle_platform_impl.cc(43)] Display.cpp:1004 (initialize): ANGLE Display::initialize error 0: Internal Vulkan error (-3): Initialization of an object could not be completed for implementation-specific reasons, in ../../third_party/angle/src/libANGLE/renderer/vulkan/RendererVk.cpp, initialize:1398.
+ERR: Display.cpp:1004 (initialize): ANGLE Display::initialize error 0: Internal Vulkan error (-3): Initialization of an object could not be completed for implementation-specific reasons, in ../../third_party/angle/src/libANGLE/renderer/vulkan/RendererVk.cpp, initialize:1398.
+[1573:1573:1113/151734.543025:ERROR:gl_display.cc(508)] EGL Driver message (Critical) eglInitialize: Internal Vulkan error (-3): Initialization of an object could not be completed for implementation-specific reasons, in ../../third_party/angle/src/libANGLE/renderer/vulkan/RendererVk.cpp, initialize:1398.
+[1573:1573:1113/151734.543060:ERROR:gl_display.cc(920)] eglInitialize SwANGLE failed with error EGL_NOT_INITIALIZED
+[1573:1573:1113/151734.543091:ERROR:gl_ozone_egl.cc(23)] GLDisplayEGL::Initialize failed.
+[1573:1573:1113/151734.546636:ERROR:viz_main_impl.cc(186)] Exiting GPU process due to errors during initialization
+[1581:1581:1113/151734.555488:ERROR:gpu_init.cc(537)] Passthrough is not supported, GL is disabled, ANGLE is 
+Opening in existing browser session.
+Opening in existing browser session.
+Opening in existing browser session.
+[1025:1025:1113/151739.587808:ERROR:interface_endpoint_client.cc(690)] Message 0 rejected by interface blink.mojom.WidgetHost
+libpng warning: iCCP: known incorrect sRGB profile
+libpng warning: iCCP: known incorrect sRGB profile
+libpng warning: iCCP: known incorrect sRGB profile
+libpng warning: iCCP: known incorrect sRGB profile
+libpng warning: iCCP: known incorrect sRGB profile
+libpng warning: iCCP: known incorrect sRGB profile
+js: ResizeObserver loop limit exceeded
+libpng warning: iCCP: known incorrect sRGB profile
+libpng warning: iCCP: known incorrect sRGB profile
+INFO     2022-11-13 15:18:08,266 [licensework:_do:95] License received: License{'subscriptions': [BaseLicense.Subscription{'code': 'prime', 'is_recurring': False, 'name': 'Prime', 'capabilities': ['ignore_rules', 'shared', 'network_drives'], 'expiry': None}], 'user_id': 'b08f239476a80a66', 'email': 'rayvermey@outlook.com', 'can_activate_backup_trial': False}
+ERROR    2022-11-13 15:18:08,289 [platui_impl:display_notification:82] Cannot initialize notifications.
+
+(process:700): GLib-GIO-CRITICAL **: 15:18:13.449: _g_file_info_get_attribute_value: assertion 'G_IS_FILE_INFO (info)' failed
+Empty filename passed to function
+INFO     2022-11-13 15:18:33,105 [inotify_manager:__init__:132] INotifyManager FS_ENCODING: utf-8
+INFO     2022-11-13 15:18:33,105 [fswatcher:_start:57] LinuxFSWatcher._start
+INFO     2022-11-13 15:18:33,106 [inotify_manager:_pull_loop:315] Inotify loop enter
+INFO     2022-11-13 15:18:33,115 [fswatcher:watch:77] watch origin: /DATA/cloud/Insync/OneDrive_Ray
+js: ResizeObserver loop limit exceeded
+INFO     2022-11-13 15:18:35,311 [syncwork:_is_stale_dl_sub:3593] #649: checking dl_sub file .~b08f239476a80a66-B08F239476A80A66!44166-689c39.insyncdl for staleness.
+INFO     2022-11-13 15:18:35,312 [syncwork:_refresh_local:3553] Permanently deleting the stale sub file during refresh: /DATA/cloud/Insync/OneDrive_Ray/Afbeeldingen/.~b08f239476a80a66-B08F239476A80A66!44166-689c39.insyncdl
+INFO     2022-11-13 15:18:35,312 [fs:delete_reg:270] Permanently deleting: /DATA/cloud/Insync/OneDrive_Ray/Afbeeldingen/.~b08f239476a80a66-B08F239476A80A66!44166-689c39.insyncdl
+INFO     2022-11-13 15:18:35,326 [syncwork:_is_stale_dl_sub:3593] #649: checking dl_sub file .~b08f239476a80a66-B08F239476A80A66!38270-9dbf72.insyncdl for staleness.
+INFO     2022-11-13 15:18:35,326 [syncwork:_refresh_local:3553] Permanently deleting the stale sub file during refresh: /DATA/cloud/Insync/OneDrive_Ray/Afbeeldingen/.~b08f239476a80a66-B08F239476A80A66!38270-9dbf72.insyncdl
+INFO     2022-11-13 15:18:35,326 [fs:delete_reg:270] Permanently deleting: /DATA/cloud/Insync/OneDrive_Ray/Afbeeldingen/.~b08f239476a80a66-B08F239476A80A66!38270-9dbf72.insyncdl
+INFO     2022-11-13 15:18:35,326 [syncwork:_is_stale_dl_sub:3593] #649: checking dl_sub file .~b08f239476a80a66-B08F239476A80A66!38267-473838.insyncdl for staleness.
+INFO     2022-11-13 15:18:35,327 [syncwork:_refresh_local:3553] Permanently deleting the stale sub file during refresh: /DATA/cloud/Insync/OneDrive_Ray/Afbeeldingen/.~b08f239476a80a66-B08F239476A80A66!38267-473838.insyncdl
+INFO     2022-11-13 15:18:35,327 [fs:delete_reg:270] Permanently deleting: /DATA/cloud/Insync/OneDrive_Ray/Afbeeldingen/.~b08f239476a80a66-B08F239476A80A66!38267-473838.insyncdl
+INFO     2022-11-13 15:18:35,327 [syncwork:_is_stale_dl_sub:3593] #649: checking dl_sub file .~b08f239476a80a66-B08F239476A80A66!38407-b6ead2.insyncdl for staleness.
+INFO     2022-11-13 15:18:35,330 [syncwork:_refresh_local:3553] Permanently deleting the stale sub file during refresh: /DATA/cloud/Insync/OneDrive_Ray/Afbeeldingen/.~b08f239476a80a66-B08F239476A80A66!38407-b6ead2.insyncdl
+INFO     2022-11-13 15:18:35,330 [fs:delete_reg:270] Permanently deleting: /DATA/cloud/Insync/OneDrive_Ray/Afbeeldingen/.~b08f239476a80a66-B08F239476A80A66!38407-b6ead2.insyncdl
+INFO     2022-11-13 15:18:35,331 [syncwork:_is_stale_dl_sub:3593] #649: checking dl_sub file .~b08f239476a80a66-B08F239476A80A66!38410-3a53dd.insyncdl for staleness.
+INFO     2022-11-13 15:18:35,332 [syncwork:_refresh_local:3553] Permanently deleting the stale sub file during refresh: /DATA/cloud/Insync/OneDrive_Ray/Afbeeldingen/.~b08f239476a80a66-B08F239476A80A66!38410-3a53dd.insyncdl
+INFO     2022-11-13 15:18:35,332 [fs:delete_reg:270] Permanently deleting: /DATA/cloud/Insync/OneDrive_Ray/Afbeeldingen/.~b08f239476a80a66-B08F239476A80A66!38410-3a53dd.insyncdl
+INFO     2022-11-13 15:18:35,334 [syncwork:_is_stale_dl_sub:3593] #649: checking dl_sub file .~b08f239476a80a66-B08F239476A80A66!38409-1e7cec.insyncdl for staleness.
+INFO     2022-11-13 15:18:35,335 [syncwork:_refresh_local:3553] Permanently deleting the stale sub file during refresh: /DATA/cloud/Insync/OneDrive_Ray/Afbeeldingen/.~b08f239476a80a66-B08F239476A80A66!38409-1e7cec.insyncdl
+INFO     2022-11-13 15:18:35,335 [fs:delete_reg:270] Permanently deleting: /DATA/cloud/Insync/OneDrive_Ray/Afbeeldingen/.~b08f239476a80a66-B08F239476A80A66!38409-1e7cec.insyncdl
+INFO     2022-11-13 15:18:35,335 [syncwork:_is_stale_dl_sub:3593] #649: checking dl_sub file .~b08f239476a80a66-B08F239476A80A66!38405-4cff23.insyncdl for staleness.
+INFO     2022-11-13 15:18:35,335 [syncwork:_refresh_local:3553] Permanently deleting the stale sub file during refresh: /DATA/cloud/Insync/OneDrive_Ray/Afbeeldingen/.~b08f239476a80a66-B08F239476A80A66!38405-4cff23.insyncdl
+INFO     2022-11-13 15:18:35,335 [fs:delete_reg:270] Permanently deleting: /DATA/cloud/Insync/OneDrive_Ray/Afbeeldingen/.~b08f239476a80a66-B08F239476A80A66!38405-4cff23.insyncdl
+INFO     2022-11-13 15:18:35,336 [syncwork:_is_stale_dl_sub:3593] #649: checking dl_sub file .~b08f239476a80a66-B08F239476A80A66!38412-a74be2.insyncdl for staleness.
+INFO     2022-11-13 15:18:35,336 [syncwork:_refresh_local:3553] Permanently deleting the stale sub file during refresh: /DATA/cloud/Insync/OneDrive_Ray/Afbeeldingen/.~b08f239476a80a66-B08F239476A80A66!38412-a74be2.insyncdl
+INFO     2022-11-13 15:18:35,336 [fs:delete_reg:270] Permanently deleting: /DATA/cloud/Insync/OneDrive_Ray/Afbeeldingen/.~b08f239476a80a66-B08F239476A80A66!38412-a74be2.insyncdl
+INFO     2022-11-13 15:18:35,337 [syncwork:_is_stale_dl_sub:3593] #649: checking dl_sub file .~b08f239476a80a66-B08F239476A80A66!38411-14349f.insyncdl for staleness.
+INFO     2022-11-13 15:18:35,337 [syncwork:_refresh_local:3553] Permanently deleting the stale sub file during refresh: /DATA/cloud/Insync/OneDrive_Ray/Afbeeldingen/.~b08f239476a80a66-B08F239476A80A66!38411-14349f.insyncdl
+INFO     2022-11-13 15:18:35,337 [fs:delete_reg:270] Permanently deleting: /DATA/cloud/Insync/OneDrive_Ray/Afbeeldingen/.~b08f239476a80a66-B08F239476A80A66!38411-14349f.insyncdl
+INFO     2022-11-13 15:18:35,338 [syncwork:_is_stale_dl_sub:3593] #649: checking dl_sub file .~b08f239476a80a66-B08F239476A80A66!38408-d05330.insyncdl for staleness.
+INFO     2022-11-13 15:18:35,338 [syncwork:_refresh_local:3553] Permanently deleting the stale sub file during refresh: /DATA/cloud/Insync/OneDrive_Ray/Afbeeldingen/.~b08f239476a80a66-B08F239476A80A66!38408-d05330.insyncdl
+INFO     2022-11-13 15:18:35,338 [fs:delete_reg:270] Permanently deleting: /DATA/cloud/Insync/OneDrive_Ray/Afbeeldingen/.~b08f239476a80a66-B08F239476A80A66!38408-d05330.insyncdl
+INFO     2022-11-13 15:18:35,338 [syncwork:_is_stale_dl_sub:3593] #649: checking dl_sub file .~b08f239476a80a66-B08F239476A80A66!38413-14349f.insyncdl for staleness.
+INFO     2022-11-13 15:18:35,338 [syncwork:_refresh_local:3553] Permanently deleting the stale sub file during refresh: /DATA/cloud/Insync/OneDrive_Ray/Afbeeldingen/.~b08f239476a80a66-B08F239476A80A66!38413-14349f.insyncdl
+INFO     2022-11-13 15:18:35,339 [fs:delete_reg:270] Permanently deleting: /DATA/cloud/Insync/OneDrive_Ray/Afbeeldingen/.~b08f239476a80a66-B08F239476A80A66!38413-14349f.insyncdl
+INFO     2022-11-13 15:18:35,339 [syncwork:_is_stale_dl_sub:3593] #649: checking dl_sub file .~b08f239476a80a66-B08F239476A80A66!38406-55a711.insyncdl for staleness.
+INFO     2022-11-13 15:18:35,339 [syncwork:_refresh_local:3553] Permanently deleting the stale sub file during refresh: /DATA/cloud/Insync/OneDrive_Ray/Afbeeldingen/.~b08f239476a80a66-B08F239476A80A66!38406-55a711.insyncdl
+INFO     2022-11-13 15:18:35,339 [fs:delete_reg:270] Permanently deleting: /DATA/cloud/Insync/OneDrive_Ray/Afbeeldingen/.~b08f239476a80a66-B08F239476A80A66!38406-55a711.insyncdl
+ERROR    2022-11-13 15:18:35,340 [workbase:__run:257] While running AddLocalODItem(cl_node_id=24)
+Traceback (most recent call last):
+  File "idesksync/workbase.py", line 246, in __run
+  File "idesksync/syncwork.py", line 4706, in _do
+  File "ideskfs/fs.py", line 302, in move_reg
+  File "ideskfs/fs.py", line 288, in move_reg
+  File "ideskfs/fs.py", line 280, in move
+FileNotFoundError: [Errno 2] No such file or directory: '/DATA/cloud/Insync/OneDrive_Ray/Afbeeldingen/.~b08f239476a80a66-B08F239476A80A66!38407-b6ead2.insyncdl' -> '/DATA/cloud/Insync/OneDrive_Ray/Afbeeldingen/IMG_16Jun2002_19.53.38__Manon met ThomasB en Purno smile closeup.JPG'
+ERROR    2022-11-13 15:18:35,348 [workbase:__run:257] While running AddLocalODItem(cl_node_id=25)
+Traceback (most recent call last):
+  File "idesksync/workbase.py", line 246, in __run
+  File "idesksync/syncwork.py", line 4706, in _do
+  File "ideskfs/fs.py", line 302, in move_reg
+  File "ideskfs/fs.py", line 288, in move_reg
+  File "ideskfs/fs.py", line 280, in move
+FileNotFoundError: [Errno 2] No such file or directory: '/DATA/cloud/Insync/OneDrive_Ray/Afbeeldingen/.~b08f239476a80a66-B08F239476A80A66!38411-14349f.insyncdl' -> '/DATA/cloud/Insync/OneDrive_Ray/Afbeeldingen/IMG_16Jun2002_19.53.52__Manon met ThomasB en Purno closeup.JPG'
+ERROR    2022-11-13 15:18:35,349 [workbase:__run:257] While running AddLocalODItem(cl_node_id=26)
+Traceback (most recent call last):
+  File "idesksync/workbase.py", line 246, in __run
+  File "idesksync/syncwork.py", line 4706, in _do
+  File "ideskfs/fs.py", line 302, in move_reg
+  File "ideskfs/fs.py", line 288, in move_reg
+  File "ideskfs/fs.py", line 280, in move
+FileNotFoundError: [Errno 2] No such file or directory: '/DATA/cloud/Insync/OneDrive_Ray/Afbeeldingen/.~b08f239476a80a66-B08F239476A80A66!38413-14349f.insyncdl' -> '/DATA/cloud/Insync/OneDrive_Ray/Afbeeldingen/IMG_16Jun2002_19.53.52__Manon_met_ThomasB_en_Purno_closeup.jpg'
+ERROR    2022-11-13 15:18:35,537 [workbase:__run:257] While running AddLocalODItem(cl_node_id=20)
+Traceback (most recent call last):
+  File "idesksync/workbase.py", line 246, in __run
+  File "idesksync/syncwork.py", line 4706, in _do
+  File "ideskfs/fs.py", line 302, in move_reg
+  File "ideskfs/fs.py", line 288, in move_reg
+  File "ideskfs/fs.py", line 280, in move
+FileNotFoundError: [Errno 2] No such file or directory: '/DATA/cloud/Insync/OneDrive_Ray/Afbeeldingen/.~b08f239476a80a66-B08F239476A80A66!44166-689c39.insyncdl' -> '/DATA/cloud/Insync/OneDrive_Ray/Afbeeldingen/chess.jpg'
+ERROR    2022-11-13 15:18:35,631 [workbase:__run:257] While running AddLocalODItem(cl_node_id=21)
+Traceback (most recent call last):
+  File "idesksync/workbase.py", line 246, in __run
+  File "idesksync/syncwork.py", line 4706, in _do
+  File "ideskfs/fs.py", line 302, in move_reg
+  File "ideskfs/fs.py", line 288, in move_reg
+  File "ideskfs/fs.py", line 280, in move
+FileNotFoundError: [Errno 2] No such file or directory: '/DATA/cloud/Insync/OneDrive_Ray/Afbeeldingen/.~b08f239476a80a66-B08F239476A80A66!38409-1e7cec.insyncdl' -> '/DATA/cloud/Insync/OneDrive_Ray/Afbeeldingen/IMG_11Aug2002_15.57.49__Dominique skatebaan close-up.JPG'
+ERROR    2022-11-13 15:18:35,694 [workbase:__run:257] While running AddLocalODItem(cl_node_id=23)
+Traceback (most recent call last):
+  File "idesksync/workbase.py", line 246, in __run
+  File "idesksync/syncwork.py", line 4706, in _do
+  File "ideskfs/fs.py", line 302, in move_reg
+  File "ideskfs/fs.py", line 288, in move_reg
+  File "ideskfs/fs.py", line 280, in move
+FileNotFoundError: [Errno 2] No such file or directory: '/DATA/cloud/Insync/OneDrive_Ray/Afbeeldingen/.~b08f239476a80a66-B08F239476A80A66!38406-55a711.insyncdl' -> '/DATA/cloud/Insync/OneDrive_Ray/Afbeeldingen/IMG_11Aug2002_15.59.12__ThomasV basketbal skatebaan actie.JPG'
+js: ResizeObserver loop limit exceeded
+js: ResizeObserver loop limit exceeded
+ERROR    2022-11-13 15:18:35,778 [workbase:__run:257] While running AddLocalODItem(cl_node_id=22)
+Traceback (most recent call last):
+  File "idesksync/workbase.py", line 246, in __run
+  File "idesksync/syncwork.py", line 4706, in _do
+  File "ideskfs/fs.py", line 302, in move_reg
+  File "ideskfs/fs.py", line 288, in move_reg
+  File "ideskfs/fs.py", line 280, in move
+FileNotFoundError: [Errno 2] No such file or directory: '/DATA/cloud/Insync/OneDrive_Ray/Afbeeldingen/.~b08f239476a80a66-B08F239476A80A66!38412-a74be2.insyncdl' -> '/DATA/cloud/Insync/OneDrive_Ray/Afbeeldingen/IMG_11Aug2002_15.58.47__ThomasV skatebaan basketbal actie.JPG'
+ERROR    2022-11-13 15:18:35,802 [workbase:__run:257] While running AddLocalODItem(cl_node_id=28)
+Traceback (most recent call last):
+  File "idesksync/workbase.py", line 246, in __run
+  File "idesksync/syncwork.py", line 4706, in _do
+  File "ideskfs/fs.py", line 302, in move_reg
+  File "ideskfs/fs.py", line 288, in move_reg
+  File "ideskfs/fs.py", line 280, in move
+FileNotFoundError: [Errno 2] No such file or directory: '/DATA/cloud/Insync/OneDrive_Ray/Afbeeldingen/.~b08f239476a80a66-B08F239476A80A66!38405-4cff23.insyncdl' -> '/DATA/cloud/Insync/OneDrive_Ray/Afbeeldingen/IMG_17Aug2002_16.49.41__Ray_zelfgenomen_blote_bast.jpg'
+js: ResizeObserver loop limit exceeded
+js: ResizeObserver loop limit exceeded
+ERROR    2022-11-13 15:18:35,918 [workbase:__run:257] While running AddLocalODItem(cl_node_id=27)
+Traceback (most recent call last):
+  File "idesksync/workbase.py", line 246, in __run
+  File "idesksync/syncwork.py", line 4706, in _do
+  File "ideskfs/fs.py", line 302, in move_reg
+  File "ideskfs/fs.py", line 288, in move_reg
+  File "ideskfs/fs.py", line 280, in move
+FileNotFoundError: [Errno 2] No such file or directory: '/DATA/cloud/Insync/OneDrive_Ray/Afbeeldingen/.~b08f239476a80a66-B08F239476A80A66!38410-3a53dd.insyncdl' -> '/DATA/cloud/Insync/OneDrive_Ray/Afbeeldingen/IMG_17Aug2002_16.48.11__Cata_staand,_Maite_bewusteloos_Hoogerheide.jpg'
+ERROR    2022-11-13 15:18:35,938 [workbase:__run:257] While running AddLocalODItem(cl_node_id=29)
+Traceback (most recent call last):
+  File "idesksync/workbase.py", line 246, in __run
+  File "idesksync/syncwork.py", line 4706, in _do
+  File "ideskfs/fs.py", line 302, in move_reg
+  File "ideskfs/fs.py", line 288, in move_reg
+  File "ideskfs/fs.py", line 280, in move
+FileNotFoundError: [Errno 2] No such file or directory: '/DATA/cloud/Insync/OneDrive_Ray/Afbeeldingen/.~b08f239476a80a66-B08F239476A80A66!38408-d05330.insyncdl' -> '/DATA/cloud/Insync/OneDrive_Ray/Afbeeldingen/IMG_17Aug2002_16.49.55_2_Ray zelfgenomen, blote bast 2.JPG'
+js: ResizeObserver loop limit exceeded
+js: ResizeObserver loop limit exceeded
+ERROR    2022-11-13 15:18:39,853 [workbase:__run:257] While running AddLocalODItem(cl_node_id=30)
+Traceback (most recent call last):
+  File "idesksync/workbase.py", line 246, in __run
+  File "idesksync/syncwork.py", line 4706, in _do
+  File "ideskfs/fs.py", line 302, in move_reg
+  File "ideskfs/fs.py", line 288, in move_reg
+  File "ideskfs/fs.py", line 280, in move
+FileNotFoundError: [Errno 2] No such file or directory: '/DATA/cloud/Insync/OneDrive_Ray/Afbeeldingen/.~b08f239476a80a66-B08F239476A80A66!38267-473838.insyncdl' -> '/DATA/cloud/Insync/OneDrive_Ray/Afbeeldingen/IMG_0787.JPG'
+ERROR    2022-11-13 15:18:39,947 [workbase:__run:257] While running AddLocalODItem(cl_node_id=31)
+Traceback (most recent call last):
+  File "idesksync/workbase.py", line 246, in __run
+  File "idesksync/syncwork.py", line 4706, in _do
+  File "ideskfs/fs.py", line 302, in move_reg
+  File "ideskfs/fs.py", line 288, in move_reg
+  File "ideskfs/fs.py", line 280, in move
+FileNotFoundError: [Errno 2] No such file or directory: '/DATA/cloud/Insync/OneDrive_Ray/Afbeeldingen/.~b08f239476a80a66-B08F239476A80A66!38270-9dbf72.insyncdl' -> '/DATA/cloud/Insync/OneDrive_Ray/Afbeeldingen/IMG_0788.JPG'
+js: ResizeObserver loop limit exceeded
+js: ResizeObserver loop limit exceeded
+js: ResizeObserver loop limit exceeded
+js: ResizeObserver loop limit exceeded
+js: ResizeObserver loop limit exceeded
+js: ResizeObserver loop limit exceeded
+js: ResizeObserver loop limit exceeded
+js: ResizeObserver loop limit exceeded
+js: ResizeObserver loop limit exceeded
+js: ResizeObserver loop limit exceeded
+js: ResizeObserver loop limit exceeded
+js: ResizeObserver loop limit exceeded
+js: ResizeObserver loop limit exceeded
+js: ResizeObserver loop limit exceeded
+js: ResizeObserver loop limit exceeded
+js: ResizeObserver loop limit exceeded
+js: ResizeObserver loop limit exceeded
+js: ResizeObserver loop limit exceeded
+js: ResizeObserver loop limit exceeded
+js: ResizeObserver loop limit exceeded
+js: ResizeObserver loop limit exceeded
+js: ResizeObserver loop limit exceeded
+js: ResizeObserver loop limit exceeded
+js: ResizeObserver loop limit exceeded
+js: ResizeObserver loop limit exceeded
+js: ResizeObserver loop limit exceeded
+js: ResizeObserver loop limit exceeded
+js: ResizeObserver loop limit exceeded
+js: ResizeObserver loop limit exceeded
+js: ResizeObserver loop limit exceeded
+js: ResizeObserver loop limit exceeded
+js: ResizeObserver loop limit exceeded
+js: ResizeObserver loop limit exceeded
+js: ResizeObserver loop limit exceeded
+js: ResizeObserver loop limit exceeded
+js: ResizeObserver loop limit exceeded
+js: ResizeObserver loop limit exceeded
+js: ResizeObserver loop limit exceeded
+js: ResizeObserver loop limit exceeded
+js: ResizeObserver loop limit exceeded
+js: ResizeObserver loop limit exceeded
+js: ResizeObserver loop limit exceeded
+js: ResizeObserver loop limit exceeded
+js: ResizeObserver loop limit exceeded
+js: ResizeObserver loop limit exceeded
+js: ResizeObserver loop limit exceeded
+js: ResizeObserver loop limit exceeded
+js: ResizeObserver loop limit exceeded
+js: ResizeObserver loop limit exceeded
+js: ResizeObserver loop limit exceeded
+js: ResizeObserver loop limit exceeded
+js: ResizeObserver loop limit exceeded
+js: ResizeObserver loop limit exceeded
+js: ResizeObserver loop limit exceeded
+js: ResizeObserver loop limit exceeded
+js: ResizeObserver loop limit exceeded
+js: ResizeObserver loop limit exceeded
+js: ResizeObserver loop limit exceeded
+js: ResizeObserver loop limit exceeded
+js: ResizeObserver loop limit exceeded
+js: ResizeObserver loop limit exceeded
+js: ResizeObserver loop limit exceeded
+js: ResizeObserver loop limit exceeded
+js: ResizeObserver loop limit exceeded
+js: ResizeObserver loop limit exceeded
+js: ResizeObserver loop limit exceeded
+js: ResizeObserver loop limit exceeded
+js: ResizeObserver loop limit exceeded
+js: ResizeObserver loop limit exceeded
+js: ResizeObserver loop limit exceeded
+js: ResizeObserver loop limit exceeded
+js: ResizeObserver loop limit exceeded
+js: ResizeObserver loop limit exceeded
+js: ResizeObserver loop limit exceeded
+js: ResizeObserver loop limit exceeded
+js: ResizeObserver loop limit exceeded
+js: ResizeObserver loop limit exceeded
+js: ResizeObserver loop limit exceeded
+js: ResizeObserver loop limit exceeded
+js: ResizeObserver loop limit exceeded
+js: ResizeObserver loop limit exceeded
+js: ResizeObserver loop limit exceeded
+js: ResizeObserver loop limit exceeded
+js: ResizeObserver loop limit exceeded
+js: ResizeObserver loop limit exceeded
+js: ResizeObserver loop limit exceeded
+js: ResizeObserver loop limit exceeded
+js: ResizeObserver loop limit exceeded
+js: ResizeObserver loop limit exceeded
+js: ResizeObserver loop limit exceeded
+js: ResizeObserver loop limit exceeded
+js: ResizeObserver loop limit exceeded
+js: ResizeObserver loop limit exceeded
+js: ResizeObserver loop limit exceeded
+js: ResizeObserver loop limit exceeded
+js: ResizeObserver loop limit exceeded
+js: ResizeObserver loop limit exceeded
+js: ResizeObserver loop limit exceeded
+js: ResizeObserver loop limit exceeded
+js: ResizeObserver loop limit exceeded
+js: ResizeObserver loop limit exceeded
+js: ResizeObserver loop limit exceeded
+js: ResizeObserver loop limit exceeded
+js: ResizeObserver loop limit exceeded
+js: ResizeObserver loop limit exceeded
+js: ResizeObserver loop limit exceeded
+js: ResizeObserver loop limit exceeded
+js: ResizeObserver loop limit exceeded
+js: ResizeObserver loop limit exceeded
+js: ResizeObserver loop limit exceeded
+js: ResizeObserver loop limit exceeded
+js: ResizeObserver loop limit exceeded
+js: ResizeObserver loop limit exceeded
+js: ResizeObserver loop limit exceeded
+js: ResizeObserver loop limit exceeded
+js: ResizeObserver loop limit exceeded
+js: ResizeObserver loop limit exceeded
+js: ResizeObserver loop limit exceeded
+js: ResizeObserver loop limit exceeded
+js: ResizeObserver loop limit exceeded
+js: ResizeObserver loop limit exceeded
+js: ResizeObserver loop limit exceeded
+js: ResizeObserver loop limit exceeded
+js: ResizeObserver loop limit exceeded
+js: ResizeObserver loop limit exceeded
+js: ResizeObserver loop limit exceeded
+js: ResizeObserver loop limit exceeded
+js: ResizeObserver loop limit exceeded
+js: ResizeObserver loop limit exceeded
+js: ResizeObserver loop limit exceeded
+js: ResizeObserver loop limit exceeded
+js: ResizeObserver loop limit exceeded
+INFO     2022-11-13 15:20:17,461 [cloudclient:_request:235] Net error: TimedOutError(28, 'Operation too slow. Less than 1 bytes/sec transferred the last 40 seconds') GET 'https://graph.microsoft.com/v1.0/drives/b08f239476a80a66/items/B08F239476A80A66!103/delta?token=aTE09NjM4MDM5MzU1NTQyNTA7SUQ9QjA4RjIzOTQ3NkE4MEE2NiExMDM7TFI9NjM4MDM5NDU5NjQ3Mjc7RVA9MjA7U0k9ODc7RExFUD0wO1NHPTE7U089NjtQST0z'
+js: ResizeObserver loop limit exceeded
+js: ResizeObserver loop limit exceeded
+js: ResizeObserver loop limit exceeded
+js: ResizeObserver loop limit exceeded
+js: ResizeObserver loop limit exceeded
+js: ResizeObserver loop limit exceeded
+js: ResizeObserver loop limit exceeded
+js: ResizeObserver loop limit exceeded
+js: ResizeObserver loop limit exceeded
+js: ResizeObserver loop limit exceeded
+js: ResizeObserver loop limit exceeded
+js: ResizeObserver loop limit exceeded
+js: ResizeObserver loop limit exceeded
+js: ResizeObserver loop limit exceeded
+js: ResizeObserver loop limit exceeded
+js: ResizeObserver loop limit exceeded
+js: ResizeObserver loop limit exceeded
+js: ResizeObserver loop limit exceeded
+js: ResizeObserver loop limit exceeded
+js: ResizeObserver loop limit exceeded
+js: ResizeObserver loop limit exceeded
+js: ResizeObserver loop limit exceeded
+js: ResizeObserver loop limit exceeded
+js: ResizeObserver loop limit exceeded
+js: ResizeObserver loop limit exceeded
+js: ResizeObserver loop limit exceeded
+js: ResizeObserver loop limit exceeded
+js: ResizeObserver loop limit exceeded
+js: ResizeObserver loop limit exceeded
+js: ResizeObserver loop limit exceeded
+js: ResizeObserver loop limit exceeded
+js: ResizeObserver loop limit exceeded
+js: ResizeObserver loop limit exceeded
+js: ResizeObserver loop limit exceeded
+js: ResizeObserver loop limit exceeded
+js: ResizeObserver loop limit exceeded
+js: ResizeObserver loop limit exceeded
+js: ResizeObserver loop limit exceeded
+js: ResizeObserver loop limit exceeded
+js: ResizeObserver loop limit exceeded
+js: ResizeObserver loop limit exceeded
+js: ResizeObserver loop limit exceeded
+js: ResizeObserver loop limit exceeded
+js: ResizeObserver loop limit exceeded
+js: ResizeObserver loop limit exceeded
+js: ResizeObserver loop limit exceeded
+js: ResizeObserver loop limit exceeded
+js: ResizeObserver loop limit exceeded
+js: ResizeObserver loop limit exceeded
+js: ResizeObserver loop limit exceeded
+js: ResizeObserver loop limit exceeded
+js: ResizeObserver loop limit exceeded
+js: ResizeObserver loop limit exceeded
+js: ResizeObserver loop limit exceeded
+js: ResizeObserver loop limit exceeded
+js: ResizeObserver loop limit exceeded
+js: ResizeObserver loop limit exceeded
+js: ResizeObserver loop limit exceeded
+js: ResizeObserver loop limit exceeded
+js: ResizeObserver loop limit exceeded
+js: ResizeObserver loop limit exceeded
+js: ResizeObserver loop limit exceeded
+js: ResizeObserver loop limit exceeded
+js: ResizeObserver loop limit exceeded
+js: ResizeObserver loop limit exceeded
+js: ResizeObserver loop limit exceeded
+js: ResizeObserver loop limit exceeded
+js: ResizeObserver loop limit exceeded
+js: ResizeObserver loop limit exceeded
+js: ResizeObserver loop limit exceeded
+js: ResizeObserver loop limit exceeded
+js: ResizeObserver loop limit exceeded
+js: ResizeObserver loop limit exceeded
+js: ResizeObserver loop limit exceeded
+js: ResizeObserver loop limit exceeded
+js: ResizeObserver loop limit exceeded
+js: ResizeObserver loop limit exceeded
+js: ResizeObserver loop limit exceeded
+js: ResizeObserver loop limit exceeded
+js: ResizeObserver loop limit exceeded
+js: ResizeObserver loop limit exceeded
+js: ResizeObserver loop limit exceeded
+js: ResizeObserver loop limit exceeded
+js: ResizeObserver loop limit exceeded
+js: ResizeObserver loop limit exceeded
+js: ResizeObserver loop limit exceeded
+js: ResizeObserver loop limit exceeded
+js: ResizeObserver loop limit exceeded
+js: ResizeObserver loop limit exceeded
+js: ResizeObserver loop limit exceeded
+js: ResizeObserver loop limit exceeded
+js: ResizeObserver loop limit exceeded
+js: ResizeObserver loop limit exceeded
+js: ResizeObserver loop limit exceeded
+js: ResizeObserver loop limit exceeded
+js: ResizeObserver loop limit exceeded
+js: ResizeObserver loop limit exceeded
+js: ResizeObserver loop limit exceeded
+js: ResizeObserver loop limit exceeded
+js: ResizeObserver loop limit exceeded
+js: ResizeObserver loop limit exceeded
+js: ResizeObserver loop limit exceeded
+js: ResizeObserver loop limit exceeded
+js: ResizeObserver loop limit exceeded
+js: ResizeObserver loop limit exceeded
+js: ResizeObserver loop limit exceeded
+js: ResizeObserver loop limit exceeded
+js: ResizeObserver loop limit exceeded
+js: ResizeObserver loop limit exceeded
+js: ResizeObserver loop limit exceeded
+js: ResizeObserver loop limit exceeded
+js: ResizeObserver loop limit exceeded
+js: ResizeObserver loop limit exceeded
+js: ResizeObserver loop limit exceeded
+js: ResizeObserver loop limit exceeded
+js: ResizeObserver loop limit exceeded
+js: ResizeObserver loop limit exceeded
+js: ResizeObserver loop limit exceeded
+js: ResizeObserver loop limit exceeded
+js: ResizeObserver loop limit exceeded
+js: ResizeObserver loop limit exceeded
+js: ResizeObserver loop limit exceeded
+js: ResizeObserver loop limit exceeded
+js: ResizeObserver loop limit exceeded
+js: ResizeObserver loop limit exceeded
+js: ResizeObserver loop limit exceeded
+js: ResizeObserver loop limit exceeded
+js: ResizeObserver loop limit exceeded
+js: ResizeObserver loop limit exceeded
+js: ResizeObserver loop limit exceeded
+js: ResizeObserver loop limit exceeded
+js: ResizeObserver loop limit exceeded
+js: ResizeObserver loop limit exceeded
+js: ResizeObserver loop limit exceeded
+js: ResizeObserver loop limit exceeded
+js: ResizeObserver loop limit exceeded
+js: ResizeObserver loop limit exceeded
+js: ResizeObserver loop limit exceeded
+js: ResizeObserver loop limit exceeded
+js: ResizeObserver loop limit exceeded
+js: ResizeObserver loop limit exceeded
+js: ResizeObserver loop limit exceeded
+js: ResizeObserver loop limit exceeded
+js: ResizeObserver loop limit exceeded
+js: ResizeObserver loop limit exceeded
+js: ResizeObserver loop limit exceeded
+js: ResizeObserver loop limit exceeded
+js: ResizeObserver loop limit exceeded
+js: ResizeObserver loop limit exceeded
+js: ResizeObserver loop limit exceeded
+js: ResizeObserver loop limit exceeded
+js: ResizeObserver loop limit exceeded
+js: ResizeObserver loop limit exceeded
+js: ResizeObserver loop limit exceeded
+js: ResizeObserver loop limit exceeded
+js: ResizeObserver loop limit exceeded
+js: ResizeObserver loop limit exceeded
+js: ResizeObserver loop limit exceeded
+js: ResizeObserver loop limit exceeded
+js: ResizeObserver loop limit exceeded
+js: ResizeObserver loop limit exceeded
+js: ResizeObserver loop limit exceeded
+js: ResizeObserver loop limit exceeded
+js: ResizeObserver loop limit exceeded
+js: ResizeObserver loop limit exceeded
+js: ResizeObserver loop limit exceeded
+js: ResizeObserver loop limit exceeded
+js: ResizeObserver loop limit exceeded
+js: ResizeObserver loop limit exceeded
+js: ResizeObserver loop limit exceeded
+js: ResizeObserver loop limit exceeded
+js: ResizeObserver loop limit exceeded
+js: ResizeObserver loop limit exceeded
+js: ResizeObserver loop limit exceeded
+js: ResizeObserver loop limit exceeded
+js: ResizeObserver loop limit exceeded
+js: ResizeObserver loop limit exceeded
+js: ResizeObserver loop limit exceeded
+js: ResizeObserver loop limit exceeded
+js: ResizeObserver loop limit exceeded
+js: ResizeObserver loop limit exceeded
+js: ResizeObserver loop limit exceeded
+js: ResizeObserver loop limit exceeded
