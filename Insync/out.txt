@@ -514,3 +514,1367 @@ js: ResizeObserver loop limit exceeded
 js: ResizeObserver loop limit exceeded
 js: ResizeObserver loop limit exceeded
 js: ResizeObserver loop limit exceeded
+
+** (process:764): WARNING **: 16:08:33.857: Failed to load shared library 'libnotify.so.4' referenced by the typelib: /usr/lib/libgdk_pixbuf-2.0.so.0: undefined symbol: g_task_set_name
+qt.qpa.xcb: Unhandled client message:  "_NET_CLIENT_LIST"
+INFO     2022-11-13 16:08:33,930 [mainlogs:_log_run:138] Core(app_version=3.8.0.50453, platform=Linux-x86_64-arch/) initialized
+INFO     2022-11-13 16:08:33,952 [mainsettings:_load_settings:236] Loaded settings, machine fingerprint = D7_CCp446DGx1AsgaH6YMwQSIec=
+INFO     2022-11-13 16:08:34,159 [inotify_manager:__init__:132] INotifyManager FS_ENCODING: utf-8
+INFO     2022-11-13 16:08:34,160 [fswatcher:_start:57] LinuxFSWatcher._start
+INFO     2022-11-13 16:08:34,162 [inotify_manager:_pull_loop:315] Inotify loop enter
+Fontconfig warning: "/usr/share/fontconfig/conf.avail/05-reset-dirs-sample.conf", line 6: unknown element "reset-dirs"
+INFO     2022-11-13 16:08:40,893 [app:start_core:65] core started
+INFO     2022-11-13 16:08:40,894 [fswatcher:watch:77] watch origin: /DATA/cloud/Insync/OneDrive_Ray
+INFO     2022-11-13 16:08:40,905 [unix_socket_server:start:106] unix socket server thread start
+INFO     2022-11-13 16:08:40,912 [syncwork:_do:1891] All items in base folder is missing, pausing local refresh: /DATA/cloud/Insync/OneDrive_Ray
+INFO     2022-11-13 16:08:40,913 [syncwork:add_prompt:438] Prompt added: TopFolderContentDeletionPrompt(node_id=-1, origin_path=PurePosixPath('/DATA/cloud/Insync/OneDrive_Ray'))
+ERROR    2022-11-13 16:08:40,917 [platui_impl:display_notification:82] Cannot initialize notifications.
+INFO     2022-11-13 16:08:43,373 [syncwork:add_prompt:438] Prompt added: LocalPermissionErrorPrompt(node_id=1140, action='create folder', path=PurePosixPath('/DATA/cloud/Insync/OneDrive_Ray/Insync'))
+
+(process:764): GLib-GIO-CRITICAL **: 16:08:44.041: _g_file_info_get_attribute_value: assertion 'G_IS_FILE_INFO (info)' failed
+
+(process:764): GLib-GIO-CRITICAL **: 16:08:44.042: _g_file_info_get_attribute_value: assertion 'G_IS_FILE_INFO (info)' failed
+
+(process:764): GLib-GIO-CRITICAL **: 16:08:44.043: _g_file_info_get_attribute_value: assertion 'G_IS_FILE_INFO (info)' failed
+
+(process:764): GLib-GIO-CRITICAL **: 16:08:44.043: _g_file_info_get_attribute_value: assertion 'G_IS_FILE_INFO (info)' failed
+
+(process:764): GLib-GIO-CRITICAL **: 16:08:44.044: _g_file_info_get_attribute_value: assertion 'G_IS_FILE_INFO (info)' failed
+
+(process:764): GLib-GIO-CRITICAL **: 16:08:44.045: _g_file_info_get_attribute_value: assertion 'G_IS_FILE_INFO (info)' failed
+
+(process:764): GLib-GIO-CRITICAL **: 16:08:44.047: _g_file_info_get_attribute_value: assertion 'G_IS_FILE_INFO (info)' failed
+
+(process:764): GLib-GIO-CRITICAL **: 16:08:44.049: _g_file_info_get_attribute_value: assertion 'G_IS_FILE_INFO (info)' failed
+
+(process:764): GLib-GIO-CRITICAL **: 16:08:44.051: _g_file_info_get_attribute_value: assertion 'G_IS_FILE_INFO (info)' failed
+
+(process:764): GLib-GIO-CRITICAL **: 16:08:44.055: _g_file_info_get_attribute_value: assertion 'G_IS_FILE_INFO (info)' failed
+
+(process:764): GLib-GIO-CRITICAL **: 16:08:44.392: _g_file_info_get_attribute_value: assertion 'G_IS_FILE_INFO (info)' failed
+
+(process:764): GLib-GIO-CRITICAL **: 16:08:44.393: _g_file_info_get_attribute_value: assertion 'G_IS_FILE_INFO (info)' failed
+
+(process:764): GLib-GIO-CRITICAL **: 16:08:44.393: _g_file_info_get_attribute_value: assertion 'G_IS_FILE_INFO (info)' failed
+
+(process:764): GLib-GIO-CRITICAL **: 16:08:44.394: _g_file_info_get_attribute_value: assertion 'G_IS_FILE_INFO (info)' failed
+
+(process:764): GLib-GIO-CRITICAL **: 16:08:44.395: _g_file_info_get_attribute_value: assertion 'G_IS_FILE_INFO (info)' failed
+
+(process:764): GLib-GIO-CRITICAL **: 16:08:44.395: _g_file_info_get_attribute_value: assertion 'G_IS_FILE_INFO (info)' failed
+
+(process:764): GLib-GIO-CRITICAL **: 16:08:44.396: _g_file_info_get_attribute_value: assertion 'G_IS_FILE_INFO (info)' failed
+
+(process:764): GLib-GIO-CRITICAL **: 16:08:44.516: _g_file_info_get_attribute_value: assertion 'G_IS_FILE_INFO (info)' failed
+
+(process:764): GLib-GIO-CRITICAL **: 16:08:44.517: _g_file_info_get_attribute_value: assertion 'G_IS_FILE_INFO (info)' failed
+
+(process:764): GLib-GIO-CRITICAL **: 16:08:44.562: _g_file_info_get_attribute_value: assertion 'G_IS_FILE_INFO (info)' failed
+
+(process:764): GLib-GIO-CRITICAL **: 16:08:44.578: _g_file_info_get_attribute_value: assertion 'G_IS_FILE_INFO (info)' failed
+
+(process:764): GLib-GIO-CRITICAL **: 16:08:44.589: _g_file_info_get_attribute_value: assertion 'G_IS_FILE_INFO (info)' failed
+
+(process:764): GLib-GIO-CRITICAL **: 16:08:44.589: _g_file_info_get_attribute_value: assertion 'G_IS_FILE_INFO (info)' failed
+
+(process:764): GLib-GIO-CRITICAL **: 16:08:44.597: _g_file_info_get_attribute_value: assertion 'G_IS_FILE_INFO (info)' failed
+js: ResizeObserver loop limit exceeded
+INFO     2022-11-13 16:09:06,056 [syncwork:_finish_prompt:380] Prompt done: LocalPermissionErrorPrompt(node_id=1140, action='create folder', path=PurePosixPath('/DATA/cloud/Insync/OneDrive_Ray/Insync')) chosen option=Option.RETRY
+INFO     2022-11-13 16:09:06,060 [syncwork:add_prompt:438] Prompt added: LocalPermissionErrorPrompt(node_id=1140, action='create folder', path=PurePosixPath('/DATA/cloud/Insync/OneDrive_Ray/Insync'))
+INFO     2022-11-13 16:09:50,521 [syncwork:_finish_prompt:380] Prompt done: LocalPermissionErrorPrompt(node_id=1140, action='create folder', path=PurePosixPath('/DATA/cloud/Insync/OneDrive_Ray/Insync')) chosen option=Option.RETRY
+js: ResizeObserver loop limit exceeded
+js: ResizeObserver loop limit exceeded
+js: ResizeObserver loop limit exceeded
+INFO     2022-11-13 16:09:51,547 [syncwork:_is_stale_dl_sub:3593] #649: checking dl_sub file .~b08f239476a80a66-B08F239476A80A66!45252-35e28c.insyncdl for staleness.
+INFO     2022-11-13 16:09:51,547 [syncwork:_refresh_local:3553] Permanently deleting the stale sub file during refresh: /DATA/cloud/Insync/OneDrive_Ray/Insync/.~b08f239476a80a66-B08F239476A80A66!45252-35e28c.insyncdl
+INFO     2022-11-13 16:09:51,548 [fs:delete_reg:270] Permanently deleting: /DATA/cloud/Insync/OneDrive_Ray/Insync/.~b08f239476a80a66-B08F239476A80A66!45252-35e28c.insyncdl
+INFO     2022-11-13 16:09:51,717 [syncwork:_is_stale_dl_sub:3593] #649: checking dl_sub file .~b08f239476a80a66-B08F239476A80A66!45255-eaaf54.insyncdl for staleness.
+INFO     2022-11-13 16:09:51,717 [syncwork:_refresh_local:3553] Permanently deleting the stale sub file during refresh: /DATA/cloud/Insync/OneDrive_Ray/Insync/live/.~b08f239476a80a66-B08F239476A80A66!45255-eaaf54.insyncdl
+INFO     2022-11-13 16:09:51,717 [fs:delete_reg:270] Permanently deleting: /DATA/cloud/Insync/OneDrive_Ray/Insync/live/.~b08f239476a80a66-B08F239476A80A66!45255-eaaf54.insyncdl
+INFO     2022-11-13 16:09:51,717 [syncwork:_is_stale_dl_sub:3593] #649: checking dl_sub file .~b08f239476a80a66-B08F239476A80A66!45254-9ab915.insyncdl for staleness.
+INFO     2022-11-13 16:09:51,718 [syncwork:_refresh_local:3553] Permanently deleting the stale sub file during refresh: /DATA/cloud/Insync/OneDrive_Ray/Insync/live/.~b08f239476a80a66-B08F239476A80A66!45254-9ab915.insyncdl
+INFO     2022-11-13 16:09:51,718 [fs:delete_reg:270] Permanently deleting: /DATA/cloud/Insync/OneDrive_Ray/Insync/live/.~b08f239476a80a66-B08F239476A80A66!45254-9ab915.insyncdl
+ERROR    2022-11-13 16:09:52,529 [workbase:__run:257] While running AddLocalODItem(cl_node_id=1150)
+Traceback (most recent call last):
+  File "idesksync/workbase.py", line 246, in __run
+  File "idesksync/syncwork.py", line 4706, in _do
+  File "ideskfs/fs.py", line 302, in move_reg
+  File "ideskfs/fs.py", line 288, in move_reg
+  File "ideskfs/fs.py", line 280, in move
+FileNotFoundError: [Errno 2] No such file or directory: '/DATA/cloud/Insync/OneDrive_Ray/Insync/live/.~b08f239476a80a66-B08F239476A80A66!45254-9ab915.insyncdl' -> '/DATA/cloud/Insync/OneDrive_Ray/Insync/live/live-od-b08f239476a80a66.db'
+ERROR    2022-11-13 16:09:53,189 [workbase:__run:257] While running AddLocalODItem(cl_node_id=1148)
+Traceback (most recent call last):
+  File "idesksync/workbase.py", line 246, in __run
+  File "idesksync/syncwork.py", line 4706, in _do
+  File "ideskfs/fs.py", line 302, in move_reg
+  File "ideskfs/fs.py", line 288, in move_reg
+  File "ideskfs/fs.py", line 280, in move
+FileNotFoundError: [Errno 2] No such file or directory: '/DATA/cloud/Insync/OneDrive_Ray/Insync/live/.~b08f239476a80a66-B08F239476A80A66!45255-eaaf54.insyncdl' -> '/DATA/cloud/Insync/OneDrive_Ray/Insync/live/live-od-b08f239476a80a66.db-wal'
+ERROR    2022-11-13 16:09:53,217 [workbase:__run:257] While running AddLocalODItem(cl_node_id=1143)
+Traceback (most recent call last):
+  File "idesksync/workbase.py", line 246, in __run
+  File "idesksync/syncwork.py", line 4706, in _do
+  File "ideskfs/fs.py", line 302, in move_reg
+  File "ideskfs/fs.py", line 288, in move_reg
+  File "ideskfs/fs.py", line 280, in move
+FileNotFoundError: [Errno 2] No such file or directory: '/DATA/cloud/Insync/OneDrive_Ray/Insync/.~b08f239476a80a66-B08F239476A80A66!45252-35e28c.insyncdl' -> '/DATA/cloud/Insync/OneDrive_Ray/Insync/logs.db'
+js: ResizeObserver loop limit exceeded
+js: ResizeObserver loop limit exceeded
+INFO     2022-11-13 16:10:04,651 [syncwork:_finish_prompt:380] Prompt done: TopFolderContentDeletionPrompt(node_id=-1, origin_path=PurePosixPath('/DATA/cloud/Insync/OneDrive_Ray')) chosen option=Option.RETRY
+
+(process:764): GLib-GIO-CRITICAL **: 16:10:04.692: _g_file_info_get_attribute_value: assertion 'G_IS_FILE_INFO (info)' failed
+
+(process:764): GLib-GIO-CRITICAL **: 16:10:04.692: _g_file_info_get_attribute_value: assertion 'G_IS_FILE_INFO (info)' failed
+
+(process:764): GLib-GIO-CRITICAL **: 16:10:04.693: _g_file_info_get_attribute_value: assertion 'G_IS_FILE_INFO (info)' failed
+
+(process:764): GLib-GIO-CRITICAL **: 16:10:04.694: _g_file_info_get_attribute_value: assertion 'G_IS_FILE_INFO (info)' failed
+
+(process:764): GLib-GIO-CRITICAL **: 16:10:04.695: _g_file_info_get_attribute_value: assertion 'G_IS_FILE_INFO (info)' failed
+
+(process:764): GLib-GIO-CRITICAL **: 16:10:04.696: _g_file_info_get_attribute_value: assertion 'G_IS_FILE_INFO (info)' failed
+
+(process:764): GLib-GIO-CRITICAL **: 16:10:04.697: _g_file_info_get_attribute_value: assertion 'G_IS_FILE_INFO (info)' failed
+
+(process:764): GLib-GIO-CRITICAL **: 16:10:04.699: _g_file_info_get_attribute_value: assertion 'G_IS_FILE_INFO (info)' failed
+
+(process:764): GLib-GIO-CRITICAL **: 16:10:04.700: _g_file_info_get_attribute_value: assertion 'G_IS_FILE_INFO (info)' failed
+js: ResizeObserver loop limit exceeded
+
+(process:764): GLib-GIO-CRITICAL **: 16:10:04.739: _g_file_info_get_attribute_value: assertion 'G_IS_FILE_INFO (info)' failed
+
+(process:764): GLib-GIO-CRITICAL **: 16:10:04.740: _g_file_info_get_attribute_value: assertion 'G_IS_FILE_INFO (info)' failed
+
+(process:764): GLib-GIO-CRITICAL **: 16:10:04.740: _g_file_info_get_attribute_value: assertion 'G_IS_FILE_INFO (info)' failed
+
+(process:764): GLib-GIO-CRITICAL **: 16:10:04.741: _g_file_info_get_attribute_value: assertion 'G_IS_FILE_INFO (info)' failed
+
+(process:764): GLib-GIO-CRITICAL **: 16:10:04.742: _g_file_info_get_attribute_value: assertion 'G_IS_FILE_INFO (info)' failed
+
+(process:764): GLib-GIO-CRITICAL **: 16:10:04.743: _g_file_info_get_attribute_value: assertion 'G_IS_FILE_INFO (info)' failed
+
+(process:764): GLib-GIO-CRITICAL **: 16:10:04.744: _g_file_info_get_attribute_value: assertion 'G_IS_FILE_INFO (info)' failed
+
+(process:764): GLib-GIO-CRITICAL **: 16:10:04.744: _g_file_info_get_attribute_value: assertion 'G_IS_FILE_INFO (info)' failed
+
+(process:764): GLib-GIO-CRITICAL **: 16:10:04.745: _g_file_info_get_attribute_value: assertion 'G_IS_FILE_INFO (info)' failed
+
+(process:764): GLib-GIO-CRITICAL **: 16:10:04.746: _g_file_info_get_attribute_value: assertion 'G_IS_FILE_INFO (info)' failed
+
+(process:764): GLib-GIO-CRITICAL **: 16:10:04.747: _g_file_info_get_attribute_value: assertion 'G_IS_FILE_INFO (info)' failed
+
+(process:764): GLib-GIO-CRITICAL **: 16:10:04.747: _g_file_info_get_attribute_value: assertion 'G_IS_FILE_INFO (info)' failed
+
+(process:764): GLib-GIO-CRITICAL **: 16:10:04.748: _g_file_info_get_attribute_value: assertion 'G_IS_FILE_INFO (info)' failed
+
+(process:764): GLib-GIO-CRITICAL **: 16:10:04.749: _g_file_info_get_attribute_value: assertion 'G_IS_FILE_INFO (info)' failed
+
+(process:764): GLib-GIO-CRITICAL **: 16:10:04.749: _g_file_info_get_attribute_value: assertion 'G_IS_FILE_INFO (info)' failed
+
+(process:764): GLib-GIO-CRITICAL **: 16:10:04.750: _g_file_info_get_attribute_value: assertion 'G_IS_FILE_INFO (info)' failed
+
+(process:764): GLib-GIO-CRITICAL **: 16:10:04.751: _g_file_info_get_attribute_value: assertion 'G_IS_FILE_INFO (info)' failed
+
+(process:764): GLib-GIO-CRITICAL **: 16:10:04.752: _g_file_info_get_attribute_value: assertion 'G_IS_FILE_INFO (info)' failed
+
+(process:764): GLib-GIO-CRITICAL **: 16:10:04.752: _g_file_info_get_attribute_value: assertion 'G_IS_FILE_INFO (info)' failed
+
+(process:764): GLib-GIO-CRITICAL **: 16:10:04.753: _g_file_info_get_attribute_value: assertion 'G_IS_FILE_INFO (info)' failed
+
+(process:764): GLib-GIO-CRITICAL **: 16:10:04.754: _g_file_info_get_attribute_value: assertion 'G_IS_FILE_INFO (info)' failed
+
+(process:764): GLib-GIO-CRITICAL **: 16:10:04.754: _g_file_info_get_attribute_value: assertion 'G_IS_FILE_INFO (info)' failed
+
+(process:764): GLib-GIO-CRITICAL **: 16:10:04.755: _g_file_info_get_attribute_value: assertion 'G_IS_FILE_INFO (info)' failed
+
+(process:764): GLib-GIO-CRITICAL **: 16:10:04.759: _g_file_info_get_attribute_value: assertion 'G_IS_FILE_INFO (info)' failed
+
+(process:764): GLib-GIO-CRITICAL **: 16:10:04.760: _g_file_info_get_attribute_value: assertion 'G_IS_FILE_INFO (info)' failed
+
+(process:764): GLib-GIO-CRITICAL **: 16:10:04.761: _g_file_info_get_attribute_value: assertion 'G_IS_FILE_INFO (info)' failed
+
+(process:764): GLib-GIO-CRITICAL **: 16:10:04.762: _g_file_info_get_attribute_value: assertion 'G_IS_FILE_INFO (info)' failed
+
+(process:764): GLib-GIO-CRITICAL **: 16:10:04.762: _g_file_info_get_attribute_value: assertion 'G_IS_FILE_INFO (info)' failed
+
+(process:764): GLib-GIO-CRITICAL **: 16:10:04.763: _g_file_info_get_attribute_value: assertion 'G_IS_FILE_INFO (info)' failed
+
+(process:764): GLib-GIO-CRITICAL **: 16:10:04.764: _g_file_info_get_attribute_value: assertion 'G_IS_FILE_INFO (info)' failed
+
+(process:764): GLib-GIO-CRITICAL **: 16:10:04.764: _g_file_info_get_attribute_value: assertion 'G_IS_FILE_INFO (info)' failed
+
+(process:764): GLib-GIO-CRITICAL **: 16:10:04.765: _g_file_info_get_attribute_value: assertion 'G_IS_FILE_INFO (info)' failed
+
+(process:764): GLib-GIO-CRITICAL **: 16:10:04.766: _g_file_info_get_attribute_value: assertion 'G_IS_FILE_INFO (info)' failed
+
+(process:764): GLib-GIO-CRITICAL **: 16:10:04.766: _g_file_info_get_attribute_value: assertion 'G_IS_FILE_INFO (info)' failed
+
+(process:764): GLib-GIO-CRITICAL **: 16:10:04.796: _g_file_info_get_attribute_value: assertion 'G_IS_FILE_INFO (info)' failed
+
+(process:764): GLib-GIO-CRITICAL **: 16:10:04.797: _g_file_info_get_attribute_value: assertion 'G_IS_FILE_INFO (info)' failed
+
+(process:764): GLib-GIO-CRITICAL **: 16:10:04.798: _g_file_info_get_attribute_value: assertion 'G_IS_FILE_INFO (info)' failed
+
+(process:764): GLib-GIO-CRITICAL **: 16:10:04.798: _g_file_info_get_attribute_value: assertion 'G_IS_FILE_INFO (info)' failed
+
+(process:764): GLib-GIO-CRITICAL **: 16:10:04.799: _g_file_info_get_attribute_value: assertion 'G_IS_FILE_INFO (info)' failed
+
+(process:764): GLib-GIO-CRITICAL **: 16:10:04.800: _g_file_info_get_attribute_value: assertion 'G_IS_FILE_INFO (info)' failed
+
+(process:764): GLib-GIO-CRITICAL **: 16:10:04.801: _g_file_info_get_attribute_value: assertion 'G_IS_FILE_INFO (info)' failed
+
+(process:764): GLib-GIO-CRITICAL **: 16:10:04.801: _g_file_info_get_attribute_value: assertion 'G_IS_FILE_INFO (info)' failed
+
+(process:764): GLib-GIO-CRITICAL **: 16:10:04.802: _g_file_info_get_attribute_value: assertion 'G_IS_FILE_INFO (info)' failed
+
+(process:764): GLib-GIO-CRITICAL **: 16:10:04.803: _g_file_info_get_attribute_value: assertion 'G_IS_FILE_INFO (info)' failed
+
+(process:764): GLib-GIO-CRITICAL **: 16:10:04.828: _g_file_info_get_attribute_value: assertion 'G_IS_FILE_INFO (info)' failed
+
+(process:764): GLib-GIO-CRITICAL **: 16:10:04.829: _g_file_info_get_attribute_value: assertion 'G_IS_FILE_INFO (info)' failed
+
+(process:764): GLib-GIO-CRITICAL **: 16:10:04.829: _g_file_info_get_attribute_value: assertion 'G_IS_FILE_INFO (info)' failed
+
+(process:764): GLib-GIO-CRITICAL **: 16:10:04.830: _g_file_info_get_attribute_value: assertion 'G_IS_FILE_INFO (info)' failed
+
+(process:764): GLib-GIO-CRITICAL **: 16:10:04.831: _g_file_info_get_attribute_value: assertion 'G_IS_FILE_INFO (info)' failed
+
+(process:764): GLib-GIO-CRITICAL **: 16:10:04.833: _g_file_info_get_attribute_value: assertion 'G_IS_FILE_INFO (info)' failed
+
+(process:764): GLib-GIO-CRITICAL **: 16:10:04.834: _g_file_info_get_attribute_value: assertion 'G_IS_FILE_INFO (info)' failed
+
+(process:764): GLib-GIO-CRITICAL **: 16:10:04.851: _g_file_info_get_attribute_value: assertion 'G_IS_FILE_INFO (info)' failed
+
+(process:764): GLib-GIO-CRITICAL **: 16:10:04.851: _g_file_info_get_attribute_value: assertion 'G_IS_FILE_INFO (info)' failed
+
+(process:764): GLib-GIO-CRITICAL **: 16:10:04.915: _g_file_info_get_attribute_value: assertion 'G_IS_FILE_INFO (info)' failed
+
+(process:764): GLib-GIO-CRITICAL **: 16:10:04.916: _g_file_info_get_attribute_value: assertion 'G_IS_FILE_INFO (info)' failed
+
+(process:764): GLib-GIO-CRITICAL **: 16:10:04.918: _g_file_info_get_attribute_value: assertion 'G_IS_FILE_INFO (info)' failed
+
+(process:764): GLib-GIO-CRITICAL **: 16:10:04.919: _g_file_info_get_attribute_value: assertion 'G_IS_FILE_INFO (info)' failed
+
+(process:764): GLib-GIO-CRITICAL **: 16:10:04.959: _g_file_info_get_attribute_value: assertion 'G_IS_FILE_INFO (info)' failed
+
+(process:764): GLib-GIO-CRITICAL **: 16:10:05.022: _g_file_info_get_attribute_value: assertion 'G_IS_FILE_INFO (info)' failed
+
+(process:764): GLib-GIO-CRITICAL **: 16:10:05.055: _g_file_info_get_attribute_value: assertion 'G_IS_FILE_INFO (info)' failed
+
+(process:764): GLib-GIO-CRITICAL **: 16:10:05.056: _g_file_info_get_attribute_value: assertion 'G_IS_FILE_INFO (info)' failed
+
+(process:764): GLib-GIO-CRITICAL **: 16:10:05.057: _g_file_info_get_attribute_value: assertion 'G_IS_FILE_INFO (info)' failed
+
+(process:764): GLib-GIO-CRITICAL **: 16:10:05.058: _g_file_info_get_attribute_value: assertion 'G_IS_FILE_INFO (info)' failed
+
+(process:764): GLib-GIO-CRITICAL **: 16:10:05.059: _g_file_info_get_attribute_value: assertion 'G_IS_FILE_INFO (info)' failed
+
+(process:764): GLib-GIO-CRITICAL **: 16:10:05.060: _g_file_info_get_attribute_value: assertion 'G_IS_FILE_INFO (info)' failed
+
+(process:764): GLib-GIO-CRITICAL **: 16:10:05.125: _g_file_info_get_attribute_value: assertion 'G_IS_FILE_INFO (info)' failed
+
+(process:764): GLib-GIO-CRITICAL **: 16:10:05.130: _g_file_info_get_attribute_value: assertion 'G_IS_FILE_INFO (info)' failed
+
+(process:764): GLib-GIO-CRITICAL **: 16:10:05.131: _g_file_info_get_attribute_value: assertion 'G_IS_FILE_INFO (info)' failed
+
+(process:764): GLib-GIO-CRITICAL **: 16:10:05.132: _g_file_info_get_attribute_value: assertion 'G_IS_FILE_INFO (info)' failed
+
+(process:764): GLib-GIO-CRITICAL **: 16:10:05.133: _g_file_info_get_attribute_value: assertion 'G_IS_FILE_INFO (info)' failed
+
+(process:764): GLib-GIO-CRITICAL **: 16:10:05.134: _g_file_info_get_attribute_value: assertion 'G_IS_FILE_INFO (info)' failed
+
+(process:764): GLib-GIO-CRITICAL **: 16:10:05.134: _g_file_info_get_attribute_value: assertion 'G_IS_FILE_INFO (info)' failed
+
+(process:764): GLib-GIO-CRITICAL **: 16:10:05.135: _g_file_info_get_attribute_value: assertion 'G_IS_FILE_INFO (info)' failed
+
+(process:764): GLib-GIO-CRITICAL **: 16:10:05.169: _g_file_info_get_attribute_value: assertion 'G_IS_FILE_INFO (info)' failed
+
+(process:764): GLib-GIO-CRITICAL **: 16:10:05.170: _g_file_info_get_attribute_value: assertion 'G_IS_FILE_INFO (info)' failed
+
+(process:764): GLib-GIO-CRITICAL **: 16:10:05.190: _g_file_info_get_attribute_value: assertion 'G_IS_FILE_INFO (info)' failed
+
+(process:764): GLib-GIO-CRITICAL **: 16:10:05.190: _g_file_info_get_attribute_value: assertion 'G_IS_FILE_INFO (info)' failed
+
+(process:764): GLib-GIO-CRITICAL **: 16:10:05.191: _g_file_info_get_attribute_value: assertion 'G_IS_FILE_INFO (info)' failed
+
+(process:764): GLib-GIO-CRITICAL **: 16:10:05.192: _g_file_info_get_attribute_value: assertion 'G_IS_FILE_INFO (info)' failed
+
+(process:764): GLib-GIO-CRITICAL **: 16:10:05.194: _g_file_info_get_attribute_value: assertion 'G_IS_FILE_INFO (info)' failed
+
+(process:764): GLib-GIO-CRITICAL **: 16:10:05.195: _g_file_info_get_attribute_value: assertion 'G_IS_FILE_INFO (info)' failed
+
+(process:764): GLib-GIO-CRITICAL **: 16:10:05.196: _g_file_info_get_attribute_value: assertion 'G_IS_FILE_INFO (info)' failed
+
+(process:764): GLib-GIO-CRITICAL **: 16:10:05.196: _g_file_info_get_attribute_value: assertion 'G_IS_FILE_INFO (info)' failed
+
+(process:764): GLib-GIO-CRITICAL **: 16:10:05.197: _g_file_info_get_attribute_value: assertion 'G_IS_FILE_INFO (info)' failed
+
+(process:764): GLib-GIO-CRITICAL **: 16:10:05.202: _g_file_info_get_attribute_value: assertion 'G_IS_FILE_INFO (info)' failed
+
+(process:764): GLib-GIO-CRITICAL **: 16:10:05.212: _g_file_info_get_attribute_value: assertion 'G_IS_FILE_INFO (info)' failed
+
+(process:764): GLib-GIO-CRITICAL **: 16:10:05.213: _g_file_info_get_attribute_value: assertion 'G_IS_FILE_INFO (info)' failed
+
+(process:764): GLib-GIO-CRITICAL **: 16:10:05.214: _g_file_info_get_attribute_value: assertion 'G_IS_FILE_INFO (info)' failed
+
+(process:764): GLib-GIO-CRITICAL **: 16:10:05.215: _g_file_info_get_attribute_value: assertion 'G_IS_FILE_INFO (info)' failed
+
+(process:764): GLib-GIO-CRITICAL **: 16:10:05.216: _g_file_info_get_attribute_value: assertion 'G_IS_FILE_INFO (info)' failed
+
+(process:764): GLib-GIO-CRITICAL **: 16:10:05.216: _g_file_info_get_attribute_value: assertion 'G_IS_FILE_INFO (info)' failed
+
+(process:764): GLib-GIO-CRITICAL **: 16:10:05.242: _g_file_info_get_attribute_value: assertion 'G_IS_FILE_INFO (info)' failed
+
+(process:764): GLib-GIO-CRITICAL **: 16:10:05.243: _g_file_info_get_attribute_value: assertion 'G_IS_FILE_INFO (info)' failed
+
+(process:764): GLib-GIO-CRITICAL **: 16:10:05.244: _g_file_info_get_attribute_value: assertion 'G_IS_FILE_INFO (info)' failed
+
+(process:764): GLib-GIO-CRITICAL **: 16:10:05.244: _g_file_info_get_attribute_value: assertion 'G_IS_FILE_INFO (info)' failed
+
+(process:764): GLib-GIO-CRITICAL **: 16:10:05.247: _g_file_info_get_attribute_value: assertion 'G_IS_FILE_INFO (info)' failed
+
+(process:764): GLib-GIO-CRITICAL **: 16:10:05.248: _g_file_info_get_attribute_value: assertion 'G_IS_FILE_INFO (info)' failed
+
+(process:764): GLib-GIO-CRITICAL **: 16:10:05.249: _g_file_info_get_attribute_value: assertion 'G_IS_FILE_INFO (info)' failed
+
+(process:764): GLib-GIO-CRITICAL **: 16:10:05.249: _g_file_info_get_attribute_value: assertion 'G_IS_FILE_INFO (info)' failed
+
+(process:764): GLib-GIO-CRITICAL **: 16:10:05.250: _g_file_info_get_attribute_value: assertion 'G_IS_FILE_INFO (info)' failed
+
+(process:764): GLib-GIO-CRITICAL **: 16:10:05.261: _g_file_info_get_attribute_value: assertion 'G_IS_FILE_INFO (info)' failed
+
+(process:764): GLib-GIO-CRITICAL **: 16:10:05.262: _g_file_info_get_attribute_value: assertion 'G_IS_FILE_INFO (info)' failed
+
+(process:764): GLib-GIO-CRITICAL **: 16:10:05.263: _g_file_info_get_attribute_value: assertion 'G_IS_FILE_INFO (info)' failed
+
+(process:764): GLib-GIO-CRITICAL **: 16:10:05.276: _g_file_info_get_attribute_value: assertion 'G_IS_FILE_INFO (info)' failed
+
+(process:764): GLib-GIO-CRITICAL **: 16:10:05.277: _g_file_info_get_attribute_value: assertion 'G_IS_FILE_INFO (info)' failed
+
+(process:764): GLib-GIO-CRITICAL **: 16:10:05.278: _g_file_info_get_attribute_value: assertion 'G_IS_FILE_INFO (info)' failed
+
+(process:764): GLib-GIO-CRITICAL **: 16:10:05.292: _g_file_info_get_attribute_value: assertion 'G_IS_FILE_INFO (info)' failed
+
+(process:764): GLib-GIO-CRITICAL **: 16:10:05.295: _g_file_info_get_attribute_value: assertion 'G_IS_FILE_INFO (info)' failed
+
+(process:764): GLib-GIO-CRITICAL **: 16:10:05.295: _g_file_info_get_attribute_value: assertion 'G_IS_FILE_INFO (info)' failed
+
+(process:764): GLib-GIO-CRITICAL **: 16:10:05.296: _g_file_info_get_attribute_value: assertion 'G_IS_FILE_INFO (info)' failed
+
+(process:764): GLib-GIO-CRITICAL **: 16:10:05.297: _g_file_info_get_attribute_value: assertion 'G_IS_FILE_INFO (info)' failed
+
+(process:764): GLib-GIO-CRITICAL **: 16:10:05.298: _g_file_info_get_attribute_value: assertion 'G_IS_FILE_INFO (info)' failed
+
+(process:764): GLib-GIO-CRITICAL **: 16:10:05.326: _g_file_info_get_attribute_value: assertion 'G_IS_FILE_INFO (info)' failed
+
+(process:764): GLib-GIO-CRITICAL **: 16:10:05.327: _g_file_info_get_attribute_value: assertion 'G_IS_FILE_INFO (info)' failed
+
+(process:764): GLib-GIO-CRITICAL **: 16:10:05.328: _g_file_info_get_attribute_value: assertion 'G_IS_FILE_INFO (info)' failed
+
+(process:764): GLib-GIO-CRITICAL **: 16:10:05.329: _g_file_info_get_attribute_value: assertion 'G_IS_FILE_INFO (info)' failed
+
+(process:764): GLib-GIO-CRITICAL **: 16:10:05.330: _g_file_info_get_attribute_value: assertion 'G_IS_FILE_INFO (info)' failed
+
+(process:764): GLib-GIO-CRITICAL **: 16:10:05.331: _g_file_info_get_attribute_value: assertion 'G_IS_FILE_INFO (info)' failed
+
+(process:764): GLib-GIO-CRITICAL **: 16:10:05.332: _g_file_info_get_attribute_value: assertion 'G_IS_FILE_INFO (info)' failed
+
+(process:764): GLib-GIO-CRITICAL **: 16:10:05.333: _g_file_info_get_attribute_value: assertion 'G_IS_FILE_INFO (info)' failed
+
+(process:764): GLib-GIO-CRITICAL **: 16:10:05.333: _g_file_info_get_attribute_value: assertion 'G_IS_FILE_INFO (info)' failed
+
+(process:764): GLib-GIO-CRITICAL **: 16:10:05.334: _g_file_info_get_attribute_value: assertion 'G_IS_FILE_INFO (info)' failed
+
+(process:764): GLib-GIO-CRITICAL **: 16:10:05.335: _g_file_info_get_attribute_value: assertion 'G_IS_FILE_INFO (info)' failed
+
+(process:764): GLib-GIO-CRITICAL **: 16:10:05.336: _g_file_info_get_attribute_value: assertion 'G_IS_FILE_INFO (info)' failed
+
+(process:764): GLib-GIO-CRITICAL **: 16:10:05.337: _g_file_info_get_attribute_value: assertion 'G_IS_FILE_INFO (info)' failed
+
+(process:764): GLib-GIO-CRITICAL **: 16:10:05.338: _g_file_info_get_attribute_value: assertion 'G_IS_FILE_INFO (info)' failed
+
+(process:764): GLib-GIO-CRITICAL **: 16:10:05.339: _g_file_info_get_attribute_value: assertion 'G_IS_FILE_INFO (info)' failed
+
+(process:764): GLib-GIO-CRITICAL **: 16:10:05.340: _g_file_info_get_attribute_value: assertion 'G_IS_FILE_INFO (info)' failed
+
+(process:764): GLib-GIO-CRITICAL **: 16:10:05.341: _g_file_info_get_attribute_value: assertion 'G_IS_FILE_INFO (info)' failed
+
+(process:764): GLib-GIO-CRITICAL **: 16:10:05.341: _g_file_info_get_attribute_value: assertion 'G_IS_FILE_INFO (info)' failed
+
+(process:764): GLib-GIO-CRITICAL **: 16:10:05.342: _g_file_info_get_attribute_value: assertion 'G_IS_FILE_INFO (info)' failed
+
+(process:764): GLib-GIO-CRITICAL **: 16:10:05.343: _g_file_info_get_attribute_value: assertion 'G_IS_FILE_INFO (info)' failed
+
+(process:764): GLib-GIO-CRITICAL **: 16:10:05.344: _g_file_info_get_attribute_value: assertion 'G_IS_FILE_INFO (info)' failed
+
+(process:764): GLib-GIO-CRITICAL **: 16:10:05.371: _g_file_info_get_attribute_value: assertion 'G_IS_FILE_INFO (info)' failed
+
+(process:764): GLib-GIO-CRITICAL **: 16:10:05.372: _g_file_info_get_attribute_value: assertion 'G_IS_FILE_INFO (info)' failed
+
+(process:764): GLib-GIO-CRITICAL **: 16:10:05.373: _g_file_info_get_attribute_value: assertion 'G_IS_FILE_INFO (info)' failed
+
+(process:764): GLib-GIO-CRITICAL **: 16:10:05.374: _g_file_info_get_attribute_value: assertion 'G_IS_FILE_INFO (info)' failed
+
+(process:764): GLib-GIO-CRITICAL **: 16:10:05.375: _g_file_info_get_attribute_value: assertion 'G_IS_FILE_INFO (info)' failed
+
+(process:764): GLib-GIO-CRITICAL **: 16:10:05.376: _g_file_info_get_attribute_value: assertion 'G_IS_FILE_INFO (info)' failed
+
+(process:764): GLib-GIO-CRITICAL **: 16:10:05.388: _g_file_info_get_attribute_value: assertion 'G_IS_FILE_INFO (info)' failed
+
+(process:764): GLib-GIO-CRITICAL **: 16:10:05.389: _g_file_info_get_attribute_value: assertion 'G_IS_FILE_INFO (info)' failed
+
+(process:764): GLib-GIO-CRITICAL **: 16:10:05.404: _g_file_info_get_attribute_value: assertion 'G_IS_FILE_INFO (info)' failed
+
+(process:764): GLib-GIO-CRITICAL **: 16:10:05.405: _g_file_info_get_attribute_value: assertion 'G_IS_FILE_INFO (info)' failed
+
+(process:764): GLib-GIO-CRITICAL **: 16:10:05.406: _g_file_info_get_attribute_value: assertion 'G_IS_FILE_INFO (info)' failed
+
+(process:764): GLib-GIO-CRITICAL **: 16:10:05.421: _g_file_info_get_attribute_value: assertion 'G_IS_FILE_INFO (info)' failed
+
+(process:764): GLib-GIO-CRITICAL **: 16:10:05.435: _g_file_info_get_attribute_value: assertion 'G_IS_FILE_INFO (info)' failed
+
+(process:764): GLib-GIO-CRITICAL **: 16:10:05.436: _g_file_info_get_attribute_value: assertion 'G_IS_FILE_INFO (info)' failed
+
+(process:764): GLib-GIO-CRITICAL **: 16:10:05.437: _g_file_info_get_attribute_value: assertion 'G_IS_FILE_INFO (info)' failed
+
+(process:764): GLib-GIO-CRITICAL **: 16:10:05.438: _g_file_info_get_attribute_value: assertion 'G_IS_FILE_INFO (info)' failed
+
+(process:764): GLib-GIO-CRITICAL **: 16:10:05.439: _g_file_info_get_attribute_value: assertion 'G_IS_FILE_INFO (info)' failed
+
+(process:764): GLib-GIO-CRITICAL **: 16:10:05.440: _g_file_info_get_attribute_value: assertion 'G_IS_FILE_INFO (info)' failed
+
+(process:764): GLib-GIO-CRITICAL **: 16:10:05.441: _g_file_info_get_attribute_value: assertion 'G_IS_FILE_INFO (info)' failed
+
+(process:764): GLib-GIO-CRITICAL **: 16:10:05.442: _g_file_info_get_attribute_value: assertion 'G_IS_FILE_INFO (info)' failed
+
+(process:764): GLib-GIO-CRITICAL **: 16:10:05.454: _g_file_info_get_attribute_value: assertion 'G_IS_FILE_INFO (info)' failed
+
+(process:764): GLib-GIO-CRITICAL **: 16:10:05.455: _g_file_info_get_attribute_value: assertion 'G_IS_FILE_INFO (info)' failed
+
+(process:764): GLib-GIO-CRITICAL **: 16:10:05.456: _g_file_info_get_attribute_value: assertion 'G_IS_FILE_INFO (info)' failed
+
+(process:764): GLib-GIO-CRITICAL **: 16:10:05.457: _g_file_info_get_attribute_value: assertion 'G_IS_FILE_INFO (info)' failed
+
+(process:764): GLib-GIO-CRITICAL **: 16:10:05.471: _g_file_info_get_attribute_value: assertion 'G_IS_FILE_INFO (info)' failed
+
+(process:764): GLib-GIO-CRITICAL **: 16:10:05.472: _g_file_info_get_attribute_value: assertion 'G_IS_FILE_INFO (info)' failed
+
+(process:764): GLib-GIO-CRITICAL **: 16:10:05.474: _g_file_info_get_attribute_value: assertion 'G_IS_FILE_INFO (info)' failed
+
+(process:764): GLib-GIO-CRITICAL **: 16:10:05.486: _g_file_info_get_attribute_value: assertion 'G_IS_FILE_INFO (info)' failed
+INFO     2022-11-13 16:10:05,659 [syncwork:_refresh_local:3579] Emitting delete operation as file missing during refresh: /DATA/cloud/Insync/OneDrive_Ray/Afbeeldingen; child_list = [('Insync', FileInfo(type='D', mtime=1668352196.726, size=4096, node_id='65026/917511'))]
+INFO     2022-11-13 16:10:05,661 [syncwork:_refresh_local:3579] Emitting delete operation as file missing during refresh: /DATA/cloud/Insync/OneDrive_Ray/Anhidema; child_list = [('Insync', FileInfo(type='D', mtime=1668352196.726, size=4096, node_id='65026/917511'))]
+INFO     2022-11-13 16:10:05,662 [syncwork:_refresh_local:3579] Emitting delete operation as file missing during refresh: /DATA/cloud/Insync/OneDrive_Ray/Bureaublad; child_list = [('Insync', FileInfo(type='D', mtime=1668352196.726, size=4096, node_id='65026/917511'))]
+INFO     2022-11-13 16:10:05,663 [syncwork:_refresh_local:3579] Emitting delete operation as file missing during refresh: /DATA/cloud/Insync/OneDrive_Ray/Documenten; child_list = [('Insync', FileInfo(type='D', mtime=1668352196.726, size=4096, node_id='65026/917511'))]
+INFO     2022-11-13 16:10:05,664 [syncwork:_refresh_local:3579] Emitting delete operation as file missing during refresh: /DATA/cloud/Insync/OneDrive_Ray/git; child_list = [('Insync', FileInfo(type='D', mtime=1668352196.726, size=4096, node_id='65026/917511'))]
+INFO     2022-11-13 16:10:05,666 [syncwork:_refresh_local:3579] Emitting delete operation as file missing during refresh: /DATA/cloud/Insync/OneDrive_Ray/Openbaar; child_list = [('Insync', FileInfo(type='D', mtime=1668352196.726, size=4096, node_id='65026/917511'))]
+INFO     2022-11-13 16:10:05,667 [syncwork:_refresh_local:3579] Emitting delete operation as file missing during refresh: /DATA/cloud/Insync/OneDrive_Ray/Ray; child_list = [('Insync', FileInfo(type='D', mtime=1668352196.726, size=4096, node_id='65026/917511'))]
+INFO     2022-11-13 16:10:05,668 [syncwork:_refresh_local:3579] Emitting delete operation as file missing during refresh: /DATA/cloud/Insync/OneDrive_Ray/SharePoint; child_list = [('Insync', FileInfo(type='D', mtime=1668352196.726, size=4096, node_id='65026/917511'))]
+INFO     2022-11-13 16:10:05,669 [syncwork:_refresh_local:3579] Emitting delete operation as file missing during refresh: /DATA/cloud/Insync/OneDrive_Ray/VanManon; child_list = [('Insync', FileInfo(type='D', mtime=1668352196.726, size=4096, node_id='65026/917511'))]
+INFO     2022-11-13 16:10:05,670 [syncwork:_refresh_local:3579] Emitting delete operation as file missing during refresh: /DATA/cloud/Insync/OneDrive_Ray/ik.xlsx; child_list = [('Insync', FileInfo(type='D', mtime=1668352196.726, size=4096, node_id='65026/917511'))]
+js: ResizeObserver loop limit exceeded
+ERROR    2022-11-13 16:10:25,420 [activitywork:_do:936] While generating activities
+Traceback (most recent call last):
+  File "idesksync/activitywork.py", line 920, in _do
+  File "ideskod/odact.py", line 65, in _save_acts_from_cloud_change
+  File "ideskod/odact.py", line 330, in _handle_delete_change
+  File "ideskod/odact.py", line 355, in _get_mime_type
+KeyError: 'file'
+ERROR    2022-11-13 16:10:26,273 [activitywork:_do:936] While generating activities
+Traceback (most recent call last):
+  File "idesksync/activitywork.py", line 920, in _do
+  File "ideskod/odact.py", line 65, in _save_acts_from_cloud_change
+  File "ideskod/odact.py", line 330, in _handle_delete_change
+  File "ideskod/odact.py", line 355, in _get_mime_type
+KeyError: 'file'
+js: ResizeObserver loop limit exceeded
+js: ResizeObserver loop limit exceeded
+Empty filename passed to function
+js: ResizeObserver loop limit exceeded
+js: ResizeObserver loop limit exceeded
+Error: Must run ranger from terminal
+/usr/bin/xdg-open: line 880: x-www-browser: command not found
+/usr/bin/xdg-open: line 880: firefox: command not found
+/usr/bin/xdg-open: line 880: iceweasel: command not found
+/usr/bin/xdg-open: line 880: seamonkey: command not found
+/usr/bin/xdg-open: line 880: mozilla: command not found
+/usr/bin/xdg-open: line 880: epiphany: command not found
+/usr/bin/xdg-open: line 880: konqueror: command not found
+[1342:1405:1113/161426.264416:ERROR:block_files.cc(441)] Failed to open /home/ray/.config/chromium/ShaderCache/data_0
+[1342:1383:1113/161426.955170:ERROR:object_proxy.cc(623)] Failed to call method: org.freedesktop.DBus.StartServiceByName: object_path= /org/freedesktop/DBus: org.freedesktop.DBus.Error.NoReply: Did not receive a reply. Possible causes include: the remote application did not send a reply, the message bus security policy blocked the reply, the reply timeout expired, or the network connection was broken.
+[1231:1384:1113/161426.957577:ERROR:object_proxy.cc(623)] Failed to call method: org.freedesktop.DBus.StartServiceByName: object_path= /org/freedesktop/DBus: org.freedesktop.DBus.Error.NoReply: Did not receive a reply. Possible causes include: the remote application did not send a reply, the message bus security policy blocked the reply, the reply timeout expired, or the network connection was broken.
+libva error: vaGetDriverNameByIndex() failed with unknown libva error, driver_name = (null)
+libva error: vaGetDriverNameByIndex() failed with unknown libva error, driver_name = (null)
+[1401:1401:1113/161427.741910:ERROR:viz_main_impl.cc(186)] Exiting GPU process due to errors during initialization
+[1400:1400:1113/161427.741789:ERROR:viz_main_impl.cc(186)] Exiting GPU process due to errors during initialization
+[1231:1497:1113/161428.864747:ERROR:object_proxy.cc(623)] Failed to call method: org.freedesktop.DBus.Properties.Get: object_path= /org/freedesktop/UPower: org.freedesktop.DBus.Error.ServiceUnknown: The name org.freedesktop.UPower was not provided by any .service files
+[1231:1497:1113/161428.864962:ERROR:object_proxy.cc(623)] Failed to call method: org.freedesktop.UPower.GetDisplayDevice: object_path= /org/freedesktop/UPower: org.freedesktop.DBus.Error.ServiceUnknown: The name org.freedesktop.UPower was not provided by any .service files
+[1231:1497:1113/161428.865126:ERROR:object_proxy.cc(623)] Failed to call method: org.freedesktop.UPower.EnumerateDevices: object_path= /org/freedesktop/UPower: org.freedesktop.DBus.Error.ServiceUnknown: The name org.freedesktop.UPower was not provided by any .service files
+libva error: vaGetDriverNameByIndex() failed with unknown libva error, driver_name = (null)
+[1495:1495:1113/161428.977416:ERROR:viz_main_impl.cc(186)] Exiting GPU process due to errors during initialization
+libva error: vaGetDriverNameByIndex() failed with unknown libva error, driver_name = (null)
+[1523:1523:1113/161429.334398:ERROR:viz_main_impl.cc(186)] Exiting GPU process due to errors during initialization
+libva error: vaGetDriverNameByIndex() failed with unknown libva error, driver_name = (null)
+[1536:1536:1113/161429.478491:ERROR:viz_main_impl.cc(186)] Exiting GPU process due to errors during initialization
+libva error: vaGetDriverNameByIndex() failed with unknown libva error, driver_name = (null)
+[1548:1548:1113/161429.567555:ERROR:viz_main_impl.cc(186)] Exiting GPU process due to errors during initialization
+[1560:1560:1113/161429.580802:ERROR:angle_platform_impl.cc(43)] Display.cpp:1004 (initialize): ANGLE Display::initialize error 0: Internal Vulkan error (-3): Initialization of an object could not be completed for implementation-specific reasons, in ../../third_party/angle/src/libANGLE/renderer/vulkan/RendererVk.cpp, initialize:1398.
+ERR: Display.cpp:1004 (initialize): ANGLE Display::initialize error 0: Internal Vulkan error (-3): Initialization of an object could not be completed for implementation-specific reasons, in ../../third_party/angle/src/libANGLE/renderer/vulkan/RendererVk.cpp, initialize:1398.
+[1560:1560:1113/161429.580896:ERROR:gl_display.cc(508)] EGL Driver message (Critical) eglInitialize: Internal Vulkan error (-3): Initialization of an object could not be completed for implementation-specific reasons, in ../../third_party/angle/src/libANGLE/renderer/vulkan/RendererVk.cpp, initialize:1398.
+[1560:1560:1113/161429.580936:ERROR:gl_display.cc(920)] eglInitialize SwANGLE failed with error EGL_NOT_INITIALIZED
+[1560:1560:1113/161429.580968:ERROR:gl_ozone_egl.cc(23)] GLDisplayEGL::Initialize failed.
+[1560:1560:1113/161429.583154:ERROR:viz_main_impl.cc(186)] Exiting GPU process due to errors during initialization
+[1568:1568:1113/161429.591708:ERROR:gpu_init.cc(537)] Passthrough is not supported, GL is disabled, ANGLE is 
+Opening in existing browser session.
+[1231:1231:1113/161432.258934:ERROR:interface_endpoint_client.cc(690)] Message 0 rejected by interface blink.mojom.WidgetHost
+[1231:1231:1113/161432.258995:ERROR:interface_endpoint_client.cc(690)] Message 3 rejected by interface blink.mojom.Widget
+[1231:1231:1113/161432.259010:ERROR:interface_endpoint_client.cc(690)] Message 6 rejected by interface blink.mojom.WidgetHost
+[1231:1231:1113/161432.259036:ERROR:interface_endpoint_client.cc(690)] Message 7 rejected by interface blink.mojom.WidgetHost
+js: ResizeObserver loop limit exceeded
+js: ResizeObserver loop limit exceeded
+js: ResizeObserver loop limit exceeded
+js: ResizeObserver loop limit exceeded
+js: ResizeObserver loop limit exceeded
+js: ResizeObserver loop limit exceeded
+js: ResizeObserver loop limit exceeded
+js: ResizeObserver loop limit exceeded
+js: ResizeObserver loop limit exceeded
+js: ResizeObserver loop limit exceeded
+js: ResizeObserver loop limit exceeded
+js: ResizeObserver loop limit exceeded
+js: ResizeObserver loop limit exceeded
+js: ResizeObserver loop limit exceeded
+js: ResizeObserver loop limit exceeded
+js: ResizeObserver loop limit exceeded
+js: ResizeObserver loop limit exceeded
+js: ResizeObserver loop limit exceeded
+js: ResizeObserver loop limit exceeded
+js: ResizeObserver loop limit exceeded
+js: ResizeObserver loop limit exceeded
+js: ResizeObserver loop limit exceeded
+js: ResizeObserver loop limit exceeded
+js: ResizeObserver loop limit exceeded
+js: ResizeObserver loop limit exceeded
+js: ResizeObserver loop limit exceeded
+js: ResizeObserver loop limit exceeded
+js: ResizeObserver loop limit exceeded
+js: ResizeObserver loop limit exceeded
+js: ResizeObserver loop limit exceeded
+js: ResizeObserver loop limit exceeded
+js: ResizeObserver loop limit exceeded
+js: ResizeObserver loop limit exceeded
+js: ResizeObserver loop limit exceeded
+js: ResizeObserver loop limit exceeded
+js: ResizeObserver loop limit exceeded
+js: ResizeObserver loop limit exceeded
+js: ResizeObserver loop limit exceeded
+js: ResizeObserver loop limit exceeded
+js: ResizeObserver loop limit exceeded
+js: ResizeObserver loop limit exceeded
+js: ResizeObserver loop limit exceeded
+js: ResizeObserver loop limit exceeded
+js: ResizeObserver loop limit exceeded
+js: ResizeObserver loop limit exceeded
+js: ResizeObserver loop limit exceeded
+js: ResizeObserver loop limit exceeded
+js: ResizeObserver loop limit exceeded
+js: ResizeObserver loop limit exceeded
+js: ResizeObserver loop limit exceeded
+js: ResizeObserver loop limit exceeded
+js: ResizeObserver loop limit exceeded
+js: ResizeObserver loop limit exceeded
+js: ResizeObserver loop limit exceeded
+js: ResizeObserver loop limit exceeded
+js: ResizeObserver loop limit exceeded
+js: ResizeObserver loop limit exceeded
+js: ResizeObserver loop limit exceeded
+js: ResizeObserver loop limit exceeded
+js: ResizeObserver loop limit exceeded
+js: ResizeObserver loop limit exceeded
+js: ResizeObserver loop limit exceeded
+js: ResizeObserver loop limit exceeded
+js: ResizeObserver loop limit exceeded
+js: ResizeObserver loop limit exceeded
+js: ResizeObserver loop limit exceeded
+js: ResizeObserver loop limit exceeded
+js: ResizeObserver loop limit exceeded
+js: ResizeObserver loop limit exceeded
+js: ResizeObserver loop limit exceeded
+js: ResizeObserver loop limit exceeded
+js: ResizeObserver loop limit exceeded
+js: ResizeObserver loop limit exceeded
+js: ResizeObserver loop limit exceeded
+js: ResizeObserver loop limit exceeded
+js: ResizeObserver loop limit exceeded
+js: ResizeObserver loop limit exceeded
+js: ResizeObserver loop limit exceeded
+js: ResizeObserver loop limit exceeded
+js: ResizeObserver loop limit exceeded
+js: ResizeObserver loop limit exceeded
+js: ResizeObserver loop limit exceeded
+js: ResizeObserver loop limit exceeded
+js: ResizeObserver loop limit exceeded
+js: ResizeObserver loop limit exceeded
+js: ResizeObserver loop limit exceeded
+js: ResizeObserver loop limit exceeded
+js: ResizeObserver loop limit exceeded
+js: ResizeObserver loop limit exceeded
+js: ResizeObserver loop limit exceeded
+js: ResizeObserver loop limit exceeded
+js: ResizeObserver loop limit exceeded
+js: ResizeObserver loop limit exceeded
+js: ResizeObserver loop limit exceeded
+js: ResizeObserver loop limit exceeded
+js: ResizeObserver loop limit exceeded
+js: ResizeObserver loop limit exceeded
+js: ResizeObserver loop limit exceeded
+js: ResizeObserver loop limit exceeded
+js: ResizeObserver loop limit exceeded
+js: ResizeObserver loop limit exceeded
+js: ResizeObserver loop limit exceeded
+js: ResizeObserver loop limit exceeded
+js: ResizeObserver loop limit exceeded
+js: ResizeObserver loop limit exceeded
+js: ResizeObserver loop limit exceeded
+js: ResizeObserver loop limit exceeded
+js: ResizeObserver loop limit exceeded
+js: ResizeObserver loop limit exceeded
+js: ResizeObserver loop limit exceeded
+js: ResizeObserver loop limit exceeded
+js: ResizeObserver loop limit exceeded
+js: ResizeObserver loop limit exceeded
+js: ResizeObserver loop limit exceeded
+js: ResizeObserver loop limit exceeded
+js: ResizeObserver loop limit exceeded
+js: ResizeObserver loop limit exceeded
+js: ResizeObserver loop limit exceeded
+js: ResizeObserver loop limit exceeded
+js: ResizeObserver loop limit exceeded
+js: ResizeObserver loop limit exceeded
+js: ResizeObserver loop limit exceeded
+js: ResizeObserver loop limit exceeded
+js: ResizeObserver loop limit exceeded
+js: ResizeObserver loop limit exceeded
+js: ResizeObserver loop limit exceeded
+js: ResizeObserver loop limit exceeded
+js: ResizeObserver loop limit exceeded
+js: ResizeObserver loop limit exceeded
+js: ResizeObserver loop limit exceeded
+js: ResizeObserver loop limit exceeded
+js: ResizeObserver loop limit exceeded
+js: ResizeObserver loop limit exceeded
+js: ResizeObserver loop limit exceeded
+js: ResizeObserver loop limit exceeded
+js: ResizeObserver loop limit exceeded
+js: ResizeObserver loop limit exceeded
+js: ResizeObserver loop limit exceeded
+js: ResizeObserver loop limit exceeded
+js: ResizeObserver loop limit exceeded
+js: ResizeObserver loop limit exceeded
+js: ResizeObserver loop limit exceeded
+js: ResizeObserver loop limit exceeded
+js: ResizeObserver loop limit exceeded
+js: ResizeObserver loop limit exceeded
+js: ResizeObserver loop limit exceeded
+js: ResizeObserver loop limit exceeded
+js: ResizeObserver loop limit exceeded
+ERROR    2022-11-13 16:21:20,081 [activitywork:_do:936] While generating activities
+Traceback (most recent call last):
+  File "idesksync/activitywork.py", line 920, in _do
+  File "ideskod/odact.py", line 17, in _save_acts_from_cloud_change
+  File "ideskod/odact.py", line 102, in _handle_new_item_change
+  File "ideskod/odact.py", line 355, in _get_mime_type
+KeyError: 'file'
+js: ResizeObserver loop limit exceeded
+js: ResizeObserver loop limit exceeded
+js: ResizeObserver loop limit exceeded
+js: ResizeObserver loop limit exceeded
+js: ResizeObserver loop limit exceeded
+js: ResizeObserver loop limit exceeded
+js: ResizeObserver loop limit exceeded
+js: ResizeObserver loop limit exceeded
+js: ResizeObserver loop limit exceeded
+js: ResizeObserver loop limit exceeded
+js: ResizeObserver loop limit exceeded
+js: ResizeObserver loop limit exceeded
+js: ResizeObserver loop limit exceeded
+js: ResizeObserver loop limit exceeded
+js: ResizeObserver loop limit exceeded
+js: ResizeObserver loop limit exceeded
+js: ResizeObserver loop limit exceeded
+js: ResizeObserver loop limit exceeded
+js: ResizeObserver loop limit exceeded
+js: ResizeObserver loop limit exceeded
+js: ResizeObserver loop limit exceeded
+js: ResizeObserver loop limit exceeded
+js: ResizeObserver loop limit exceeded
+js: ResizeObserver loop limit exceeded
+js: ResizeObserver loop limit exceeded
+js: ResizeObserver loop limit exceeded
+js: ResizeObserver loop limit exceeded
+js: ResizeObserver loop limit exceeded
+js: ResizeObserver loop limit exceeded
+js: ResizeObserver loop limit exceeded
+js: ResizeObserver loop limit exceeded
+js: ResizeObserver loop limit exceeded
+js: ResizeObserver loop limit exceeded
+js: ResizeObserver loop limit exceeded
+js: ResizeObserver loop limit exceeded
+js: ResizeObserver loop limit exceeded
+js: ResizeObserver loop limit exceeded
+js: ResizeObserver loop limit exceeded
+js: ResizeObserver loop limit exceeded
+js: ResizeObserver loop limit exceeded
+js: ResizeObserver loop limit exceeded
+js: ResizeObserver loop limit exceeded
+js: ResizeObserver loop limit exceeded
+js: ResizeObserver loop limit exceeded
+js: ResizeObserver loop limit exceeded
+js: ResizeObserver loop limit exceeded
+js: ResizeObserver loop limit exceeded
+js: ResizeObserver loop limit exceeded
+js: ResizeObserver loop limit exceeded
+js: ResizeObserver loop limit exceeded
+js: ResizeObserver loop limit exceeded
+js: ResizeObserver loop limit exceeded
+js: ResizeObserver loop limit exceeded
+js: ResizeObserver loop limit exceeded
+js: ResizeObserver loop limit exceeded
+js: ResizeObserver loop limit exceeded
+js: ResizeObserver loop limit exceeded
+js: ResizeObserver loop limit exceeded
+js: ResizeObserver loop limit exceeded
+js: ResizeObserver loop limit exceeded
+js: ResizeObserver loop limit exceeded
+js: ResizeObserver loop limit exceeded
+js: ResizeObserver loop limit exceeded
+js: ResizeObserver loop limit exceeded
+js: ResizeObserver loop limit exceeded
+js: ResizeObserver loop limit exceeded
+js: ResizeObserver loop limit exceeded
+js: ResizeObserver loop limit exceeded
+js: ResizeObserver loop limit exceeded
+js: ResizeObserver loop limit exceeded
+js: ResizeObserver loop limit exceeded
+js: ResizeObserver loop limit exceeded
+js: ResizeObserver loop limit exceeded
+js: ResizeObserver loop limit exceeded
+js: ResizeObserver loop limit exceeded
+js: ResizeObserver loop limit exceeded
+js: ResizeObserver loop limit exceeded
+js: ResizeObserver loop limit exceeded
+js: ResizeObserver loop limit exceeded
+js: ResizeObserver loop limit exceeded
+js: ResizeObserver loop limit exceeded
+js: ResizeObserver loop limit exceeded
+js: ResizeObserver loop limit exceeded
+js: ResizeObserver loop limit exceeded
+js: ResizeObserver loop limit exceeded
+js: ResizeObserver loop limit exceeded
+js: ResizeObserver loop limit exceeded
+ERROR    2022-11-13 16:22:43,442 [activitywork:_do:936] While generating activities
+Traceback (most recent call last):
+  File "idesksync/activitywork.py", line 920, in _do
+  File "ideskod/odact.py", line 62, in _save_acts_from_cloud_change
+  File "ideskod/odact.py", line 91, in _handle_new_item_change
+  File "ideskod/odact.py", line 355, in _get_mime_type
+KeyError: 'file'
+js: ResizeObserver loop limit exceeded
+js: ResizeObserver loop limit exceeded
+js: ResizeObserver loop limit exceeded
+js: ResizeObserver loop limit exceeded
+js: ResizeObserver loop limit exceeded
+js: ResizeObserver loop limit exceeded
+js: ResizeObserver loop limit exceeded
+js: ResizeObserver loop limit exceeded
+js: ResizeObserver loop limit exceeded
+js: ResizeObserver loop limit exceeded
+js: ResizeObserver loop limit exceeded
+js: ResizeObserver loop limit exceeded
+js: ResizeObserver loop limit exceeded
+js: ResizeObserver loop limit exceeded
+js: ResizeObserver loop limit exceeded
+js: ResizeObserver loop limit exceeded
+js: ResizeObserver loop limit exceeded
+js: ResizeObserver loop limit exceeded
+js: ResizeObserver loop limit exceeded
+js: ResizeObserver loop limit exceeded
+js: ResizeObserver loop limit exceeded
+js: ResizeObserver loop limit exceeded
+js: ResizeObserver loop limit exceeded
+js: ResizeObserver loop limit exceeded
+js: ResizeObserver loop limit exceeded
+js: ResizeObserver loop limit exceeded
+js: ResizeObserver loop limit exceeded
+js: ResizeObserver loop limit exceeded
+js: ResizeObserver loop limit exceeded
+js: ResizeObserver loop limit exceeded
+js: ResizeObserver loop limit exceeded
+js: ResizeObserver loop limit exceeded
+js: ResizeObserver loop limit exceeded
+js: ResizeObserver loop limit exceeded
+js: ResizeObserver loop limit exceeded
+js: ResizeObserver loop limit exceeded
+js: ResizeObserver loop limit exceeded
+js: ResizeObserver loop limit exceeded
+js: ResizeObserver loop limit exceeded
+js: ResizeObserver loop limit exceeded
+js: ResizeObserver loop limit exceeded
+js: ResizeObserver loop limit exceeded
+js: ResizeObserver loop limit exceeded
+js: ResizeObserver loop limit exceeded
+js: ResizeObserver loop limit exceeded
+js: ResizeObserver loop limit exceeded
+js: ResizeObserver loop limit exceeded
+js: ResizeObserver loop limit exceeded
+js: ResizeObserver loop limit exceeded
+js: ResizeObserver loop limit exceeded
+js: ResizeObserver loop limit exceeded
+js: ResizeObserver loop limit exceeded
+js: ResizeObserver loop limit exceeded
+js: ResizeObserver loop limit exceeded
+js: ResizeObserver loop limit exceeded
+js: ResizeObserver loop limit exceeded
+js: ResizeObserver loop limit exceeded
+js: ResizeObserver loop limit exceeded
+js: ResizeObserver loop limit exceeded
+js: ResizeObserver loop limit exceeded
+js: ResizeObserver loop limit exceeded
+js: ResizeObserver loop limit exceeded
+js: ResizeObserver loop limit exceeded
+js: ResizeObserver loop limit exceeded
+js: ResizeObserver loop limit exceeded
+js: ResizeObserver loop limit exceeded
+js: ResizeObserver loop limit exceeded
+js: ResizeObserver loop limit exceeded
+js: ResizeObserver loop limit exceeded
+js: ResizeObserver loop limit exceeded
+js: ResizeObserver loop limit exceeded
+js: ResizeObserver loop limit exceeded
+js: ResizeObserver loop limit exceeded
+js: ResizeObserver loop limit exceeded
+js: ResizeObserver loop limit exceeded
+js: ResizeObserver loop limit exceeded
+js: ResizeObserver loop limit exceeded
+js: ResizeObserver loop limit exceeded
+js: ResizeObserver loop limit exceeded
+js: ResizeObserver loop limit exceeded
+js: ResizeObserver loop limit exceeded
+js: ResizeObserver loop limit exceeded
+js: ResizeObserver loop limit exceeded
+js: ResizeObserver loop limit exceeded
+js: ResizeObserver loop limit exceeded
+js: ResizeObserver loop limit exceeded
+js: ResizeObserver loop limit exceeded
+js: ResizeObserver loop limit exceeded
+js: ResizeObserver loop limit exceeded
+js: ResizeObserver loop limit exceeded
+js: ResizeObserver loop limit exceeded
+js: ResizeObserver loop limit exceeded
+js: ResizeObserver loop limit exceeded
+js: ResizeObserver loop limit exceeded
+js: ResizeObserver loop limit exceeded
+js: ResizeObserver loop limit exceeded
+js: ResizeObserver loop limit exceeded
+js: ResizeObserver loop limit exceeded
+js: ResizeObserver loop limit exceeded
+js: ResizeObserver loop limit exceeded
+js: ResizeObserver loop limit exceeded
+js: ResizeObserver loop limit exceeded
+js: ResizeObserver loop limit exceeded
+js: ResizeObserver loop limit exceeded
+js: ResizeObserver loop limit exceeded
+js: ResizeObserver loop limit exceeded
+js: ResizeObserver loop limit exceeded
+js: ResizeObserver loop limit exceeded
+js: ResizeObserver loop limit exceeded
+js: ResizeObserver loop limit exceeded
+js: ResizeObserver loop limit exceeded
+js: ResizeObserver loop limit exceeded
+js: ResizeObserver loop limit exceeded
+js: ResizeObserver loop limit exceeded
+js: ResizeObserver loop limit exceeded
+js: ResizeObserver loop limit exceeded
+js: ResizeObserver loop limit exceeded
+js: ResizeObserver loop limit exceeded
+js: ResizeObserver loop limit exceeded
+js: ResizeObserver loop limit exceeded
+js: ResizeObserver loop limit exceeded
+js: ResizeObserver loop limit exceeded
+js: ResizeObserver loop limit exceeded
+js: ResizeObserver loop limit exceeded
+js: ResizeObserver loop limit exceeded
+js: ResizeObserver loop limit exceeded
+js: ResizeObserver loop limit exceeded
+js: ResizeObserver loop limit exceeded
+js: ResizeObserver loop limit exceeded
+js: ResizeObserver loop limit exceeded
+js: ResizeObserver loop limit exceeded
+js: ResizeObserver loop limit exceeded
+js: ResizeObserver loop limit exceeded
+js: ResizeObserver loop limit exceeded
+js: ResizeObserver loop limit exceeded
+js: ResizeObserver loop limit exceeded
+js: ResizeObserver loop limit exceeded
+js: ResizeObserver loop limit exceeded
+js: ResizeObserver loop limit exceeded
+js: ResizeObserver loop limit exceeded
+js: ResizeObserver loop limit exceeded
+js: ResizeObserver loop limit exceeded
+js: ResizeObserver loop limit exceeded
+js: ResizeObserver loop limit exceeded
+js: ResizeObserver loop limit exceeded
+js: ResizeObserver loop limit exceeded
+js: ResizeObserver loop limit exceeded
+js: ResizeObserver loop limit exceeded
+js: ResizeObserver loop limit exceeded
+js: ResizeObserver loop limit exceeded
+js: ResizeObserver loop limit exceeded
+js: ResizeObserver loop limit exceeded
+js: ResizeObserver loop limit exceeded
+js: ResizeObserver loop limit exceeded
+js: ResizeObserver loop limit exceeded
+js: ResizeObserver loop limit exceeded
+js: ResizeObserver loop limit exceeded
+js: ResizeObserver loop limit exceeded
+js: ResizeObserver loop limit exceeded
+js: ResizeObserver loop limit exceeded
+js: ResizeObserver loop limit exceeded
+js: ResizeObserver loop limit exceeded
+js: ResizeObserver loop limit exceeded
+js: ResizeObserver loop limit exceeded
+js: ResizeObserver loop limit exceeded
+js: ResizeObserver loop limit exceeded
+js: ResizeObserver loop limit exceeded
+js: ResizeObserver loop limit exceeded
+js: ResizeObserver loop limit exceeded
+js: ResizeObserver loop limit exceeded
+js: ResizeObserver loop limit exceeded
+js: ResizeObserver loop limit exceeded
+js: ResizeObserver loop limit exceeded
+js: ResizeObserver loop limit exceeded
+js: ResizeObserver loop limit exceeded
+js: ResizeObserver loop limit exceeded
+js: ResizeObserver loop limit exceeded
+js: ResizeObserver loop limit exceeded
+js: ResizeObserver loop limit exceeded
+js: ResizeObserver loop limit exceeded
+js: ResizeObserver loop limit exceeded
+js: ResizeObserver loop limit exceeded
+js: ResizeObserver loop limit exceeded
+js: ResizeObserver loop limit exceeded
+js: ResizeObserver loop limit exceeded
+js: ResizeObserver loop limit exceeded
+js: ResizeObserver loop limit exceeded
+js: ResizeObserver loop limit exceeded
+js: ResizeObserver loop limit exceeded
+js: ResizeObserver loop limit exceeded
+js: ResizeObserver loop limit exceeded
+js: ResizeObserver loop limit exceeded
+js: ResizeObserver loop limit exceeded
+js: ResizeObserver loop limit exceeded
+js: ResizeObserver loop limit exceeded
+js: ResizeObserver loop limit exceeded
+js: ResizeObserver loop limit exceeded
+js: ResizeObserver loop limit exceeded
+js: ResizeObserver loop limit exceeded
+js: ResizeObserver loop limit exceeded
+js: ResizeObserver loop limit exceeded
+js: ResizeObserver loop limit exceeded
+js: ResizeObserver loop limit exceeded
+js: ResizeObserver loop limit exceeded
+js: ResizeObserver loop limit exceeded
+js: ResizeObserver loop limit exceeded
+js: ResizeObserver loop limit exceeded
+js: ResizeObserver loop limit exceeded
+js: ResizeObserver loop limit exceeded
+js: ResizeObserver loop limit exceeded
+js: ResizeObserver loop limit exceeded
+js: ResizeObserver loop limit exceeded
+js: ResizeObserver loop limit exceeded
+js: ResizeObserver loop limit exceeded
+js: ResizeObserver loop limit exceeded
+js: ResizeObserver loop limit exceeded
+js: ResizeObserver loop limit exceeded
+js: ResizeObserver loop limit exceeded
+js: ResizeObserver loop limit exceeded
+js: ResizeObserver loop limit exceeded
+js: ResizeObserver loop limit exceeded
+js: ResizeObserver loop limit exceeded
+js: ResizeObserver loop limit exceeded
+js: ResizeObserver loop limit exceeded
+js: ResizeObserver loop limit exceeded
+js: ResizeObserver loop limit exceeded
+js: ResizeObserver loop limit exceeded
+js: ResizeObserver loop limit exceeded
+js: ResizeObserver loop limit exceeded
+js: ResizeObserver loop limit exceeded
+js: ResizeObserver loop limit exceeded
+js: ResizeObserver loop limit exceeded
+js: ResizeObserver loop limit exceeded
+js: ResizeObserver loop limit exceeded
+js: ResizeObserver loop limit exceeded
+js: ResizeObserver loop limit exceeded
+js: ResizeObserver loop limit exceeded
+js: ResizeObserver loop limit exceeded
+js: ResizeObserver loop limit exceeded
+js: ResizeObserver loop limit exceeded
+js: ResizeObserver loop limit exceeded
+js: ResizeObserver loop limit exceeded
+js: ResizeObserver loop limit exceeded
+js: ResizeObserver loop limit exceeded
+js: ResizeObserver loop limit exceeded
+js: ResizeObserver loop limit exceeded
+js: ResizeObserver loop limit exceeded
+js: ResizeObserver loop limit exceeded
+js: ResizeObserver loop limit exceeded
+js: ResizeObserver loop limit exceeded
+js: ResizeObserver loop limit exceeded
+js: ResizeObserver loop limit exceeded
+js: ResizeObserver loop limit exceeded
+js: ResizeObserver loop limit exceeded
+js: ResizeObserver loop limit exceeded
+js: ResizeObserver loop limit exceeded
+js: ResizeObserver loop limit exceeded
+js: ResizeObserver loop limit exceeded
+js: ResizeObserver loop limit exceeded
+js: ResizeObserver loop limit exceeded
+js: ResizeObserver loop limit exceeded
+js: ResizeObserver loop limit exceeded
+js: ResizeObserver loop limit exceeded
+js: ResizeObserver loop limit exceeded
+js: ResizeObserver loop limit exceeded
+js: ResizeObserver loop limit exceeded
+js: ResizeObserver loop limit exceeded
+js: ResizeObserver loop limit exceeded
+js: ResizeObserver loop limit exceeded
+js: ResizeObserver loop limit exceeded
+js: ResizeObserver loop limit exceeded
+js: ResizeObserver loop limit exceeded
+js: ResizeObserver loop limit exceeded
+js: ResizeObserver loop limit exceeded
+js: ResizeObserver loop limit exceeded
+js: ResizeObserver loop limit exceeded
+js: ResizeObserver loop limit exceeded
+js: ResizeObserver loop limit exceeded
+js: ResizeObserver loop limit exceeded
+js: ResizeObserver loop limit exceeded
+js: ResizeObserver loop limit exceeded
+js: ResizeObserver loop limit exceeded
+js: ResizeObserver loop limit exceeded
+js: ResizeObserver loop limit exceeded
+js: ResizeObserver loop limit exceeded
+js: ResizeObserver loop limit exceeded
+js: ResizeObserver loop limit exceeded
+js: ResizeObserver loop limit exceeded
+js: ResizeObserver loop limit exceeded
+js: ResizeObserver loop limit exceeded
+js: ResizeObserver loop limit exceeded
+js: ResizeObserver loop limit exceeded
+js: ResizeObserver loop limit exceeded
+js: ResizeObserver loop limit exceeded
+js: ResizeObserver loop limit exceeded
+js: ResizeObserver loop limit exceeded
+js: ResizeObserver loop limit exceeded
+js: ResizeObserver loop limit exceeded
+js: ResizeObserver loop limit exceeded
+js: ResizeObserver loop limit exceeded
+js: ResizeObserver loop limit exceeded
+js: ResizeObserver loop limit exceeded
+js: ResizeObserver loop limit exceeded
+js: ResizeObserver loop limit exceeded
+js: ResizeObserver loop limit exceeded
+js: ResizeObserver loop limit exceeded
+js: ResizeObserver loop limit exceeded
+js: ResizeObserver loop limit exceeded
+js: ResizeObserver loop limit exceeded
+js: ResizeObserver loop limit exceeded
+js: ResizeObserver loop limit exceeded
+js: ResizeObserver loop limit exceeded
+js: ResizeObserver loop limit exceeded
+js: ResizeObserver loop limit exceeded
+js: ResizeObserver loop limit exceeded
+js: ResizeObserver loop limit exceeded
+js: ResizeObserver loop limit exceeded
+js: ResizeObserver loop limit exceeded
+js: ResizeObserver loop limit exceeded
+js: ResizeObserver loop limit exceeded
+js: ResizeObserver loop limit exceeded
+js: ResizeObserver loop limit exceeded
+js: ResizeObserver loop limit exceeded
+js: ResizeObserver loop limit exceeded
+js: ResizeObserver loop limit exceeded
+js: ResizeObserver loop limit exceeded
+js: ResizeObserver loop limit exceeded
+js: ResizeObserver loop limit exceeded
+js: ResizeObserver loop limit exceeded
+js: ResizeObserver loop limit exceeded
+js: ResizeObserver loop limit exceeded
+js: ResizeObserver loop limit exceeded
+js: ResizeObserver loop limit exceeded
+js: ResizeObserver loop limit exceeded
+js: ResizeObserver loop limit exceeded
+js: ResizeObserver loop limit exceeded
+js: ResizeObserver loop limit exceeded
+js: ResizeObserver loop limit exceeded
+js: ResizeObserver loop limit exceeded
+js: ResizeObserver loop limit exceeded
+js: ResizeObserver loop limit exceeded
+js: ResizeObserver loop limit exceeded
+js: ResizeObserver loop limit exceeded
+js: ResizeObserver loop limit exceeded
+js: ResizeObserver loop limit exceeded
+js: ResizeObserver loop limit exceeded
+js: ResizeObserver loop limit exceeded
+js: ResizeObserver loop limit exceeded
+js: ResizeObserver loop limit exceeded
+js: ResizeObserver loop limit exceeded
+js: ResizeObserver loop limit exceeded
+js: ResizeObserver loop limit exceeded
+js: ResizeObserver loop limit exceeded
+js: ResizeObserver loop limit exceeded
+js: ResizeObserver loop limit exceeded
+js: ResizeObserver loop limit exceeded
+js: ResizeObserver loop limit exceeded
+INFO     2022-11-13 16:27:05,282 [cloudclient:_request:235] Net error: TimedOutError(28, 'Operation too slow. Less than 1 bytes/sec transferred the last 40 seconds') GET 'https://graph.microsoft.com/v1.0/drives/b08f239476a80a66/items/B08F239476A80A66!3027/children'
+js: ResizeObserver loop limit exceeded
+js: ResizeObserver loop limit exceeded
+js: ResizeObserver loop limit exceeded
+js: ResizeObserver loop limit exceeded
+js: ResizeObserver loop limit exceeded
+js: ResizeObserver loop limit exceeded
+js: ResizeObserver loop limit exceeded
+js: ResizeObserver loop limit exceeded
+js: ResizeObserver loop limit exceeded
+js: ResizeObserver loop limit exceeded
+js: ResizeObserver loop limit exceeded
+js: ResizeObserver loop limit exceeded
+js: ResizeObserver loop limit exceeded
+js: ResizeObserver loop limit exceeded
+js: ResizeObserver loop limit exceeded
+js: ResizeObserver loop limit exceeded
+js: ResizeObserver loop limit exceeded
+js: ResizeObserver loop limit exceeded
+js: ResizeObserver loop limit exceeded
+js: ResizeObserver loop limit exceeded
+js: ResizeObserver loop limit exceeded
+js: ResizeObserver loop limit exceeded
+js: ResizeObserver loop limit exceeded
+js: ResizeObserver loop limit exceeded
+js: ResizeObserver loop limit exceeded
+js: ResizeObserver loop limit exceeded
+js: ResizeObserver loop limit exceeded
+js: ResizeObserver loop limit exceeded
+js: ResizeObserver loop limit exceeded
+js: ResizeObserver loop limit exceeded
+js: ResizeObserver loop limit exceeded
+js: ResizeObserver loop limit exceeded
+js: ResizeObserver loop limit exceeded
+js: ResizeObserver loop limit exceeded
+js: ResizeObserver loop limit exceeded
+js: ResizeObserver loop limit exceeded
+js: ResizeObserver loop limit exceeded
+js: ResizeObserver loop limit exceeded
+js: ResizeObserver loop limit exceeded
+js: ResizeObserver loop limit exceeded
+js: ResizeObserver loop limit exceeded
+js: ResizeObserver loop limit exceeded
+js: ResizeObserver loop limit exceeded
+js: ResizeObserver loop limit exceeded
+js: ResizeObserver loop limit exceeded
+js: ResizeObserver loop limit exceeded
+js: ResizeObserver loop limit exceeded
+js: ResizeObserver loop limit exceeded
+js: ResizeObserver loop limit exceeded
+js: ResizeObserver loop limit exceeded
+js: ResizeObserver loop limit exceeded
+js: ResizeObserver loop limit exceeded
+js: ResizeObserver loop limit exceeded
+js: ResizeObserver loop limit exceeded
+js: ResizeObserver loop limit exceeded
+js: ResizeObserver loop limit exceeded
+js: ResizeObserver loop limit exceeded
+js: ResizeObserver loop limit exceeded
+js: ResizeObserver loop limit exceeded
+js: ResizeObserver loop limit exceeded
+js: ResizeObserver loop limit exceeded
+js: ResizeObserver loop limit exceeded
+js: ResizeObserver loop limit exceeded
+js: ResizeObserver loop limit exceeded
+js: ResizeObserver loop limit exceeded
+js: ResizeObserver loop limit exceeded
+js: ResizeObserver loop limit exceeded
+js: ResizeObserver loop limit exceeded
+js: ResizeObserver loop limit exceeded
+js: ResizeObserver loop limit exceeded
+js: ResizeObserver loop limit exceeded
+js: ResizeObserver loop limit exceeded
+js: ResizeObserver loop limit exceeded
+js: ResizeObserver loop limit exceeded
+js: ResizeObserver loop limit exceeded
+js: ResizeObserver loop limit exceeded
+js: ResizeObserver loop limit exceeded
+js: ResizeObserver loop limit exceeded
+js: ResizeObserver loop limit exceeded
+js: ResizeObserver loop limit exceeded
+js: ResizeObserver loop limit exceeded
+js: ResizeObserver loop limit exceeded
+js: ResizeObserver loop limit exceeded
+js: ResizeObserver loop limit exceeded
+js: ResizeObserver loop limit exceeded
+js: ResizeObserver loop limit exceeded
+js: ResizeObserver loop limit exceeded
+js: ResizeObserver loop limit exceeded
+js: ResizeObserver loop limit exceeded
+js: ResizeObserver loop limit exceeded
+js: ResizeObserver loop limit exceeded
+js: ResizeObserver loop limit exceeded
+js: ResizeObserver loop limit exceeded
+js: ResizeObserver loop limit exceeded
+js: ResizeObserver loop limit exceeded
+js: ResizeObserver loop limit exceeded
+js: ResizeObserver loop limit exceeded
+js: ResizeObserver loop limit exceeded
+js: ResizeObserver loop limit exceeded
+js: ResizeObserver loop limit exceeded
+js: ResizeObserver loop limit exceeded
+js: ResizeObserver loop limit exceeded
+js: ResizeObserver loop limit exceeded
+js: ResizeObserver loop limit exceeded
+js: ResizeObserver loop limit exceeded
+js: ResizeObserver loop limit exceeded
+js: ResizeObserver loop limit exceeded
+js: ResizeObserver loop limit exceeded
+js: ResizeObserver loop limit exceeded
+js: ResizeObserver loop limit exceeded
+js: ResizeObserver loop limit exceeded
+js: ResizeObserver loop limit exceeded
+js: ResizeObserver loop limit exceeded
+js: ResizeObserver loop limit exceeded
+js: ResizeObserver loop limit exceeded
+js: ResizeObserver loop limit exceeded
+js: ResizeObserver loop limit exceeded
+js: ResizeObserver loop limit exceeded
+js: ResizeObserver loop limit exceeded
+js: ResizeObserver loop limit exceeded
+js: ResizeObserver loop limit exceeded
+js: ResizeObserver loop limit exceeded
+js: ResizeObserver loop limit exceeded
+js: ResizeObserver loop limit exceeded
+js: ResizeObserver loop limit exceeded
+js: ResizeObserver loop limit exceeded
+js: ResizeObserver loop limit exceeded
+js: ResizeObserver loop limit exceeded
+js: ResizeObserver loop limit exceeded
+js: ResizeObserver loop limit exceeded
+js: ResizeObserver loop limit exceeded
+js: ResizeObserver loop limit exceeded
+js: ResizeObserver loop limit exceeded
+js: ResizeObserver loop limit exceeded
+js: ResizeObserver loop limit exceeded
+js: ResizeObserver loop limit exceeded
+js: ResizeObserver loop limit exceeded
+js: ResizeObserver loop limit exceeded
+js: ResizeObserver loop limit exceeded
+js: ResizeObserver loop limit exceeded
+js: ResizeObserver loop limit exceeded
+js: ResizeObserver loop limit exceeded
+js: ResizeObserver loop limit exceeded
+js: ResizeObserver loop limit exceeded
+js: ResizeObserver loop limit exceeded
+js: ResizeObserver loop limit exceeded
+js: ResizeObserver loop limit exceeded
+js: ResizeObserver loop limit exceeded
+js: ResizeObserver loop limit exceeded
+js: ResizeObserver loop limit exceeded
+js: ResizeObserver loop limit exceeded
+js: ResizeObserver loop limit exceeded
+js: ResizeObserver loop limit exceeded
+js: ResizeObserver loop limit exceeded
+js: ResizeObserver loop limit exceeded
+js: ResizeObserver loop limit exceeded
+js: ResizeObserver loop limit exceeded
+js: ResizeObserver loop limit exceeded
+js: ResizeObserver loop limit exceeded
+js: ResizeObserver loop limit exceeded
+js: ResizeObserver loop limit exceeded
+js: ResizeObserver loop limit exceeded
+js: ResizeObserver loop limit exceeded
+js: ResizeObserver loop limit exceeded
+js: ResizeObserver loop limit exceeded
+js: ResizeObserver loop limit exceeded
+js: ResizeObserver loop limit exceeded
+js: ResizeObserver loop limit exceeded
+js: ResizeObserver loop limit exceeded
+js: ResizeObserver loop limit exceeded
+js: ResizeObserver loop limit exceeded
+js: ResizeObserver loop limit exceeded
+js: ResizeObserver loop limit exceeded
+js: ResizeObserver loop limit exceeded
+js: ResizeObserver loop limit exceeded
+js: ResizeObserver loop limit exceeded
+js: ResizeObserver loop limit exceeded
+js: ResizeObserver loop limit exceeded
+js: ResizeObserver loop limit exceeded
+js: ResizeObserver loop limit exceeded
+js: ResizeObserver loop limit exceeded
+js: ResizeObserver loop limit exceeded
+js: ResizeObserver loop limit exceeded
+js: ResizeObserver loop limit exceeded
+js: ResizeObserver loop limit exceeded
+js: ResizeObserver loop limit exceeded
+js: ResizeObserver loop limit exceeded
+js: ResizeObserver loop limit exceeded
+js: ResizeObserver loop limit exceeded
+js: ResizeObserver loop limit exceeded
+js: ResizeObserver loop limit exceeded
+js: ResizeObserver loop limit exceeded
+js: ResizeObserver loop limit exceeded
+js: ResizeObserver loop limit exceeded
+js: ResizeObserver loop limit exceeded
+js: ResizeObserver loop limit exceeded
+js: ResizeObserver loop limit exceeded
+js: ResizeObserver loop limit exceeded
+js: ResizeObserver loop limit exceeded
+js: ResizeObserver loop limit exceeded
+js: ResizeObserver loop limit exceeded
+js: ResizeObserver loop limit exceeded
+js: ResizeObserver loop limit exceeded
+js: ResizeObserver loop limit exceeded
+js: ResizeObserver loop limit exceeded
+js: ResizeObserver loop limit exceeded
+js: ResizeObserver loop limit exceeded
+js: ResizeObserver loop limit exceeded
+js: ResizeObserver loop limit exceeded
+js: ResizeObserver loop limit exceeded
+js: ResizeObserver loop limit exceeded
+js: ResizeObserver loop limit exceeded
+js: ResizeObserver loop limit exceeded
+js: ResizeObserver loop limit exceeded
+js: ResizeObserver loop limit exceeded
+
+** (process:584): WARNING **: 16:33:11.510: Failed to load shared library 'libnotify.so.4' referenced by the typelib: /usr/lib/libgdk_pixbuf-2.0.so.0: undefined symbol: g_task_set_name
+qt.qpa.xcb: Unhandled client message:  "_NET_CLIENT_LIST"
+Traceback (most recent call last):
+  File "idesklinux/statusmenu_impl.py", line 46, in on_activation
+AttributeError: 'NoneType' object has no attribute 'on_tray_icon_click'
+Traceback (most recent call last):
+  File "idesklinux/statusmenu_impl.py", line 46, in on_activation
+AttributeError: 'NoneType' object has no attribute 'on_tray_icon_click'
+INFO     2022-11-13 16:33:40,560 [mainlogs:_log_run:138] Core(app_version=3.8.0.50453, platform=Linux-x86_64-arch/) initialized
+WARNING  2022-11-13 16:33:40,607 [base_events:_run_once:1782] Executing <Task pending coro=<init() running at ideskcore/core.py:28> wait_for=<Task pending coro=<SettingsMain._load_settings() running at ideskcore/mainsettings.py:186> cb=[_log_tb_after_delay() at ideskasync/coreloop.py:302, <TaskWakeupMethWrapper object at 0x7f7440d50d90>()] created at ideskcore/mainsettings.py:160> cb=[_log_tb_after_delay() at ideskasync/coreloop.py:302, _chain_future.<locals>._call_set_state() at asyncio/futures.py:358] created at asyncio/events.py:88> took 28.577 seconds
+INFO     2022-11-13 16:33:40,811 [mainsettings:_load_settings:236] Loaded settings, machine fingerprint = D7_CCp446DGx1AsgaH6YMwQSIec=
+WARNING  2022-11-13 16:33:40,812 [base_events:_run_once:1782] Executing <Task finished coro=<SettingsMain._load_settings() done, defined at ideskcore/mainsettings.py:186> result=None created at ideskcore/mainsettings.py:160> took 0.204 seconds
+Fontconfig warning: "/usr/share/fontconfig/conf.avail/05-reset-dirs-sample.conf", line 6: unknown element "reset-dirs"
+Traceback (most recent call last):
+  File "idesklinux/statusmenu_impl.py", line 102, in <lambda>
+  File "ideskui/statusmenu.py", line 9, in do_action
+  File "idesklinux/platui_impl.py", line 63, in do_action
+AttributeError: 'NoneType' object has no attribute 'show_app_dialog'
+INFO     2022-11-13 16:33:50,950 [inotify_manager:__init__:132] INotifyManager FS_ENCODING: utf-8
+INFO     2022-11-13 16:33:50,951 [fswatcher:_start:57] LinuxFSWatcher._start
+INFO     2022-11-13 16:33:50,954 [inotify_manager:_pull_loop:315] Inotify loop enter
+INFO     2022-11-13 16:33:55,087 [app:start_core:65] core started
+INFO     2022-11-13 16:33:55,088 [unix_socket_server:start:106] unix socket server thread start
+INFO     2022-11-13 16:33:55,089 [fswatcher:watch:77] watch origin: /DATA/cloud/Insync/OneDrive_Ray
+js: ResizeObserver loop limit exceeded
