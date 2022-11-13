@@ -18,7 +18,8 @@ sgdisk -n=2:201M:+30G -t 2:8300 /dev/vda
 sgdisk -n=3:31G:0 -t 2:8300 /dev/vda
 
 echo Mirrors
-reflector -c NL > /etc/pacman.d/mirrorlist
+rate-mirrors --allow-root --protocol https arch | tee /etc/pacman.d/mirrorlist
+
 pacman -Syy
 
 
