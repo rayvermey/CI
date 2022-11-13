@@ -17,12 +17,10 @@ sgdisk -n=1:0:+200M -t 1:ef00 /dev/vda
 sgdisk -n=2:201M:+30G -t 2:8300 /dev/vda
 sgdisk -n=3:31G:0 -t 2:8300 /dev/vda
 
-pacman -Syy
-pacman -S rate-mirrors
-
 echo Mirrors
-rate-mirrors --protocol https arch | tee /etc/pacman.d/mirrorlist
 
+reflector --latest 5 --sort rate --save /etc/pacman.d/mirrorlist
+pacman -Syy
 
 
 MEMTOTAL=$(grep MemTotal /proc/meminfo | awk ' { print $2 }')
