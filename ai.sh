@@ -17,10 +17,12 @@ sgdisk -n=1:0:+200M -t 1:ef00 /dev/vda
 sgdisk -n=2:201M:+30G -t 2:8300 /dev/vda
 sgdisk -n=3:31G:0 -t 2:8300 /dev/vda
 
-echo Mirrors
-rate-mirrors --allow-root --protocol https arch | tee /etc/pacman.d/mirrorlist
-
 pacman -Syy
+pacman -S rate-mirrors
+
+echo Mirrors
+rate-mirrors --protocol https arch | tee /etc/pacman.d/mirrorlist
+
 
 
 MEMTOTAL=$(grep MemTotal /proc/meminfo | awk ' { print $2 }')
@@ -54,7 +56,7 @@ pacstrap /mnt base base-devel linux linux-firmware vim openssh dhclient networkm
 echo FSTAB
 genfstab -U /mnt >> /mnt/etc/fstab
 
-cp yay-11.0.2-1-x86_64.pkg.tar.zst /mnt/root
+#cp yay-11.0.2-1-x86_64.pkg.tar.zst /mnt/root
 cp yay-11.0.2-1-x86_64.pkg.tar.zst /mnt/
 
 echo Copying files
@@ -91,7 +93,7 @@ echo Installing yay
 
 pacman -U yay-11.0.2-1-x86_64.pkg.tar.zst --noconfirm --needed
 
-systemctl enable --now sshd.service
+#systemctl enable --now sshd.service
 
 su ray -c "yay --noconfirm -R libxft xorg-x11perf"
 
