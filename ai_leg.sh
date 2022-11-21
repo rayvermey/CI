@@ -8,7 +8,8 @@ ln -s /usr/bin/vim /usr/bin/vi
 
 
 echo Partitioning disk
-sgdisk --zap /dev/sda
+sgdisk --zap_all /dev/sda
+sgdisk -o /dev/sda
 sgdisk -m /dev/sda
 sgdisk -n=1:0:+30G -t 1:8300 /dev/sda
 sgdisk -n=2:31G:0 -t 2:8300 /dev/sda
