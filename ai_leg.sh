@@ -1,18 +1,3 @@
-echo Freeing System
-umount /dev/sda1
-sleep 2
-umount /dev/sda2
-
-echo Setting vi
-ln -s /usr/bin/vim /usr/bin/vi
-
-
-echo Partitioning disk
-sgdisk --zap_all /dev/sda
-sgdisk -o /dev/sda
-sgdisk -m /dev/sda
-sgdisk -n=1:0:+30G -t 1:8300 /dev/sda
-sgdisk -n=2:31G:0 -t 2:8300 /dev/sda
 
 echo Mirrors
 
@@ -133,7 +118,6 @@ make && sudo make install
 
 cd
 
-
 echo Creating .xinitrc
 cat <<XINITRC > /home/ray/.xinitrc
 export DESKTOP_SESSION=dusk
@@ -150,11 +134,11 @@ XINITRC
 systemctl enable --now NetworkManager
 chown -R ray:ray /home/ray
 
-EOF
-
 echo Preparing Bootloader
 grub-install --target=i386-pc /dev/sda
 grub-mkconfig -o /boot/grub/grub.cfg
+
+EOF
 
 cp /root/CI/picom.conf /mnt/home/ray/.config
 cp /root/CI/.bashrc /mnt/home/ray
