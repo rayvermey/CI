@@ -47,6 +47,8 @@ chmod 0600 /mnt/.swapfile
 mkswap -U clear /mnt/.swapfile
 swapon /mnt/.swapfile
 
+pacman --noconfirm -S archlinux-keyring
+
 echo Pacstrap
 pacstrap /mnt base base-devel linux linux-firmware vim openssh dhclient networkmanager neofetch wget xorg xorg-server xorg-apps xorg-xinit noto-fonts ttf-ubuntu-font-family ttf-dejavu ttf-freefont terminus-font ttf-font-awesome variety feh picom polkit fuseiso gparted git dmenu zsh chromium vivaldi yajl bash-completion zsh-completions  pipewire-audio pipewire-media-session pipewire-pulse pavucontrol volumeicon exa expac rclone rsync ranger atool elinks ffmpegthumbnailer highlight libcaca lynx mediainfo odt2txt perl-image-exiftool poppler python-chardet transmission-cli ueberzug w3m 
 
@@ -63,6 +65,9 @@ cp -r * /mnt/root/FILES
 
 echo CHROOT
 arch-chroot /mnt <<EOF
+
+pacman --noconfirm -S archlinux-keyring
+
 echo LOCALE and stuff
 echo "en_US.UTF-8 UTF-8" > /etc/locale.gen
 locale-gen
